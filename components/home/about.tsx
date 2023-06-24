@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
+import tw from "tailwind-styled-components";
 
 const HomeAbout = () => {
   return (
@@ -32,13 +33,10 @@ const HomeAbout = () => {
               diverse range of client-focused and cost-effective engineering
               solutions in the oil, gas and manufacturing industries.
             </p>
-            <a
-              href="#"
-              className="bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80"
-            >
+            <Button href="#">
               Learn More
               <Icon icon="ph:arrow-right-bold"></Icon>
-            </a>
+            </Button>
           </div>
         </Slide>
 
@@ -57,5 +55,7 @@ const HomeAbout = () => {
     </div>
   );
 };
+
+const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
 
 export default HomeAbout;

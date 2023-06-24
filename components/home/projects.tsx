@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Slide } from "react-awesome-reveal";
+import tw from "tailwind-styled-components";
 
 interface ProjectTabProps {
   isActive: boolean;
@@ -88,12 +89,9 @@ const HomeProjects = () => {
         <h6 className="font-[700] lg:text-[30px] text-[20px] text-white">
           Latest Projects
         </h6>
-        <a
-          href="#"
-          className="bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 px-4 py-2 font-[400] lg:text-[13.5px] text-[10px] font-poppins flex items-center gap-2 w-fit hover:opacity-80"
-        >
+        <Btn href="#" className="">
           View All Projects
-        </a>
+        </Btn>
       </div>
 
       <Slide direction="down" cascade triggerOnce={true}>
@@ -138,10 +136,12 @@ const HomeProjects = () => {
             onClick={() => handleTabClick(5)}
             heading="Training"
           />
-        </div>{" "}
+        </div>
       </Slide>
     </div>
   );
 };
+
+const Btn = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 px-4 py-2 font-[400] lg:text-[13.5px] text-[10px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
 
 export default HomeProjects;

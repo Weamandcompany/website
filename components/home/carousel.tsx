@@ -6,6 +6,7 @@ import { Navigation, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Icon } from "@iconify/react";
 import { CarouselImages, carouselData } from "@/utils/constants";
+import tw from "tailwind-styled-components";
 
 const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,15 +25,13 @@ const HomeCarousel = () => {
 
   return (
     <>
-      <div
+      <Wrapper
         style={{
           backgroundImage: "url('blueframe.svg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
-          // width: "36.7%",
-          // height: "70%",
         }}
-        className="absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] h-[50%] top-[6%] text-white z-[30]"
+        className=""
       >
         <div className="carousel relative">
           {carouselData.map((data, index) => (
@@ -51,17 +50,14 @@ const HomeCarousel = () => {
               <p className="lg:text-sm text-[7px] font-nunito lg:mb-6 mb-3 leading-[1.7]">
                 {data.description}
               </p>
-              <a
-                href="#"
-                className="bg-[#E47B0E] text-white rounded-[3px] py-1 px-4 lg:py-3 lg:px-8 font-[400] lg:text-[13.5px] text-[8px] font-poppins flex items-center gap-2 w-fit hover:opacity-80"
-              >
+              <Button href="#">
                 About Us
                 <Icon icon="ph:arrow-right-bold"></Icon>
-              </a>
+              </Button>
             </div>
           ))}
         </div>
-      </div>
+      </Wrapper>
 
       <div className="lg:pt-[85px] pt-10 w-[76%] mr-[0px] mx-auto">
         <Swiper
@@ -92,5 +88,8 @@ const HomeCarousel = () => {
     </>
   );
 };
+
+const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
+const Wrapper = tw.div`absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] h-[50%] top-[6%] text-white z-[30]`;
 
 export default HomeCarousel;

@@ -1,12 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   --swiper-navigation-color: #fff;
   --swiper-theme-color: #e47b0e !important;
   --swiper-pagination-bullet-inactive-color: #fff !important;
-  --splash-bg-color: #0c1239;
 }
 
 .font-roboto {
@@ -33,8 +32,6 @@
   background-repeat: no-repeat !important;
   top: 90% !important;
   right: 5% !important;
-  /* background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(13.5px); */
 }
 
 .myswiper .swiper-button-next:after,
@@ -60,36 +57,6 @@
 
 .fade-in.active {
   opacity: 1;
-}
-
-.content__menu {
-  position: relative;
-  z-index: 5;
-  visibility: hidden;
-}
-
-.splash::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 50%;
-  background-color: var(--splash-bg-color);
-  width: 284vmax;
-  height: 284vmax;
-  top: -142vmax;
-  left: -142vmax;
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  will-change: transform;
-}
-.content:target > .splash::after,
-.content--open > .splash::after {
-  transform: scale(1);
-}
-
-.content--open .content__menu {
-  visibility: visible;
 }
 
 /* Mobile */

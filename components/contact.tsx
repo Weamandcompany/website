@@ -2,6 +2,7 @@
 
 import { Icon } from "@iconify/react";
 import React from "react";
+import tw from "tailwind-styled-components";
 
 const Contact = () => {
   return (
@@ -23,21 +24,11 @@ const Contact = () => {
             to contact our support team.
           </p>
           <div className="lg:flex grid lg:gap-8 gap-4 items-center">
-            <a
-              href="Weam-official.pdf"
-              download={true}
-              className="bg-[#fff] border-[1px] border-[#000] text-[#434343] rounded-[12px] py-3 px-6 font-[400] lg:text-[15px] text-xs font-poppins flex items-center gap-2 w-fit hover:opacity-80"
-            >
+            <BtnDownload href="Weam-official.pdf" download={true}>
               <Icon icon="subway:download-3"></Icon> Download Company&apos;s
               Profile
-            </a>
-
-            <a
-              href="#"
-              className="border-[1px] border-white text-[#fff] rounded-[12px] py-3 px-6 font-[400] lg:text-[15px] text-xs font-inter  w-fit hover:opacity-80"
-            >
-              Contact Us
-            </a>
+            </BtnDownload>
+            <BtnContact href="#">Contact Us</BtnContact>
           </div>
         </div>
       </div>
@@ -45,4 +36,6 @@ const Contact = () => {
   );
 };
 
+const BtnDownload = tw.a`bg-[#fff] border-[1px] border-[#000] text-[#434343] rounded-[12px] py-3 px-6 font-[400] lg:text-[15px] text-xs font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
+const BtnContact = tw.a`border-[1px] border-white text-[#fff] rounded-[12px] py-3 px-6 font-[400] lg:text-[15px] text-xs font-inter  w-fit hover:opacity-80`;
 export default Contact;

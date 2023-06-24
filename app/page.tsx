@@ -23,7 +23,6 @@ export default function Home() {
           className="absolute lg:top-[-80px] top-[-20px] lg:w-[70.2%] w-[63%] right-0"
           width={0}
           height={0}
-          // style={{ width: "70.2%", height: "auto" }}
           alt="logos"
         />
       </div>
