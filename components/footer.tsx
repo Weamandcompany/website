@@ -74,7 +74,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="bg-[#131944] lg:flex inline-flex items-center justify-between lg:text-left text-center lg:px-32 px-10 py-4 text-white font-poppins">
+      <div className="bg-[#131944] lg:flex grid justify-center items-center lg:justify-between lg:text-left text-center lg:px-32 px-10 py-4 text-white font-poppins">
         <p className="text-[12px] lg:order-1 order-2">
           © Copyright {new Date().getFullYear()}. All Right Reserved
         </p>

@@ -54,3 +54,10 @@ export const footerQuickLinks = [
   { name: "Our Process", link: "/" },
   { name: "Contact Us", link: "/" },
 ];
+
+export const navLinks = [
+  { name: "Home", link: "/" },
+  { name: "About us", link: "/about" },
+  { name: "Services", link: "/services" },
+  { name: "Projects", link: "/projects" },
+];

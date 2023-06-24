@@ -14,7 +14,7 @@ const HomeAbout = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="py-20"
+      className="lg:py-20 py-12"
     >
       <div className="lg:px-24 px-10 grid lg:grid-cols-2 grid-cols-1 gap-16  items-center">
         <Slide cascade triggerOnce={false}>

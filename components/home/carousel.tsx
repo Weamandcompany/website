@@ -41,13 +41,13 @@ const HomeCarousel = () => {
                 index === currentIndex ? "active" : ""
               }`}
             >
-              <h6 className="text-[#E47B0E] lg:text-sm text-[7px] font-poppins font-[500] lg:mb-3 mb-1">
+              <h6 className="text-[#E47B0E] lg:text-sm text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
                 {data.title}
               </h6>
-              <p className="lg:text-[30px] text-[9px] font-nunito font-[900] leading-[1.5] lg:mb-6 mb-2">
+              <p className="lg:text-[30px] text-[8px] font-nunito font-[900] leading-[1.5] lg:mb-6 mb-1">
                 {data.subtitle}
               </p>
-              <p className="lg:text-sm text-[7px] font-nunito lg:mb-6 mb-3 leading-[1.7]">
+              <p className="lg:text-sm text-[6px] font-nunito lg:mb-6 mb-2 leading-[1.7]">
                 {data.description}
               </p>
               <Button href="#">
@@ -59,7 +59,7 @@ const HomeCarousel = () => {
         </div>
       </Wrapper>
 
-      <div className="lg:pt-[85px] pt-10 w-[76%] mr-[0px] mx-auto">
+      <div className="lg:pt-[85px] pt-0 w-[76%] mr-[0px] mx-auto">
         <Swiper
           modules={[Navigation, A11y, Autoplay]}
           slidesPerView={1}
@@ -89,7 +89,7 @@ const HomeCarousel = () => {
   );
 };
 
-const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
+const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-1  px-3 font-[400] lg:text-[13.5px] text-[7px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
 const Wrapper = tw.div`absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] h-[50%] top-[6%] text-white z-[30]`;
 
 export default HomeCarousel;

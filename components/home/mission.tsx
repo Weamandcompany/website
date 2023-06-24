@@ -72,7 +72,7 @@ const HomeMission = () => {
           <Title>
             <span className="text-[#C9D0FC78]">Our</span> Core Values
           </Title>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 text-xs lg:text-base">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:mb-0 mb-8 text-xs lg:text-base">
             <CoreValueItem
               icon="zondicons:checkmark"
               text="Commitment to Quality Service"
