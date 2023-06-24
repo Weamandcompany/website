@@ -9,7 +9,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-[#0F1437] ">
-      <div className="lg:px-32 p-10 lg:pt-16 grid lg:grid-cols-10 grid-cols-1 gap-6 lg:gap-24">
+      <div className="lg:px-32 p-10 pb-2 lg:pt-16 grid lg:grid-cols-10 grid-cols-1 gap-6 lg:gap-24">
         <div className="col-span-3">
           <h6 className="text-white font-poppins text-lg mb-4">About Us</h6>
           <p className="font-roboto text-[#B8B8B8] text-xs">
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#131944] p-8 lg:mx-32 mx-5 lg:my-20 my-6 rounded-[4px] flex items-center justify-between font-poppins text-white">
+      <div className="bg-[#131944] p-8 lg:mx-32 mx-5 lg:mb-[4.5rem] my-6 rounded-[4px] flex items-center justify-between font-poppins text-white">
         <Image src={"logowhite.svg"} height={56.07} width={77.45} alt="logo" />
         <div className="flex items-center gap-6">
           Find us on:{" "}

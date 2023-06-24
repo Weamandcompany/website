@@ -19,7 +19,10 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        heroservice: "url('/images/heroservice.svg')",
+        bgservice: "url('/images/bgservice.svg')",
       },
       screens: {
         xs: "576px",
