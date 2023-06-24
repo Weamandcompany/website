@@ -2,26 +2,19 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
-
 :root {
   --swiper-navigation-color: #fff;
   --swiper-theme-color: #e47b0e !important;
   --swiper-pagination-bullet-inactive-color: #fff !important;
+  --font-nunito: "Nunito";
+  --font-roboto: "Roboto";
+  --font-poppins: "Poppins";
 }
 
-.font-roboto {
-  font-family: "Roboto", sans-serif;
-}
-
-.font-poppins {
-  font-family: "Poppins", sans-serif;
-}
-
-.font-nunito {
-  font-family: "Nunito", sans-serif;
+@layer components {
+  .btn-yellow {
+    @apply bg-[#E47B0E] text-white border border-[#e47d0e] focus:outline-none font-medium disabled:opacity-75 rounded text-sm px-4 py-3 cursor-pointer transition-all ease-in duration-200;
+  }
 }
 
 .myswiper .swiper-button-prev {
@@ -78,4 +71,50 @@
     top: 90% !important;
     right: 5% !important;
   }
+}
+
+/** =================================================
+      Css Container resets
+==================================================== **/
+
+@media (min-width: 1200px) {
+  .container-fluid,
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container {
+  max-width: 1165px !important;
 }
