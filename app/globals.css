@@ -3,15 +3,108 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --swiper-navigation-color: #fff;
+  --swiper-theme-color: #e47b0e !important;
+  --swiper-pagination-bullet-inactive-color: #fff !important;
+  --splash-bg-color: #0c1239;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.myswiper .swiper-button-prev {
+  background-image: url("../public/arrow-left.svg") !important;
+  background-repeat: no-repeat !important;
+  top: 90% !important;
+  left: 89% !important;
+}
+
+.myswiper .swiper-button-next {
+  background-image: url("../public/arrow-right.svg") !important;
+  background-repeat: no-repeat !important;
+  top: 90% !important;
+  right: 5% !important;
+  /* background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(13.5px); */
+}
+
+.myswiper .swiper-button-next:after,
+.myswiper .swiper-rtl .swiper-button-prev:after,
+.myswiper .swiper-button-prev:after,
+.myswiper .swiper-rtl .swiper-button-next:after {
+  content: "" !important;
+}
+
+.myswiper .swiper-horizontal > .swiper-pagination-bullets,
+.myswiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.myswiper .swiper-pagination-custom,
+.myswiper .swiper-pagination-fraction {
+  bottom: auto !important;
+}
+
+/* fade-in effect */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+  position: absolute;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.content__menu {
+  position: relative;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.splash::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--splash-bg-color);
+  width: 284vmax;
+  height: 284vmax;
+  top: -142vmax;
+  left: -142vmax;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  will-change: transform;
+}
+.content:target > .splash::after,
+.content--open > .splash::after {
+  transform: scale(1);
+}
+
+.content--open .content__menu {
+  visibility: visible;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .myswiper .swiper-button-prev {
+    background-image: url("../public/arrow-left.svg") !important;
+    background-repeat: no-repeat !important;
+    top: 90% !important;
+    left: 75% !important;
+  }
+
+  .myswiper .swiper-button-next {
+    background-image: url("../public/arrow-right.svg") !important;
+    background-repeat: no-repeat !important;
+    top: 90% !important;
+    right: 5% !important;
   }
 }
