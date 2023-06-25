@@ -1,23 +1,21 @@
 "use client";
 
 import Contact from "@/components/contact";
-import ProjectSection from "@/components/common/projects";
 import React from "react";
 import PageLayout from "@/layouts/PageLayout";
 
-const Projects = () => {
+const ContactUs = () => {
   return (
     <PageLayout>
       <div className="bg-heroservice bg-no-repeat bg-cover lg:py-[5.5rem] py-14 lg:mt-[5.5rem]">
         <h6 className="lg:text-[34px] text-[25px] font-[500] font-poppins text-white lg:px-32 px-10">
-          Projects
+          Contact Us
         </h6>
       </div>
 
-      <ProjectSection />
       <Contact />
     </PageLayout>
   );
 };
 
-export default Projects;
+export default ContactUs;

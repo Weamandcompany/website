@@ -17,12 +17,12 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
           style={{
             background: bgcolor ? bgcolor : "bg-white",
           }}
-          className={`w-[60%]  mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
+          className={`w-[60%] bg-white mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
         >
           {bgcolor ? (
-            <Image src={"logowhite.svg"} height={35.11} width={48.5} alt="logo" />
+            <Image src={"/images/logowhite.svg"} height={35.11} width={48.5} alt="logo" />
           ) : (
-            <Image src={"logo.svg"} height={35.11} width={48.5} alt="logo" />
+            <Image src={"/images/logo.svg"} height={35.11} width={48.5} alt="logo" />
           )}
           <div className="flex items-center gap-10  font-[600] text-sm font-roboto">
             {navLinks?.map((item, i) => (
@@ -43,7 +43,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
           </div>
           <li>
             <a
-              href="#"
+              href="/contact"
               className="bg-[#E47B0E] text-white rounded-[3px] py-3 px-8 font-[400] text-[13.5px] font-poppins"
             >
               Contact

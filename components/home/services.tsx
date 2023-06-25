@@ -3,6 +3,7 @@
 import React from "react";
 import { Bounce } from "react-awesome-reveal";
 import ServiceItem from "@/components/common/serviceItem";
+import Link from "next/link";
 
 const HomeServices: React.FC = () => {
   return (
@@ -24,19 +25,28 @@ const HomeServices: React.FC = () => {
           <ServiceItem
             title="Engineering"
             description="We have an in-house multi-disciplined engineering team with an average of 25 years industry..."
-            icon="icon1.svg"
+            icon="/images/icon1.svg"
           />
           <ServiceItem
             title="Software Solutions and Integration"
             description="Lorem ipsum dolor sit amet consectetur. Est accumsan nulla neque at arcu proin placerat. Auctor."
-            icon="icon11.svg"
+            icon="/images/icon11.svg"
           />
           <ServiceItem
             title="Cloud Consulting"
             description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
-            icon="icon111.svg"
+            icon="/images/icon111.svg"
           />
         </Bounce>
+      </div>
+
+      <div className="flex justify-end">
+        <Link
+          href="/services"
+          className="font-poppins text-[14px] font-[400] mb-8 hover:underline"
+        >
+          View more
+        </Link>
       </div>
     </div>
   );

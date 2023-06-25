@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-[#131944] p-8 lg:mx-32 mx-5 lg:mb-[4.5rem] my-6 rounded-[4px] flex items-center justify-between font-poppins text-white">
-        <Image src={"logowhite.svg"} height={56.07} width={77.45} alt="logo" />
+        <Image src={"/images/logowhite.svg"} height={56.07} width={77.45} alt="logo" />
         <div className="flex items-center gap-6">
           Find us on:{" "}
           <Link href={"/"}>

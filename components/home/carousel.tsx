@@ -26,12 +26,7 @@ const HomeCarousel = () => {
   return (
     <>
       <Wrapper
-        style={{
-          backgroundImage: "url('blueframe.svg')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "contain",
-        }}
-        className=""
+        className="bg-bgblueframe bg-no-repeat bg-contain"
       >
         <div className="carousel relative">
           {carouselData.map((data, index) => (
@@ -50,7 +45,7 @@ const HomeCarousel = () => {
               <p className="lg:text-sm text-[6px] font-nunito lg:mb-6 mb-2 leading-[1.7]">
                 {data.description}
               </p>
-              <Button href="#">
+              <Button href="/about">
                 About Us
                 <Icon icon="ph:arrow-right-bold"></Icon>
               </Button>

@@ -18,14 +18,14 @@
 }
 
 .myswiper .swiper-button-prev {
-  background-image: url("../public/arrow-left.svg") !important;
+  background-image: url("../public/images/arrow-left.svg") !important;
   background-repeat: no-repeat !important;
   top: 90% !important;
   left: 89% !important;
 }
 
 .myswiper .swiper-button-next {
-  background-image: url("../public/arrow-right.svg") !important;
+  background-image: url("../public/images/arrow-right.svg") !important;
   background-repeat: no-repeat !important;
   top: 90% !important;
   right: 5% !important;
@@ -59,14 +59,14 @@
 /* Mobile */
 @media (max-width: 800px) {
   .myswiper .swiper-button-prev {
-    background-image: url("../public/arrow-left.svg") !important;
+    background-image: url("../public/images/arrow-left.svg") !important;
     background-repeat: no-repeat !important;
     top: 90% !important;
     left: 75% !important;
   }
 
   .myswiper .swiper-button-next {
-    background-image: url("../public/arrow-right.svg") !important;
+    background-image: url("../public/images/arrow-right.svg") !important;
     background-repeat: no-repeat !important;
     top: 90% !important;
     right: 5% !important;

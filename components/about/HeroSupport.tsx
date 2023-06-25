@@ -41,7 +41,7 @@ const HeroSupport = () => {
           <Fade triggerOnce={false}>
             {" "}
             <Image
-              src="experience2.svg"
+              src="/images/experience2.svg"
               width={0}
               height={0}
               style={{ width: "100%", height: "auto" }}

@@ -23,6 +23,11 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         heroservice: "url('/images/heroservice.svg')",
         bgservice: "url('/images/bgservice.svg')",
+        bgcontact: "url('/images/bgcontact.svg')",
+        bgblue: "url('/images/bgblue.svg')",
+        bgabout: "url('/images/About.svg')",
+        bgblueframe: "url('/images/blueframe.svg')",
+        bgtestimonials: "url('/images/Testimonials.svg')",
       },
       screens: {
         xs: "576px",

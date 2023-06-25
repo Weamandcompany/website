@@ -35,13 +35,7 @@ const HomeMission = () => {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="myTestimonials w-[85%] mx-auto rounded-[32px]  text-white font-roboto"
-      style={{
-        backgroundImage: "url('Testimonials.svg')",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "bottom",
-      }}
+      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials w-[85%] mx-auto rounded-[32px]  text-white font-roboto"
     >
       <SwiperSlide>
         <Wrapper>

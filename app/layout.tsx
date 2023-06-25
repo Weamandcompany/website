@@ -1,7 +1,5 @@
 "use client";
 
-import Footer from "@/components/footer";
-import Header from "../components/header";
 import "./globals.css";
 import { Inter, Nunito, Roboto, Poppins } from "next/font/google";
 // Import Swiper styles
@@ -47,9 +45,7 @@ export default function RootLayout({
           "antialiased"
         )}
       >
-        {/* <Header /> */}
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );

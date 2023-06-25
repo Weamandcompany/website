@@ -1,8 +1,8 @@
 export const CarouselImages = [
-  "image1.svg",
-  "image2.svg",
-  "image3.svg",
-  "image4.svg",
+  "/images/image1.svg",
+  "/images/image2.svg",
+  "/images/image3.svg",
+  "/images/image4.svg",
 ];
 
 export const carouselData = [

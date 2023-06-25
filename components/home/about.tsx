@@ -8,14 +8,7 @@ import tw from "tailwind-styled-components";
 
 const HomeAbout = () => {
   return (
-    <div
-      style={{
-        backgroundImage: "url('About.svg')",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-      className="lg:py-20 py-12"
-    >
+    <div className="bg-bgabout bg-no-repeat bg-cover lg:py-20 py-12">
       <div className="lg:px-24 px-10 grid lg:grid-cols-2 grid-cols-1 gap-16  items-center">
         <Slide cascade triggerOnce={false}>
           {" "}
@@ -33,7 +26,7 @@ const HomeAbout = () => {
               diverse range of client-focused and cost-effective engineering
               solutions in the oil, gas and manufacturing industries.
             </p>
-            <Button href="#">
+            <Button href="/about">
               Learn More
               <Icon icon="ph:arrow-right-bold"></Icon>
             </Button>
@@ -43,7 +36,7 @@ const HomeAbout = () => {
         <Fade triggerOnce={false}>
           {" "}
           <Image
-            src="experience2.svg"
+            src="/images/experience2.svg"
             width={0}
             height={0}
             style={{ width: "100%", height: "auto" }}

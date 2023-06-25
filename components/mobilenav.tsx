@@ -22,7 +22,7 @@ const MobileNavigation = () => {
         <div className="flex items-center justify-between ">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Image src={"logo.svg"} height={18} width={30} alt="logo" />
+              <Image src={"/images/logo.svg"} height={18} width={30} alt="logo" />
             </div>
           </div>
           <div className="flex -mr-2 md:hidden">
