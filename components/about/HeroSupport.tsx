@@ -2,14 +2,47 @@
 
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import CheckMark from "public/icons/check-mark.svg";
+import cn from "classnames";
 
 const HeroSupport = () => {
+  const [navItems, setNavItems] = useState([
+    "Who we are",
+    "Certificates",
+    "HSE Policy",
+    "Quality Policy Statement",
+    "Our Clientele",
+  ]);
+
+  const [active, setActive] = useState(0);
+  const [isFixed, setIsFixed] = useState(false);
+  const divRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <section className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
+      <section className="pt-5 pb-16 px-4 xs:px-5 sm:px-6">
+        <div className="max-w-4xl mx-auto mb-10">
+          <div
+            ref={divRef}
+            className={cn("flex justify-center overflow-x-auto", {
+              "fixed bottom-2 inset-x-0 h-20 z-10": isFixed,
+            })}>
+            <ul className="list-none flex flex-nowrap overflow-x-auto items-center rounded-md shadow-light2 bg-[#fdf4ec]">
+              {navItems.map((nav, index) => (
+                <li
+                  key={index}
+                  className="flex items-center after:border-r after:last:border-r-0 after:border-slate-300 after:h-4 after:mx-4 after:last:mx-0">
+                  <button className="rounded text-sm text-[#61657E] font-medium whitespace-nowrap py-4 px-5 [&.active]:bg-worange bg-transparent [&.active]:text-white">
+                    {nav}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
         <div
           className="bg-no-repeat bg-cover"
           style={{
@@ -79,7 +112,7 @@ const HeroSupport = () => {
             </div>
 
             <div className="col-span-6">
-              <Fade triggerOnce={false}>
+              <Fade className={"opacity-0"} triggerOnce={true}>
                 <Image src="/images/engineer.png" width={1000} height={1000} alt="about us" />
               </Fade>
             </div>

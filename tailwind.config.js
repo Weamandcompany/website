@@ -36,6 +36,7 @@ module.exports = {
       boxShadow: {
         air: "0px 0px 17.337308883666992px 0px rgba(0, 0, 0, 0.06)",
         light: "0px 16.85163116455078px 92.68397521972656px 0px rgba(0, 0, 0, 0.08)",
+        light2: "0px 16px 88px 0px rgba(0, 0, 0, 0.08);",
       },
     },
   },
