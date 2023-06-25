@@ -13,7 +13,7 @@
 
 @layer components {
   .btn-yellow {
-    @apply bg-[#E47B0E] text-white border border-[#e47d0e] focus:outline-none font-medium disabled:opacity-75 rounded text-sm px-4 py-3 cursor-pointer transition-all ease-in duration-200;
+    @apply bg-[#E47B0E] text-white border border-[#e47d0e] focus:outline-none font-medium disabled:opacity-75 rounded text-sm px-4 py-3 cursor-pointer transition-all ease-in duration-200 font-poppins;
   }
 }
 
@@ -77,7 +77,7 @@
       Css Container resets
 ==================================================== **/
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container-fluid,
   .container-xxl,
   .container-xl,
@@ -88,7 +88,7 @@
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
-}
+} */
 
 @media (min-width: 1200px) {
   .container-xl,
@@ -113,8 +113,4 @@
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-.container {
-  max-width: 1165px !important;
 }
