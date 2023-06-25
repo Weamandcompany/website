@@ -3,8 +3,14 @@ import HomeCarousel from "@/components/home/carousel";
 import HomeServices from "@/components/home/services";
 import HomeAbout from "@/components/home/about";
 import HomeMission from "@/components/home/mission";
-import HomeProjects from "@/components/home/projects";
+import ProjectSection from "@/components/common/projects";
 import Contact from "@/components/contact";
+
+export const metadata = {
+  title: "Weam and Company Limited",
+  description:
+    "A company that provide a diverse range of client-focused and cost-effective services in the oil and gas industry.",
+};
 
 export default function Home() {
   return (
@@ -29,7 +35,7 @@ export default function Home() {
       <HomeAbout />
       <HomeMission />
       <HomeServices />
-      <HomeProjects />
+      <ProjectSection />
       <Contact />
     </main>
   );

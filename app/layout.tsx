@@ -1,8 +1,9 @@
+"use client";
+
 import Footer from "@/components/footer";
 import Header from "../components/header";
 import "./globals.css";
 import { Inter, Nunito, Roboto, Poppins } from "next/font/google";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -30,13 +31,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export const metadata = {
-  title: "Weam and Company Limited",
-  description:
-    "A company that provide a diverse range of client-focused and cost-effective services in the oil and gas industry.",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body
@@ -46,10 +45,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           nunito.variable,
           inter.className,
           "antialiased"
-        )}>
-        <Header />
+        )}
+      >
+        {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

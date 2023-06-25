@@ -7,15 +7,24 @@ import { usePathname } from "next/navigation";
 import MobileNavigation from "./mobilenav";
 import { navLinks } from "@/utils/constants";
 
-const Header = () => {
+const Header = ({ bgcolor }: { bgcolor?: string }) => {
   const pathname = usePathname();
 
   return (
     <>
       <div className="fixed lg:block hidden top-2 z-[100] w-full">
-        <ul className="w-[60%] bg-white mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center">
-          <Image src={"logo.svg"} height={35.11} width={48.5} alt="logo" />
-          <div className="flex items-center gap-10 text-[#0C1239] font-[600] text-sm font-roboto">
+        <ul
+          style={{
+            background: bgcolor ? bgcolor : "bg-white",
+          }}
+          className={`w-[60%]  mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
+        >
+          {bgcolor ? (
+            <Image src={"logowhite.svg"} height={35.11} width={48.5} alt="logo" />
+          ) : (
+            <Image src={"logo.svg"} height={35.11} width={48.5} alt="logo" />
+          )}
+          <div className="flex items-center gap-10  font-[600] text-sm font-roboto">
             {navLinks?.map((item, i) => (
               <li key={i}>
                 <Link
@@ -25,6 +34,7 @@ const Header = () => {
                       ? "px-6 border-b-[1px] border-[#E47B0E] pb-1 "
                       : "px-6"
                   }`}
+                  style={{ color: bgcolor ? "white" : "#0C1239" }}
                 >
                   {item?.name}
                 </Link>
