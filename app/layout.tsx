@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-nunito",
 });
 
@@ -29,23 +29,19 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning={true}
         className={cn(
           roboto.variable,
           poppins.variable,
           nunito.variable,
           inter.className,
           "antialiased"
-        )}
-      >
-        {children}
+        )}>
+        <main className="font-roboto">{children}</main>
       </body>
     </html>
   );
