@@ -8,14 +8,10 @@ import PageLayout from "@/layouts/PageLayout";
 const Projects = () => {
   return (
     <PageLayout>
-      <div className="bg-heroservice bg-no-repeat bg-cover lg:py-[5.5rem] py-14 lg:mt-[5.5rem]">
-        <h6 className="lg:text-[34px] text-[25px] font-[500] font-poppins text-white lg:px-32 px-10">
-          Projects
-        </h6>
+      <div className="lg:mt-[6rem]">
+        <ProjectSection />
+        <Contact />
       </div>
-
-      <ProjectSection />
-      <Contact />
     </PageLayout>
   );
 };

@@ -1,19 +1,17 @@
 "use client";
 
-import Contact from "@/components/contact";
 import React from "react";
 import PageLayout from "@/layouts/PageLayout";
+import ContactForm from "@/components/contactus/form";
+import Location from "@/components/contactus/location";
 
 const ContactUs = () => {
   return (
     <PageLayout>
-      <div className="bg-heroservice bg-no-repeat bg-cover lg:py-[5.5rem] py-14 lg:mt-[5.5rem]">
-        <h6 className="lg:text-[34px] text-[25px] font-[500] font-poppins text-white lg:px-32 px-10">
-          Contact Us
-        </h6>
+      <div className="lg:mt-[7.5rem]  grid lg:grid-cols-2 lg:gap-8 gap-6 lg:px-32 px-10 lg:mb-16 mb-8">
+        <ContactForm />
+        <Location />
       </div>
-
-      <Contact />
     </PageLayout>
   );
 };

@@ -29,18 +29,18 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
     >
       <div className="flex gap-5 items-center justify-between relative">
         <div>
-          <h6 className="text-[#E47B0E] text-[13.5px] mb-2">
+          <h6 className="text-[#E47B0E] lg:text-[18px] text-[13.5px] mb-2">
             {isActive ? heading : title}
           </h6>
           <p
-            className={`text-white text-[19.5px] font[600] ${
+            className={`text-white  text-[19.5px] font[600] ${
               isActive ? "hidden" : ""
             }`}
           >
             {heading}
           </p>
           <p
-            className={`text-[#61657E] text-xs lg:w-[45%] ${
+            className={`text-[#61657E] lg:text-sm text-xs lg:w-[45%] ${
               isActive ? "" : "hidden"
             }`}
           >

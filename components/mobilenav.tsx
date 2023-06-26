@@ -22,7 +22,12 @@ const MobileNavigation = () => {
         <div className="flex items-center justify-between ">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Image src={"/images/logo.svg"} height={18} width={30} alt="logo" />
+              <Image
+                src={"/images/logo.svg"}
+                height={18}
+                width={30}
+                alt="logo"
+              />
             </div>
           </div>
           <div className="flex -mr-2 md:hidden">
@@ -58,6 +63,12 @@ const MobileNavigation = () => {
                   </Link>
                 </div>
               ))}
+              <Link
+                href="/contact"
+                className="bg-[#E47B0E] text-white rounded-[3px] py-3 px-8 font-[400] text-[13.5px] font-poppins"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         )}

@@ -21,13 +21,13 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        heroservice: "url('/images/heroservice.svg')",
         bgservice: "url('/images/bgservice.svg')",
         bgcontact: "url('/images/bgcontact.svg')",
         bgblue: "url('/images/bgblue.svg')",
         bgabout: "url('/images/About.svg')",
         bgblueframe: "url('/images/blueframe.svg')",
         bgtestimonials: "url('/images/Testimonials.svg')",
+        bgcontactform: "url('/images/bgcontactform.svg')",
       },
       screens: {
         xs: "576px",
