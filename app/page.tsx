@@ -45,7 +45,7 @@ export default function Home() {
       <HomeAbout />
       <HomeMission />
       <HomeServices />
-      <ProjectSection />
+      <ProjectSection showHeader={true} />
       <Contact />
     </PageLayout>
   );

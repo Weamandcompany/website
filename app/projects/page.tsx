@@ -55,7 +55,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="lg:mt-[6rem] mt-8">
-        <ProjectSection />
+        <ProjectSection showHeader={false} />
         <Contact />
       </div>
     </PageLayout>
