@@ -20,7 +20,8 @@ const HeroSection = () => {
                 life. With our team of experts and a passion for excellence, we push boundaries and
                 deliver remarkable outcomes. Harnessing cutting-edge technologies and creative
                 thinking, we ignite innovation to shape a brighter future. Experience the power of
-                Weam and Company Limited and let us inspire the solutions you've been searching for.
+                Weam and Company Limited and let us inspire the solutions you&apos;ve been searching
+                for.
               </p>
               <div className="flex justify-center md:justify-start md:mb-0 mb-10">
                 <a
@@ -39,9 +40,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <div className="flex justify-center w-24 -mb-4 pt-2.5 bg-white rounded-tr-[90%_5rem] rounded-tl-[90%_5rem] before:rounded">
-              <button className="flex-shrink-0 btn-yellow p-0 h-11 w-11 rounded-full flex items-center justify-center">
+          <div className="relative flex flex-col justify-center items-center">
+            <div className="curve relative bg-white">
+              <button className="absolute z-[2] flex-shrink-0 btn-yellow -mt-8 ml-[19%] p-0 h-11 w-11 rounded-full flex items-center justify-center">
                 <Icon icon="ph:arrow-down-bold"></Icon>
               </button>
             </div>
