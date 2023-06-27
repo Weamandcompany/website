@@ -32,13 +32,13 @@ const HomeServices: React.FC = () => {
             title="Software Solutions and Integration"
             description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
             icon="/images/icon2.svg"
-            link="/services/engineering"
+            link="/services/software"
           />
           <ServiceItem
             title="Cloud Consulting"
             description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
             icon="/images/icon3.svg"
-            link="/services/engineering"
+            link="/services/cloud-consulting"
           />
         </Bounce>
       </div>

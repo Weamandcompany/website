@@ -55,11 +55,11 @@ export const navLinks = [
 export const services = [
   { name: "Engineering", link: "/services/engineering" },
   { name: "Project Management", link: "/services/project-management" },
-  { name: "Software", link: "/" },
-  { name: "Training", link: "/" },
-  { name: "Simulation Studies", link: "/" },
-  { name: "Cloud Consulting", link: "/" },
-  { name: "Risk Management", link: "/" },
+  { name: "Software", link: "/services/software" },
+  { name: "Training", link: "/services/training" },
+  { name: "Simulation Studies", link: "/services/simulation-studies" },
+  { name: "Cloud Consulting", link: "/services/cloud-consulting" },
+  { name: "Risk Management", link: "/services/risk-management" },
 ];
 
 export const engineeringAccordions = [
@@ -115,4 +115,65 @@ export const projectManagementAccordions = [
     title: "Follow-on/Construction Engineering",
     content: `We offer follow-on and construction engineering services to support project implementation and ensure seamless execution. Our team of construction engineers brings extensive experience and technical expertise to oversee the construction phase, monitor progress, and address any on-site challenges. By providing comprehensive construction engineering support, we help maintain project quality, ensure adherence to specifications, and deliver successful outcomes.`,
   },
+];
+
+export const simulationStudiesAccordions = [
+  {
+    title: "Steady State and Dynamic Simulation Studies",
+    content: `Our expertise in steady state and dynamic simulation studies allows us to analyze and optimize complex systems. Through advanced modeling and simulation techniques, we accurately capture the behavior and performance of your processes. Whether it's evaluating process efficiencies, identifying bottlenecks, or optimizing control strategies, our simulation studies provide invaluable insights to enhance your operations and drive continuous improvement.`,
+  },
+  {
+    title: "Flow Assurance Studies",
+    content: `Flow assurance is critical in ensuring the smooth and efficient transportation of fluids within your systems. Our flow assurance studies analyze and mitigate potential issues such as hydrate formation, wax deposition, and pipeline erosion. By employing advanced modeling and simulation tools, we assess flow characteristics, optimize fluid properties, and recommend strategies to ensure uninterrupted flow, minimizing operational risks and maximizing production efficiency.`,
+  },
+  {
+    title: "Integrated Flare System Analysis",
+    content: `Flare systems play a vital role in safety and environmental compliance. Our integrated flare system analysis combines engineering expertise with regulatory compliance knowledge to design and optimize flare systems. We assess flare capacity, evaluate relief scenarios, and propose effective mitigation strategies. By ensuring efficient and reliable flare operations, we help you meet regulatory requirements, mitigate risks, and maintain a safe operating environment.`,
+  },
+  {
+    title: "Design of Operator Training Simulator",
+    content: `Cost accuracy is vital for successful project execution. Our dedicated team focuses on improving costing accuracy across all project phases. Through meticulous analysis, continuous monitoring, and implementation of industry best practices, we ensure that your project's costing remains precise and aligned with actual expenses. With improved costing accuracy, you can optimize budget utilization, enhance cost control, and achieve greater financial transparency.`,
+  },
+];
+
+export const cloudConsultingAccordions = [
+  {
+    title: "Cloud Strategy and Planning",
+    content: `Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their specific needs and goals. We analyze existing infrastructure, evaluate the suitability of different cloud service models (public, private, hybrid), and create a roadmap for successful cloud adoption. By understanding your business objectives, we identify the right cloud solutions to enhance agility, scalability, and security while minimizing costs and risks.`,
+  },
+  {
+    title: "Cloud Migration",
+    content: `Moving existing IT infrastructure and applications to the cloud requires careful planning and execution. We provide end-to-end support for a smooth and efficient migration process. Our experts assess the compatibility of existing systems, identify dependencies, and develop a migration strategy that minimizes downtime and disruption. We handle the entire migration process, ensuring data integrity, security, and seamless integration with the chosen cloud platform.`,
+  },
+  {
+    title: "Cloud Infrastructure Optimization",
+    content: `To maximize the benefits of cloud computing, organizations must optimize their cloud infrastructure continuously. Our consultancy helps businesses streamline their cloud architecture, fine-tune resource allocation, and leverage automation tools for improved performance and cost-efficiency. We assess the scalability and elasticity requirements, implement load balancing mechanisms, and provide ongoing monitoring and optimization services to ensure optimal resource`,
+  },
+  {
+    title: "Cloud Security and Compliance",
+    content: `Ensuring the security and compliance of cloud environments is of paramount importance. We assist businesses in implementing robust security measures, including identity and access management, encryption, data protection, and disaster recovery planning. Our consultancy stays up-to-date with the latest regulatory requirements, such as GDPR or CCPA, and helps organizations achieve and maintain compliance in their cloud operations.`,
+  },
+  {
+    title: "Cloud Cost Optimization",
+    content: `Controlling cloud costs can be a significant challenge for businesses. We analyze cloud usage patterns, identify cost optimization opportunities, and implement strategies to reduce unnecessary spending. Our experts assist in rightsizing resources, implementing cost-effective storage solutions, leveraging spot instances, and utilizing cost management tools to optimize cloud expenditure without compromising performance or scalability.`,
+  },
+];
+
+export const trainingData = [
+  "Project Management",
+  "Piping Engineering Trainings",
+  "Fundamentals of Process Society",
+  "Design of Operator Training Simulator",
+  "Pump and Compressor Design Manpower ",
+  "Basic and Advanced Process Engineering and Simulation Training",
+  "Engineering Software: AspenOne Engineering Suite, Flaresim, Pipenet, etc.",
+  "Pipeline Engineering and Pipeline Management.",
+];
+
+export const riskManagementData = [
+  "Design HSE planning, design HSE risk management and HSE management systems",
+  "Design HSE workshops (HAZID, ENVID, HAZOP, FMECA, etc.)",
+  "Safety philosophy, safety requirement specifications (SRS) and process shutdown philosophy.",
+  "Area classification and safety plot plan drawings",
+  "Safety design review and Verification. Based on our extensive technical safety expertise, we carry out third-party design verification to ensure that designs comply with industry's codes, standards and national safety requirements.",
 ];
