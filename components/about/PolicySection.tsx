@@ -9,7 +9,7 @@ import HomeMission from "../home/mission";
 
 const CommitCard = ({ title, description }: { title: string; description: string }) => {
   return (
-    <div className="flex items-start gap-1">
+    <div className="flex items-start gap-1 hover:shadow-light2 hover:backdrop-blur-md hover:rounded-md hover:p-3 transition-shadow duration-200">
       <div className="flex-shrink-0 -ml-4 -mt-2">
         <CheckMark className="h-16 w-16" />
       </div>
@@ -34,7 +34,7 @@ const PolicySection = () => {
         </div>
       </section>
 
-      <section className="px-4 xs:px-5 sm:px-6">
+      <section id="policy-Statement" className="px-4 xs:px-5 sm:px-6">
         <div
           className="bg-no-repeat bg-cover pt-7"
           style={{
@@ -102,22 +102,24 @@ const PolicySection = () => {
             />
           </div>
         </div>
+      </section>
 
-        {/* policy Statement */}
-        <div className="container bg-wdark py-16 mt-14 mb-16 px-3 xs:px-4 sm:px-6 md:px-10 rounded-3xl">
+      {/* policy Statement */}
+      <section id="hse-policy" className="px-0 xs:px-5 sm:px-6">
+        <div className="container bg-bgcommunity bg-repeat-x bg-[size:150%] sm:bg-contain bg-bottom bg-wdark pt-16 pb-20 sm:pb-24 md:pb-32 mt-14 mb-16 px-4 sm:px-6 md:px-10 xs:rounded-3xl">
           <h3 className="text-white font-nunito font-black leading-normal text-center text-2xl md:text-3xl lg:text-4xl mb-8">
             HSE Policy Statement
           </h3>
 
           <div className="max-w-4xl mx-auto flex flex-col gap-y-6">
-            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-[#B9C9CD] text-center font-medium">
+            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
               It is the policy of WEAM & Company Limited to conduct its activities in such a manner
               that will ensure the health and safety of its employees and those of other persons who
               may be affected, and that at all times adequate attention is given to the protection
               of the environment.
             </p>
 
-            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-[#B9C9CD] text-center font-medium">
+            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
               It is understood that the achievement of efficient and effective operations requires
               that Health, Safety and Environment issues be given equal attention as production.
               Management therefore, has the responsibility of providing a safe and healthy place of
@@ -125,7 +127,7 @@ const PolicySection = () => {
               schedule of programs with full management support and involvement.
             </p>
 
-            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-[#B9C9CD] text-center font-medium">
+            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
               The company also understands that Health, Safety and Environment concerns are part of
               management duties and responsibilities for which they are primarily responsible. In
               line with this therefore, management will continuously give health, safety and
@@ -138,13 +140,13 @@ const PolicySection = () => {
               regulations.
             </p>
 
-            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-[#B9C9CD] text-center font-medium">
+            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
               In an effort and as a starting approach to achieve the above policy, a dedicated
               position of a Safety Manager/Supervisor will be created, with the responsibility of
               co-coordinating, health, safety and environmental issues within the organization.
             </p>
 
-            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-[#B9C9CD] text-center font-medium">
+            <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
               Due to the urgent need to have an effective HSE, that would at all times reflect the
               latest developments in industry, this policy will be reviewed annually.
             </p>

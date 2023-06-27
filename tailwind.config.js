@@ -20,8 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         heroservice: "url('/images/heroservice.svg')",
         bgservice: "url('/images/bgservice.svg')",
         bgcontact: "url('/images/bgcontact.svg')",
@@ -30,6 +29,7 @@ module.exports = {
         bgblueframe: "url('/images/blueframe.svg')",
         bgtestimonials: "url('/images/Testimonials.svg')",
         bgcontactform: "url('/images/bgcontactform.svg')",
+        bgcommunity: "url('/images/community.svg')",
       },
       screens: {
         xs: "576px",
@@ -37,8 +37,7 @@ module.exports = {
       },
       boxShadow: {
         air: "0px 0px 17.337308883666992px 0px rgba(0, 0, 0, 0.06)",
-        light:
-          "0px 16.85163116455078px 92.68397521972656px 0px rgba(0, 0, 0, 0.08)",
+        light: "0px 16.85163116455078px 92.68397521972656px 0px rgba(0, 0, 0, 0.08)",
         light2: "0px 16px 88px 0px rgba(0, 0, 0, 0.08);",
       },
     },

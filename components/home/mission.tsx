@@ -17,7 +17,7 @@ const CoreValueItem = ({ icon, text }: CoreValueItemProps) => {
       <div className="bg-[#E47B0E] rounded-full p-1 lg:h-[24px] lg:w-[24px]  flex items-center justify-center">
         <Icon icon={icon} />
       </div>
-      {text}
+      <span className="text-left">{text}</span>
     </div>
   );
 };
@@ -43,9 +43,8 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]"> Our </span>Mission
           </Title>
           <Value>
-            To provide a diverse range of client focused and cost-effective
-            engineering & software solutions in the oil & gas, manufacturing,
-            and maritime industry.
+            To provide a diverse range of client focused and cost-effective engineering & software
+            solutions in the oil & gas, manufacturing, and maritime industry.
           </Value>
         </Wrapper>
       </SwiperSlide>
@@ -55,9 +54,8 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]"> Our </span>Vision
           </Title>
           <Value>
-            To be the reliable indigenous company in the West African
-            sub-region, delivering world-class engineering services and
-            simulation software to the oil and gas industry.
+            To be the reliable indigenous company in the West African sub-region, delivering
+            world-class engineering services and simulation software to the oil and gas industry.
           </Value>
         </Wrapper>
       </SwiperSlide>
@@ -67,19 +65,10 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]">Our</span> Core Values
           </Title>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:mb-0 mb-8 text-xs lg:text-base">
-            <CoreValueItem
-              icon="zondicons:checkmark"
-              text="Commitment to Quality Service"
-            />
+            <CoreValueItem icon="zondicons:checkmark" text="Commitment to Quality Service" />
             <CoreValueItem icon="zondicons:checkmark" text="Integrity" />
-            <CoreValueItem
-              icon="zondicons:checkmark"
-              text="Culture of Continuous Improvement"
-            />
-            <CoreValueItem
-              icon="zondicons:checkmark"
-              text="Building Lasting Relationships"
-            />
+            <CoreValueItem icon="zondicons:checkmark" text="Culture of Continuous Improvement" />
+            <CoreValueItem icon="zondicons:checkmark" text="Building Lasting Relationships" />
           </div>
         </Wrapper>
       </SwiperSlide>
