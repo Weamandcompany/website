@@ -15,7 +15,7 @@ const RiskManagementService = () => {
       <div className="lg:mt-[7.5rem]  lg:pt-0 pt-[3.5rem]  lg:flex lg:gap-20 gap-6 lg:px-32 px-5  mb-8 grid">
         <div className="lg:w-[68%] font-roboto order-2 lg:order-1">
           <Image
-            src={"/images/training1.svg"}
+            src={"/images/risk1.svg"}
             className="relative rounded-lg mb-5 lg:h-[350px] h-[100px]"
             width={0}
             height={0}
@@ -76,7 +76,7 @@ const RiskManagementService = () => {
           <div>
             <Zoom triggerOnce={true}>
               <Image
-                src={"/images/training2.svg"}
+                src={"/images/risk2.svg"}
                 className="lg:block relative hidden rounded-lg mb-5"
                 width={0}
                 height={0}
