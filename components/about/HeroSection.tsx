@@ -39,9 +39,9 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <div className="flex justify-center w-24 -mb-4 pt-2.5 bg-white rounded-tr-[90%_5rem] rounded-tl-[90%_5rem] before:rounded">
-              <button className="flex-shrink-0 btn-yellow p-0 h-11 w-11 rounded-full flex items-center justify-center">
+          <div className="relative flex flex-col justify-center items-center">
+            <div className="curve relative bg-white">
+              <button className="absolute z-[2] flex-shrink-0 btn-yellow -mt-8 ml-[19%] p-0 h-11 w-11 rounded-full flex items-center justify-center">
                 <Icon icon="ph:arrow-down-bold"></Icon>
               </button>
             </div>

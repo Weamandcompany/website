@@ -96,7 +96,7 @@
   .container-md,
   .container-sm,
   .container {
-    max-width: 1140px;
+    max-width: 1145px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -113,4 +113,28 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.curve {
+  width: 200px;
+  position: relative;
+}
+
+.curve:before,
+.curve:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  width: 30%;
+  left: 0;
+  height: 40px;
+  background: radial-gradient(50% 100% at top left, #0c1239 98%, #fff) bottom,
+    radial-gradient(50% 100% at bottom right, #fff 98%, #0c1239) top;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.curve:after {
+  transform-origin: right;
+  transform: scaleX(-1);
 }
