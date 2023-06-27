@@ -80,33 +80,37 @@ const Services = () => {
                 title="Project Management Consulting"
                 description="We offer Project Management Consulting services on engineering projects for onshore and offshore..."
                 icon="/images/icon6.svg"
+                link="/services/project-management"
               />
               <ServiceItem
                 title="Software Solutions and Integration"
                 description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
                 icon="/images/icon2.svg"
+                link="/services/engineering"
               />
               <ServiceItem
                 title="Training"
                 description="Engineering Design Software/ Process Simulation Training"
                 icon="/images/icon4.svg"
+                link="/services/engineering"
               />
-
               <ServiceItem
                 title="Simulation Studies"
                 description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
                 icon="/images/icon5.svg"
+                link="/services/engineering"
               />
-
               <ServiceItem
                 title="Cloud Consulting"
                 description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
                 icon="/images/icon3.svg"
+                link="/services/engineering"
               />
               <ServiceItem
                 title="Risk Management"
                 description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
                 icon="/images/icon7.svg"
+                link="/services/engineering"
               />
             </Bounce>
           </div>

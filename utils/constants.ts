@@ -54,7 +54,7 @@ export const navLinks = [
 
 export const services = [
   { name: "Engineering", link: "/services/engineering" },
-  { name: "Project Management", link: "/" },
+  { name: "Project Management", link: "/services/project-management" },
   { name: "Software", link: "/" },
   { name: "Training", link: "/" },
   { name: "Simulation Studies", link: "/" },
@@ -90,5 +90,29 @@ export const engineeringAccordions = [
   {
     title: "Ongoing Support and Maintenance:",
     content: `Even after the project is completed, our commitment to your success doesn't waver. We offer ongoing support and maintenance services to ensure the continued optimal performance of the solution. Our responsive team is readily available to address any concerns, provide technical assistance, and implement upgrades or modifications as needed`,
+  },
+];
+
+export const projectManagementAccordions = [
+  {
+    title: "Improving quality, quantity, and consistency of estimates",
+    content: `We specialize in enhancing the overall quality, quantity, and consistency of project estimates. Our experienced team utilizes industry-leading methodologies and tools to ensure accurate and reliable estimates throughout all project phases. By implementing best practices and leveraging advanced technologies, we optimize estimation processes, enabling you to make well-informed decisions and achieve project success.`,
+  },
+  {
+    title: "Costing, Planning, and Scheduling",
+    content: `At Weam and Company Limited, we offer comprehensive services in costing, planning, and scheduling. Our dedicated experts work closely with clients to develop robust cost estimation strategies that align with project goals. By integrating accurate costing, meticulous planning, and efficient scheduling, we help optimize resource allocation, minimize risks, and drive project efficiency. Trust us to deliver customized solutions that streamline your project's cost, timeline, and overall success.`,
+  },
+  {
+    title:
+      "Consultancy services for project Cost Estimation using the Aspen Capital Cost Estimation tool",
+    content: `We provide specialized consultancy services utilizing the powerful Aspen Capital Cost Estimation tool. Our consultants possess in-depth expertise in leveraging this cutting-edge technology to deliver accurate and detailed project cost estimations. By utilizing the Aspen tool's advanced capabilities, we ensure precise cost forecasting, enabling you to make informed decisions and effectively manage your project's financial aspects.`,
+  },
+  {
+    title: "Improving costing accuracy in all project phases",
+    content: `Cost accuracy is vital for successful project execution. Our dedicated team focuses on improving costing accuracy across all project phases. Through meticulous analysis, continuous monitoring, and implementation of industry best practices, we ensure that your project's costing remains precise and aligned with actual expenses. With improved costing accuracy, you can optimize budget utilization, enhance cost control, and achieve greater financial transparency.`,
+  },
+  {
+    title: "Follow-on/Construction Engineering",
+    content: `We offer follow-on and construction engineering services to support project implementation and ensure seamless execution. Our team of construction engineers brings extensive experience and technical expertise to oversee the construction phase, monitor progress, and address any on-site challenges. By providing comprehensive construction engineering support, we help maintain project quality, ensure adherence to specifications, and deliver successful outcomes.`,
   },
 ];
