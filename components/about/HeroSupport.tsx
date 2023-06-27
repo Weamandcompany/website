@@ -6,37 +6,61 @@ import React, { useEffect, useRef, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import CheckMark from "public/icons/check-mark.svg";
 import cn from "classnames";
+import Link from "next/link";
 
 const HeroSupport = () => {
   const [navItems, setNavItems] = useState([
-    "Who we are",
-    "Certificates",
-    "HSE Policy",
-    "Quality Policy Statement",
-    "Our Clientele",
+    { name: "Who we are", link: "who-we-are" },
+    { name: "Certificates", link: "certificates" },
+    { name: "HSE Policy", link: "hse-policy" },
+    { name: "Quality Policy Statement", link: "policy-Statement" },
+    { name: "Our Clientele", link: "our-clientele" },
   ]);
 
-  const [active, setActive] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [isFixed, setIsFixed] = useState(false);
   const divRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const sticky = divRef?.current?.offsetTop ?? 0;
+
+    const handleScroll = () => {
+      if (divRef.current) {
+        let shouldFix = window.scrollY >= sticky ? true : false;
+        setIsFixed(shouldFix);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <section className="pt-5 pb-16 px-4 xs:px-5 sm:px-6">
-        <div className="max-w-4xl mx-auto mb-10">
-          <div
-            ref={divRef}
-            className={cn("flex justify-center overflow-x-auto", {
-              "fixed bottom-2 inset-x-0 h-20 z-10": isFixed,
-            })}>
-            <ul className="list-none flex flex-nowrap overflow-x-auto items-center rounded-md shadow-light2 bg-[#fdf4ec]">
+      <section className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
+        <div
+          ref={divRef}
+          className={cn("max-w-4xl mx-auto mb-10", {
+            "fixed bottom-[0] md:bottom-[12px] inset-x-[0] z-[2] !mb-0 [&_.xnav]:md:p-1.5 [&_.xnav]:p-0 [&_.xnav]:md:rounded-md [&_.xnav]:rounded-none [&_.navb]:md:rounded [&_.navb]:rounded-none":
+              isFixed,
+          })}>
+          <div className="flex justify-center overflow-x-auto">
+            <ul className="xnav list-none flex flex-nowrap overflow-x-auto items-center rounded-md shadow-light2 bg-[#fdf4ec]">
               {navItems.map((nav, index) => (
                 <li
                   key={index}
                   className="flex items-center after:border-r after:last:border-r-0 after:border-slate-300 after:h-4 after:mx-4 after:last:mx-0">
-                  <button className="rounded text-sm text-[#61657E] font-medium whitespace-nowrap py-4 px-5 [&.active]:bg-worange bg-transparent [&.active]:text-white">
-                    {nav}
-                  </button>
+                  <Link
+                    href={`#${nav.link}`}
+                    onClick={() => setActiveIndex(index)}
+                    className={cn(
+                      "navb rounded text-sm text-[#61657E] font-medium whitespace-nowrap py-4 px-5 transition-colors duration-300 [&.active]:bg-worange bg-transparent [&.active]:text-white",
+                      { active: index == activeIndex }
+                    )}>
+                    {nav.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -49,7 +73,7 @@ const HeroSupport = () => {
             backgroundImage: "url('images/narrow-rects.png')",
           }}>
           <div className="container grid md:grid-cols-12 gap-x-4 pt-16 pb-12">
-            <div className="col-span-6">
+            <div className="col-span-6" id="who-we-are">
               <Slide cascade triggerOnce={false}>
                 <h6 className="text-worange lg:text-[15px] text-sm font-[500] mb-3">
                   An Excellence Powered By Innovation
@@ -118,60 +142,59 @@ const HeroSupport = () => {
             </div>
           </div>
         </div>
-        <div className="container"></div>
       </section>
 
-      <section className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
+      <section id="certificates" className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
         <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-5 text-center">
           Our Certificates and Permits
         </h3>
 
-        <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 justify-center max-w-7xl mx-auto gap-3">
-          <div className="rounded-md bg-white shadow-air p-1.5">
+        <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 justify-center max-w-4xl mx-auto gap-3">
+          <div className="rounded-md bg-white shadow-air p-1">
             <Image
               src="/images/cert-1.png"
               width={200}
-              height={200}
+              height={100}
               className="w-auto h-20 object-cover"
               alt="Certificates"
             />
           </div>
 
-          <div className="rounded-md bg-white shadow-air p-1.5">
+          <div className="rounded-md bg-white shadow-air p-1">
             <Image
               src="/images/cert-2.png"
               width={200}
-              height={200}
+              height={100}
               className="w-auto h-20 object-cover"
               alt="Certificates"
             />
           </div>
 
-          <div className="rounded-md bg-white shadow-air p-1.5">
+          <div className="rounded-md bg-white shadow-air p-1">
             <Image
               src="/images/cert-3.png"
               width={200}
-              height={200}
+              height={100}
               className="w-auto h-20 object-cover"
               alt="Certificates"
             />
           </div>
 
-          <div className="rounded-md bg-white shadow-air p-1.5">
+          <div className="rounded-md bg-white shadow-air p-1">
             <Image
               src="/images/cert-4.png"
               width={200}
-              height={200}
+              height={100}
               className="w-auto h-20 object-cover"
               alt="Certificates"
             />
           </div>
 
-          <div className="rounded-md bg-white shadow-air p-1.5">
+          <div className="rounded-md bg-white shadow-air p-1">
             <Image
               src="/images/cert-5.png"
               width={200}
-              height={200}
+              height={100}
               className="w-auto h-20 object-cover"
               alt="Certificates"
             />
