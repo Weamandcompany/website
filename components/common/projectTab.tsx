@@ -41,7 +41,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
             {heading}
           </p>
 
-          <p
+          <div
             className={`text-[#61657E] lg:text-[13px] text-xs lg:w-[45%] ${
               isActive ? "" : "hidden"
             }`}
@@ -59,7 +59,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
               </div>
             </Bounce>
             {description}
-          </p>
+          </div>
           {isActive && (
             <Bounce cascade triggerOnce={true}>
               <div className="lg:block hidden">

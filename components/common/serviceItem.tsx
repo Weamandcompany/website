@@ -1,17 +1,19 @@
 "use client";
 
 import Image from "next/image";
-
+import Link from "next/link";
 interface ServiceItemProps {
   title: string;
   description: string;
   icon: string;
+  link?: string;
 }
 
 const ServiceItem: React.FC<ServiceItemProps> = ({
   title,
   description,
   icon,
+  link,
 }) => {
   return (
     <div className="relative">
@@ -27,9 +29,12 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
             <p className="font-roboto pr-8 font-[400] text-[13px] mt-3 mb-6">
               {description}
             </p>
-            <a href="#" className="font-poppins text-[13px] font-[400] mb-8">
+            <Link
+              href={link ?? ""}
+              className="font-poppins text-[13px] font-[400] mb-8 hover:underline"
+            >
               Read More
-            </a>
+            </Link>
             <div className="content__toggle2 flex justify-end cursor-pointer">
               <Image
                 src={icon}

@@ -74,6 +74,7 @@ const Services = () => {
                 title="Engineering"
                 description="We have an in-house multi-disciplined engineering team with an average of 25 years industry..."
                 icon="/images/icon1.svg"
+                link="/services/engineering"
               />
               <ServiceItem
                 title="Project Management Consulting"
