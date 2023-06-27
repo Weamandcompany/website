@@ -20,7 +20,8 @@ const HeroSection = () => {
                 life. With our team of experts and a passion for excellence, we push boundaries and
                 deliver remarkable outcomes. Harnessing cutting-edge technologies and creative
                 thinking, we ignite innovation to shape a brighter future. Experience the power of
-                Weam and Company Limited and let us inspire the solutions you've been searching for.
+                Weam and Company Limited and let us inspire the solutions you&apos;ve been searching
+                for.
               </p>
               <div className="flex justify-center md:justify-start md:mb-0 mb-10">
                 <a
