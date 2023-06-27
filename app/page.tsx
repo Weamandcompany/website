@@ -26,7 +26,7 @@ export default function Home() {
       />
       <HomeCarousel />
       <div className="relative  lg:mb-0 mb-6">
-        <div className=" absolute lg:top-[0px] top-[10px] lg:w-[64%] w-[90%] right-[5%]">
+        <div className=" absolute lg:top-[0px] top-[10px] lg:w-[64%] w-[90%] lg:right-0 right-[5%]">
           <div className="flex gap-3 bg-[#F4F6FF] lg:py-4 py-2 lg:px-3 px-2 justify-end">
             {SponsorImages?.map((item, i) => (
               <div key={i} className="bg-white p-1">

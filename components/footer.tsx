@@ -45,8 +45,12 @@ const Footer = () => {
           © Copyright {new Date().getFullYear()}. All Right Reserved
         </p>
         <div className="flex items-center gap-12 justify-center lg:order-2 order-1">
-          <p className="text-[12px] text-[Orange]">Privacy Policy </p>
-          <p className="text-[12px]">Terms & Conditions </p>
+          <Link href={"/privacy-policy"} className="text-[12px] text-[Orange]">
+            Privacy Policy{" "}
+          </Link>
+          <Link href={"/terms-and-conditions"} className="text-[12px]">
+            Terms & Conditions{" "}
+          </Link>
         </div>
       </div>
     </div>
