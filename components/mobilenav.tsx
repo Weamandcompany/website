@@ -55,7 +55,10 @@ const MobileNavigation = () => {
                   <Link
                     href={item?.link}
                     className={`${
-                      pathname === item?.link
+                      pathname === item?.link ||
+                      (item?.subLinks || []).some((link) =>
+                        pathname.includes(link)
+                      )
                         ? "px-6 border-b-[1px] border-[#E47B0E] pb-1 "
                         : "px-6"
                     }`}

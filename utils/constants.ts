@@ -46,9 +46,16 @@ export const carouselData = [
 ];
 
 export const navLinks = [
-  { name: "Home", link: "/" },
+  {
+    name: "Home",
+    link: "/",
+  },
   { name: "About us", link: "/about" },
-  { name: "Services", link: "/services" },
+  {
+    name: "Services",
+    link: "/services",
+    subLinks: ["/services/"],
+  },
   { name: "Projects", link: "/projects" },
 ];
 
