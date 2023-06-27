@@ -9,8 +9,8 @@ import tw from "tailwind-styled-components";
 const HomeAbout = () => {
   return (
     <div className="bg-bgabout bg-no-repeat bg-cover lg:py-20 py-12">
-      <div className="lg:px-24 px-10 grid lg:grid-cols-2 grid-cols-1 gap-16  items-center">
-        <Slide cascade triggerOnce={false}>
+      <div className="lg:px-24 px-5 grid lg:grid-cols-2 grid-cols-1 gap-16  items-center">
+        <Slide cascade triggerOnce={true}>
           {" "}
           <div className="lg:w-[85%]">
             <h6 className="text-[#E47B0E] lg:text-[15px] text-sm font-poppins font-[500] mb-3">

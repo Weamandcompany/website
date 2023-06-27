@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <PageLayout>
       <>
-        <div className="lg:mt-[6.5rem] relative ">
+        <div className="lg:mt-[6.5rem] lg:pt-0 pt-[3.5rem] relative ">
           <Fade triggerOnce={false}>
             <Image
               src="/images/service.svg"
@@ -22,17 +22,27 @@ const Services = () => {
               width={0}
               height={0}
               style={{ width: "32%" }}
-              className="mx-auto hover:opacity-80 absolute right-[6%] top-[10%]"
+              className="mx-auto absolute right-[6%] top-[12%] lg:block hidden"
             />
           </Fade>
-          <div className="bg-[#0C1239] lg:py-[5.5rem] lg:px-32 py-14  px-10 rounded-r-[42px]  w-[75%] text-white ">
-            <Slide cascade triggerOnce={false}>
-              <div className="w-[70%] font-nunito">
-                <h6 className=" font-[900] lg:text-[40px] leading-[1.4]">
+          <div className="bg-[#0C1239] lg:py-[5.5rem] lg:px-32 py-5  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white ">
+            <Slide cascade triggerOnce={true}>
+              <div className="lg:w-[75%] font-nunito">
+                <Fade triggerOnce={false}>
+                  <Image
+                    src="/images/service.svg"
+                    alt="service"
+                    width={0}
+                    height={0}
+                    style={{ width: "100%" }}
+                    className="mx-auto lg:hidden block mb-5"
+                  />
+                </Fade>
+                <h6 className=" font-[900] lg:text-[40px] text-[25px] leading-[1.4]">
                   Unleashing Possibilities: Our Dynamic Services at Weam and
                   Company Limited
                 </h6>
-                <p className="text-[16px] my-8">
+                <p className="lg:text-[16px] lg:my-8 my-4 lg:leading-9">
                   Our dynamic services at Weam and Company Limited empower your
                   success. With a customer-centric approach, we deliver tailored
                   solutions for digital transformation, process optimization,
@@ -51,7 +61,7 @@ const Services = () => {
             </Slide>
           </div>
         </div>
-        <div className="bg-bgservice bg-no-repeat lg:px-32 px-10 lg:pt-10 py-14 ">
+        <div className="bg-bgservice bg-no-repeat lg:px-32 px-5 lg:pt-10 lg:py-14 pt-10 ">
           <h6 className="text-[#E47B0E] lg:text-[15px] text-sm font-poppins font-[500] mb-3">
             What We Do
           </h6>
@@ -66,34 +76,36 @@ const Services = () => {
                 icon="/images/icon1.svg"
               />
               <ServiceItem
-                title="Software Solutions and Integration"
-                description="Lorem ipsum dolor sit amet consectetur. Est accumsan nulla neque at arcu proin placerat. Auctor."
-                icon="/images/icon11.svg"
-              />
-              <ServiceItem
-                title="Cloud Consulting"
-                description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
-                icon="/images/icon111.svg"
-              />
-              <ServiceItem
-                title="Engineering"
-                description="We have an in-house multi-disciplined engineering team with an average of 25 years industry..."
-                icon="/images/icon1.svg"
+                title="Project Management Consulting"
+                description="We offer Project Management Consulting services on engineering projects for onshore and offshore..."
+                icon="/images/icon6.svg"
               />
               <ServiceItem
                 title="Software Solutions and Integration"
-                description="Lorem ipsum dolor sit amet consectetur. Est accumsan nulla neque at arcu proin placerat. Auctor."
-                icon="/images/icon11.svg"
+                description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
+                icon="/images/icon2.svg"
               />
+              <ServiceItem
+                title="Training"
+                description="Engineering Design Software/ Process Simulation Training"
+                icon="/images/icon4.svg"
+              />
+
+              <ServiceItem
+                title="Simulation Studies"
+                description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
+                icon="/images/icon5.svg"
+              />
+
               <ServiceItem
                 title="Cloud Consulting"
                 description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
-                icon="/images/icon111.svg"
+                icon="/images/icon3.svg"
               />
               <ServiceItem
-                title="Cloud Consulting"
-                description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
-                icon="/images/icon111.svg"
+                title="Risk Management"
+                description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
+                icon="/images/icon7.svg"
               />
             </Bounce>
           </div>

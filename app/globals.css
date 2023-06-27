@@ -2,6 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html,
+body,
+#__next {
+  min-height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 :root {
   --swiper-navigation-color: #fff;
   --swiper-theme-color: #e47b0e !important;
@@ -18,15 +25,11 @@
 }
 
 .myswiper .swiper-button-prev {
-  background-image: url("../public/images/arrow-left.svg") !important;
-  background-repeat: no-repeat !important;
   top: 90% !important;
   left: 89% !important;
 }
 
 .myswiper .swiper-button-next {
-  background-image: url("../public/images/arrow-right.svg") !important;
-  background-repeat: no-repeat !important;
   top: 90% !important;
   right: 5% !important;
 }
@@ -59,15 +62,11 @@
 /* Mobile */
 @media (max-width: 800px) {
   .myswiper .swiper-button-prev {
-    background-image: url("../public/images/arrow-left.svg") !important;
-    background-repeat: no-repeat !important;
     top: 90% !important;
-    left: 75% !important;
+    left: 82% !important;
   }
 
   .myswiper .swiper-button-next {
-    background-image: url("../public/images/arrow-right.svg") !important;
-    background-repeat: no-repeat !important;
     top: 90% !important;
     right: 5% !important;
   }

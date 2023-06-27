@@ -2,6 +2,7 @@
 
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import { Bounce } from "react-awesome-reveal";
 
 interface ProjectTabProps {
   isActive: boolean;
@@ -23,11 +24,11 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
   return (
     <div
       className={`${
-        isActive ? "bg-white my-12" : "bg-[#161C49] mb-4"
+        isActive ? "bg-white lg:my-12 my-6" : "bg-[#161C49] mb-4"
       } lg:p-10 p-6 rounded-[8px] font-poppins cursor-pointer`}
       onClick={onClick}
     >
-      <div className="flex gap-5 items-center justify-between relative">
+      <div className="flex lg:gap-5 gap-8 items-center justify-between relative">
         <div>
           <h6 className="text-[#E47B0E] lg:text-[14px] text-[13.5px] mb-2">
             {isActive ? heading : title}
@@ -39,22 +40,39 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
           >
             {heading}
           </p>
+
           <p
             className={`text-[#61657E] lg:text-[13px] text-xs lg:w-[45%] ${
               isActive ? "" : "hidden"
             }`}
           >
+            <Bounce cascade triggerOnce={true}>
+              <div className="lg:hidden block">
+                <Image
+                  src={imageSrc}
+                  className="relative rounded-lg my-3"
+                  width={0}
+                  height={0}
+                  style={{ width: "100%", height: "120px", objectFit: "cover" }}
+                  alt="projectImage"
+                />
+              </div>
+            </Bounce>
             {description}
           </p>
           {isActive && (
-            <Image
-              src={imageSrc}
-              className="absolute lg:top-[-70px] top-[-50px] right-[15%]"
-              width={0}
-              height={0}
-              style={{ width: "37%", height: "auto" }}
-              alt="logos"
-            />
+            <Bounce cascade triggerOnce={true}>
+              <div className="lg:block hidden">
+                <Image
+                  src={imageSrc}
+                  className="absolute lg:top-[-150px] rounded-lg right-[15%]"
+                  width={0}
+                  height={0}
+                  style={{ width: "37%", height: "210px", objectFit: "cover" }}
+                  alt="projectImage"
+                />
+              </div>
+            </Bounce>
           )}
         </div>
         <div>

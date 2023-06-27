@@ -11,7 +11,7 @@ const ProjectSection = () => {
     setActiveTab(tabIndex);
   };
   return (
-    <div className="bg-bgblue bg-no-repeat bg-cover lg:px-32 px-10 py-16">
+    <div className="bg-bgblue bg-no-repeat bg-cover lg:px-32 px-5 lg:py-16 py-12">
       <div className="flex justify-between items-center font-roboto">
         <h6 className="font-[700] lg:text-[30px] text-[20px] text-white">
           Latest Projects
@@ -22,7 +22,7 @@ const ProjectSection = () => {
       </div>
 
       <Slide direction="up" cascade triggerOnce={true}>
-        <div className="mt-10">
+        <div className="lg:mt-10 mt-8">
           <ProjectTab
             isActive={activeTab === 1}
             title="Projects V1"

@@ -5,6 +5,14 @@ export const CarouselImages = [
   "/images/image4.svg",
 ];
 
+export const SponsorImages = [
+  "/images/sponsor1.svg",
+  "/images/sponsor2.svg",
+  "/images/sponsor3.svg",
+  "/images/sponsor4.svg",
+  "/images/sponsor5.svg",
+];
+
 export const carouselData = [
   {
     title: "WELCOME TO",
@@ -35,24 +43,6 @@ export const carouselData = [
     description:
       " Project Management and Construction supervision of Engineering, Procurement and Construction projects.",
   },
-];
-
-export const footerServices = [
-  { name: "Single Ply Roofing", link: "/" },
-  { name: "Modified Roofing", link: "/" },
-  { name: "Built-Up Roofing", link: "/" },
-  { name: "Metal Roofing", link: "/" },
-  { name: "Vegetative Roofing", link: "/" },
-  { name: "Specialty Metal", link: "/" },
-];
-
-export const footerQuickLinks = [
-  { name: "Terms & Conditions", link: "/" },
-  { name: "Tax & Vat", link: "/" },
-  { name: "Refund Policy", link: "/" },
-  { name: "Typically Solutions", link: "/" },
-  { name: "Our Process", link: "/" },
-  { name: "Contact Us", link: "/" },
 ];
 
 export const navLinks = [

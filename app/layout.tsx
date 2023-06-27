@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useEffect } from "react";
 import "./globals.css";
 import { Inter, Nunito, Roboto, Poppins } from "next/font/google";
 // Import Swiper styles
@@ -8,6 +9,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import cn from "classnames";
+
+import { usePathname, useRouter } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +32,18 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    router.push(pathname + "#top");
+  }, [pathname, router]);
+
   return (
     <html lang="en">
       <body
@@ -40,7 +54,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           nunito.variable,
           inter.className,
           "antialiased"
-        )}>
+        )}
+      >
         <main className="font-roboto">{children}</main>
       </body>
     </html>

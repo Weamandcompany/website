@@ -22,7 +22,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
         className="content overflow-hidden relative flex"
       >
         <div className="content__inner">
-          <div className="content__inner-wrapper pb-8 pr-0 px-8 py-5 text-[#0C1239] shadow-lg bg-white z-[2000] relative mx-10 rounded-[8px] mb-8 h-[210px]">
+          <div className="content__inner-wrapper pb-8 pr-0 lg:px-8 lg:py-5 p-4 text-[#0C1239] shadow-lg bg-white z-[2000] relative mx-10 rounded-[8px] mb-8 lg:h-[210px]">
             <h6 className="font-roboto font-[600] text-[16px]">{title}</h6>
             <p className="font-roboto pr-8 font-[400] text-[13px] mt-3 mb-6">
               {description}

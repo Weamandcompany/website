@@ -27,7 +27,7 @@ const HomeMission = () => {
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -35,7 +35,7 @@ const HomeMission = () => {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials w-[85%] mx-auto rounded-[32px]  text-white font-roboto"
+      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials lg:w-[85%] w-[90%] mx-auto rounded-[32px]  text-white font-roboto"
     >
       <SwiperSlide>
         <Wrapper>

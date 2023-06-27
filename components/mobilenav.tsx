@@ -17,28 +17,30 @@ const MobileNavigation = () => {
   };
 
   return (
-    <nav className="bg-white  relative z-[10000] py-2">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-white z-[10000] py-2 fixed w-full">
+      <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="flex items-center justify-between ">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image
                 src={"/images/logo.svg"}
-                height={18}
-                width={30}
+                // height={30}
+                // width={40}
+                height={35.11}
+                width={45}
                 alt="logo"
               />
             </div>
           </div>
-          <div className="flex -mr-2 md:hidden">
+          <div className="flex md:hidden">
             <button
-              className="inline-flex items-center justify-center p-2 rounded-md text-[#E47B0E] hover:text-white hover:bg-[#E47B0E] focus:outline-none focus:bg-[#E47B0E] focus:text-white"
+              className="inline-flex items-center justify-center p-1 rounded-md text-[#fff] hover:text-white hover:bg-[#E47B0E] bg-[#E47B0E]  focus:outline-none focus:bg-[#E47B0E] focus:text-white"
               onClick={toggleMenu}
             >
               {isOpen ? (
-                <Icon icon={"ion:close-outline"} className="h-4 w-4" />
+                <Icon icon={"ion:close-outline"} className="h-5 w-5" />
               ) : (
-                <Icon icon={"quill:hamburger"} className="h-4 w-4" />
+                <Icon icon={"quill:hamburger"} className="h-5 w-5" />
               )}
             </button>
           </div>

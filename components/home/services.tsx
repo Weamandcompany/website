@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HomeServices: React.FC = () => {
   return (
-    <div className="bg-[#F9F4FF] lg:px-32 px-10 lg:py-20 py-14 mt-14">
+    <div className="bg-[#F9F4FF] lg:px-32 px-5 lg:py-20 py-10 mt-14">
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-14 gap-6">
         <h6 className="text-[#0C1239] font-nunito font-[900] lg:text-[32px] text-[25px]">
           Efficiency at its Finest: Streamlining Processes for Optimal Results.
@@ -29,13 +29,13 @@ const HomeServices: React.FC = () => {
           />
           <ServiceItem
             title="Software Solutions and Integration"
-            description="Lorem ipsum dolor sit amet consectetur. Est accumsan nulla neque at arcu proin placerat. Auctor."
-            icon="/images/icon11.svg"
+            description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
+            icon="/images/icon2.svg"
           />
           <ServiceItem
             title="Cloud Consulting"
             description="Our consultancy works closely with businesses to develop a customized cloud strategy aligned with their..."
-            icon="/images/icon111.svg"
+            icon="/images/icon3.svg"
           />
         </Bounce>
       </div>
