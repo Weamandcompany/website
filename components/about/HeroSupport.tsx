@@ -74,7 +74,7 @@ const HeroSupport = () => {
           }}>
           <div className="container grid md:grid-cols-12 gap-x-4 pt-16 pb-12">
             <div className="col-span-6" id="who-we-are">
-              <Slide cascade triggerOnce={false}>
+              <Slide duration={500} cascade triggerOnce={false}>
                 <h6 className="text-worange lg:text-[15px] text-sm font-[500] mb-3">
                   An Excellence Powered By Innovation
                 </h6>

@@ -1,3 +1,4 @@
+import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import NextTopLoader from "nextjs-toploader";
@@ -19,6 +20,7 @@ export default function PageLayout({
       />
       <Header />
       {children}
+      <Contact />
       <Footer />
     </>
   );
