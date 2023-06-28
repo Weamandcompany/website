@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import cn from "classnames";
-
 import { usePathname, useRouter } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -56,7 +55,7 @@ export default function RootLayout({
           "antialiased"
         )}
       >
-        <main className="font-roboto">{children}</main>
+        <main className="font-roboto 2xl:container mx-auto">{children}</main>
       </body>
     </html>
   );

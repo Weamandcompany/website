@@ -12,7 +12,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
 
   return (
     <>
-      <div className="fixed lg:block hidden top-2 z-[100] w-full">
+      <div className="fixed 2xl:container lg:block hidden top-2 z-[100] w-full">
         <ul
           style={{
             background: bgcolor ? bgcolor : "bg-white",

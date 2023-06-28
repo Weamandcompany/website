@@ -33,7 +33,7 @@ const HomeCarousel = () => {
           {carouselData.map((data, index) => (
             <div
               key={index}
-              className={`fade-in w-[80%] mr-[0px] lg:top-[50px] top-[10px] right-[0px] lg:pr-12 pr-4 ${
+              className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-12 2xl:pr-12 pr-4 ${
                 index === currentIndex ? "active" : ""
               }`}
             >
@@ -89,7 +89,7 @@ const HomeCarousel = () => {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-          className="myswiper"
+          className="myswiper 2xl:h-[515px] lg:h-[483px] h-[156px]"
           autoplay={{
             delay: 4000,
             disableOnInteraction: true,
@@ -103,7 +103,7 @@ const HomeCarousel = () => {
                 height={0}
                 style={{ width: "100%", height: "auto" }}
                 alt={`CarouselImage${i}`}
-                className="lg:rounded-tl-[126px] rounded-[10px]"
+                className="lg:rounded-tl-[126px] lg:rounded-none rounded-[10px]"
               />
             </SwiperSlide>
           ))}
@@ -130,6 +130,6 @@ const HomeCarousel = () => {
 };
 
 const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-1  px-3 font-[400] lg:text-[13.5px] text-[7px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
-const Wrapper = tw.div`absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] h-[50%] top-[6%] text-white z-[30]`;
+const Wrapper = tw.div`absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] 2xl:h-[51%] h-[50%] top-[6%] text-white z-[30]`;
 
 export default HomeCarousel;
