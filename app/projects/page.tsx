@@ -1,6 +1,5 @@
 "use client";
 
-import Contact from "@/components/contact";
 import ProjectSection from "@/components/common/projects";
 import React from "react";
 import PageLayout from "@/layouts/PageLayout";
@@ -56,7 +55,6 @@ const Projects = () => {
       </div>
       <div className="lg:mt-[6rem] mt-8">
         <ProjectSection showHeader={false} />
-        <Contact />
       </div>
     </PageLayout>
   );

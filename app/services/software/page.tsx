@@ -2,12 +2,9 @@
 
 import React from "react";
 import PageLayout from "@/layouts/PageLayout";
-import Contact from "@/components/contact";
 import Image from "next/image";
 import ServiceSidebar from "@/components/common/serviceSidebar";
-import Accordion from "@/components/common/accordion";
-import { projectManagementAccordions } from "@/utils/constants";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Row = ({ cellOne, cellTwo }: { cellOne: string; cellTwo: string }) => (
   <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
@@ -34,11 +31,12 @@ const SoftwareServices = () => {
               Software sales, Deployment and Support.
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
-              We offer end-to-end software solutions. From sales to deployment and ongoing support,
-              our experts ensure a seamless experience. Choose the right software with our
-              personalized consultations. Our skilled professionals handle smooth deployment,
-              minimizing disruptions. Count on us for dedicated support, updates, and training.
-              Enhance productivity with our comprehensive services.
+              We offer end-to-end software solutions. From sales to deployment
+              and ongoing support, our experts ensure a seamless experience.
+              Choose the right software with our personalized consultations. Our
+              skilled professionals handle smooth deployment, minimizing
+              disruptions. Count on us for dedicated support, updates, and
+              training. Enhance productivity with our comprehensive services.
             </p>
           </Slide>
         </div>
@@ -52,43 +50,60 @@ const SoftwareServices = () => {
         <div className="overflow-x-auto">
           <div className="grid grid-cols-1 gap-y-4">
             <div className="grid grid-cols-2 text-sm font-normal text-left text-white bg-wdark">
-              <div className="px-6 py-4">Software sales, Deployment and Support</div>
+              <div className="px-6 py-4">
+                Software sales, Deployment and Support
+              </div>
               <div className="px-6 py-4">Training Projects</div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
               <div className="px-6 py-4">Frontier Oil Limited</div>
-              <div className="px-6 py-4">Process Modelling using Aspen HYSYS</div>
+              <div className="px-6 py-4">
+                Process Modelling using Aspen HYSYS
+              </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
-              <div className="px-6 py-4">Makon Engineering & Technical Services Limited</div>
+              <div className="px-6 py-4">
+                Makon Engineering & Technical Services Limited
+              </div>
               <div className="px-6 py-4">
                 Process Modelling using Aspen HYSYS <br />
-                Modelling Flare System using Aspen Flare System Analyzer (Formerly Aspen FLARENET)
+                Modelling Flare System using Aspen Flare System Analyzer
+                (Formerly Aspen FLARENET)
               </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
               <div className="px-6 py-4">Ministry of Petroleum Resources.</div>
-              <div className="px-6 py-4">Process Modelling using Aspen HYSYS</div>
+              <div className="px-6 py-4">
+                Process Modelling using Aspen HYSYS
+              </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
               <div className="px-6 py-4">
                 National Engineering and Technical Company Limited (NETCO)
               </div>
-              <div className="px-6 py-4">Aspen Capital Cost Estimator (Kbase)</div>
+              <div className="px-6 py-4">
+                Aspen Capital Cost Estimator (Kbase)
+              </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
               <div className="px-6 py-4">Chevron Nigeria Limited</div>
-              <div className="px-6 py-4">Advanced Process Modelling using Aspen HYSYS</div>
+              <div className="px-6 py-4">
+                Advanced Process Modelling using Aspen HYSYS
+              </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
-              <div className="px-6 py-4">Warri Refining & Petrochemical Company (WRPC)</div>
-              <div className="px-6 py-4">Process Modelling using Aspen HYSYS</div>
+              <div className="px-6 py-4">
+                Warri Refining & Petrochemical Company (WRPC)
+              </div>
+              <div className="px-6 py-4">
+                Process Modelling using Aspen HYSYS
+              </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
@@ -96,10 +111,14 @@ const SoftwareServices = () => {
               <div className="px-6 py-4">
                 Engineering Design Training Program (EDTP) Comprehensive Phase 2
                 <ol className="list-decimal list-inside">
-                  <li>Modelling Oil and Gas Production and Facilities using HYSYS Upstream</li>
+                  <li>
+                    Modelling Oil and Gas Production and Facilities using HYSYS
+                    Upstream
+                  </li>
                   <li>Modelling Flare System using Aspen FLARENET</li>
                   <li>
-                    Pipeline and Utility System Modelling using Sunrise System’s PIPENET Suite
+                    Pipeline and Utility System Modelling using Sunrise System’s
+                    PIPENET Suite
                   </li>
                 </ol>
               </div>
@@ -107,7 +126,9 @@ const SoftwareServices = () => {
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
               <div className="px-6 py-4">Chevron Nigeria Limited</div>
-              <div className="px-6 py-4">Process Modelling using Aspen HYSYS</div>
+              <div className="px-6 py-4">
+                Process Modelling using Aspen HYSYS
+              </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
@@ -115,7 +136,8 @@ const SoftwareServices = () => {
               <div className="px-6 py-4">
                 <ol className="list-decimal list-inside">
                   <li>
-                    Pipeline and Utility System Modelling using Sunrise System’s PIPENET Suite
+                    Pipeline and Utility System Modelling using Sunrise System’s
+                    PIPENET Suite
                   </li>
                   <li>Process Modelling using Aspen HYSYS</li>
                 </ol>
@@ -129,7 +151,10 @@ const SoftwareServices = () => {
                   <li>Process Modelling using Aspen HYSYS</li>
                   <li>Advanced Process Modelling using Aspen HYSYS</li>
                   <li>Dynamic Modelling using Aspen HYSYS Dynamics</li>
-                  <li>Modelling Pipeline Hydraulics and Multiphase flow using ASPEN PIPESYS</li>
+                  <li>
+                    Modelling Pipeline Hydraulics and Multiphase flow using
+                    ASPEN PIPESYS
+                  </li>
                 </ol>
               </div>
             </div>
@@ -155,7 +180,9 @@ const SoftwareServices = () => {
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
-              <div className="px-6 py-4">Shell Petroleum Development Company/ SNEPCO</div>
+              <div className="px-6 py-4">
+                Shell Petroleum Development Company/ SNEPCO
+              </div>
               <div className="px-6 py-4">
                 <ol className="list-decimal list-inside">
                   <li>Process Modelling using Aspen HYSYS</li>
@@ -166,20 +193,24 @@ const SoftwareServices = () => {
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
-              <div className="px-6 py-4">International Energy Services Limited</div>
+              <div className="px-6 py-4">
+                International Energy Services Limited
+              </div>
               <div className="px-6 py-4">
                 <ol className="list-decimal list-inside">
                   <li>International Energy Services Limited</li>
                   <li>
-                    Modelling Flare System using Aspen Flare System Analyzer (Formerly Aspen
-                    FLARENET)
+                    Modelling Flare System using Aspen Flare System Analyzer
+                    (Formerly Aspen FLARENET)
                   </li>
                 </ol>
               </div>
             </div>
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
-              <div className="px-6 py-4">International Energy Services Limited</div>
+              <div className="px-6 py-4">
+                International Energy Services Limited
+              </div>
               <div className="px-6 py-4">
                 Aspen ONE Engineering Software
                 <ol className="list-decimal list-inside">
@@ -193,8 +224,8 @@ const SoftwareServices = () => {
 
             <div className="grid grid-cols-2 text-[13px] font-normal text-left text-[#0C1239] bg-[#F4F6FF]">
               <div className="px-6 py-4">
-                Nigerian National Petroleum Corporation Group [NNPC Head Office Abuja, NPDC, WRPC,
-                KRPC, PHRC, R&D, NETCO AND NGC]
+                Nigerian National Petroleum Corporation Group [NNPC Head Office
+                Abuja, NPDC, WRPC, KRPC, PHRC, R&D, NETCO AND NGC]
               </div>
               <div className="px-6 py-4">
                 Aspen ONE Engineering Software

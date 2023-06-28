@@ -1,7 +1,6 @@
 "use client";
 
 import ServiceItem from "@/components/common/serviceItem";
-import Contact from "@/components/contact";
 import PageLayout from "@/layouts/PageLayout";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
@@ -115,7 +114,6 @@ const Services = () => {
             </Bounce>
           </div>
         </div>
-        <Contact />
       </>
     </PageLayout>
   );

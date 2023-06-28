@@ -2,7 +2,6 @@
 
 import React from "react";
 import PageLayout from "@/layouts/PageLayout";
-import Contact from "@/components/contact";
 import Image from "next/image";
 import ServiceSidebar from "@/components/common/serviceSidebar";
 import { Icon } from "@iconify/react";
@@ -84,8 +83,6 @@ const TrainingService = () => {
           </div>
         </div>
       </div>
-
-      <Contact />
     </PageLayout>
   );
 };

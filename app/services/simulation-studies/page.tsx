@@ -2,7 +2,6 @@
 
 import React from "react";
 import PageLayout from "@/layouts/PageLayout";
-import Contact from "@/components/contact";
 import Image from "next/image";
 import ServiceSidebar from "@/components/common/serviceSidebar";
 import Accordion from "@/components/common/accordion";
@@ -70,8 +69,6 @@ const SimulationStudiesService = () => {
           </Zoom>
         </div>
       </div>
-
-      <Contact />
     </PageLayout>
   );
 };

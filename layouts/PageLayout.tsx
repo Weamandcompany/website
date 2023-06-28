@@ -5,8 +5,10 @@ import NextTopLoader from "nextjs-toploader";
 
 export default function PageLayout({
   children,
+  showContact = true,
 }: {
   children: React.ReactNode;
+  showContact?: boolean;
 }) {
   return (
     <>
@@ -20,7 +22,7 @@ export default function PageLayout({
       />
       <Header />
       {children}
-      <Contact />
+      {showContact && <Contact />}
       <Footer />
     </>
   );

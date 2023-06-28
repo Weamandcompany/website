@@ -4,7 +4,6 @@ import HomeServices from "@/components/home/services";
 import HomeAbout from "@/components/home/about";
 import HomeMission from "@/components/home/mission";
 import ProjectSection from "@/components/common/projects";
-import Contact from "@/components/contact";
 import PageLayout from "@/layouts/PageLayout";
 import { SponsorImages } from "@/utils/constants";
 
@@ -46,7 +45,6 @@ export default function Home() {
       <HomeMission />
       <HomeServices />
       <ProjectSection showHeader={true} />
-      <Contact />
     </PageLayout>
   );
 }
