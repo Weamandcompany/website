@@ -7,7 +7,6 @@ import ServiceSidebar from "@/components/common/serviceSidebar";
 import Accordion from "@/components/common/accordion";
 import { simulationStudiesAccordions } from "@/utils/constants";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
-import { managementProjects } from "@/utils/projects";
 
 const SimulationStudiesService = () => {
   return (
@@ -76,7 +75,7 @@ const SimulationStudiesService = () => {
   );
 };
 
-export const simulations = [
+const simulations = [
   {
     title: "SPDC",
     content: [

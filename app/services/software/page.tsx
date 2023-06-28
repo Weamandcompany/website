@@ -61,7 +61,7 @@ const SoftwareServices = () => {
 
 export default SoftwareServices;
 
-export const softwares = [
+const softwares = [
   {
     title: "Aspen Technology Software",
     content: (
