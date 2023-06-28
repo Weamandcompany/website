@@ -47,7 +47,7 @@ const MobileNavigation = () => {
       <div className="relative  z-[3000]">
         {isOpen && (
           <div className="md:hidden absolute bg-white w-full h-[100vh] flex justify-center">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col gap-8 mt-10">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col text-center gap-8 mt-10">
               {navLinks?.map((item, i) => (
                 <div key={i}>
                   <Link
