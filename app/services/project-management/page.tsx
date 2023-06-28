@@ -7,6 +7,7 @@ import ServiceSidebar from "@/components/common/serviceSidebar";
 import Accordion from "@/components/common/accordion";
 import { projectManagementAccordions } from "@/utils/constants";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { managementProjects } from "@/utils/projects";
 
 const ProjectManagementService = () => {
   return (
@@ -23,17 +24,15 @@ const ProjectManagementService = () => {
           />
           <Slide cascade triggerOnce={true}>
             <h6 className="text-[#1C1C1C] lg:text-[24px] text-[20px] font-[600] lg:mb-3 mb-1">
-              Efficiently Navigate the Path to Success: Expert Project
-              Management Solutions.{" "}
+              Efficiently Navigate the Path to Success: Expert Project Management Solutions.{" "}
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
-              Weam and Company Limited excels in project management, delivering
-              exceptional solutions across industries. With a dedicated team of
-              experienced project managers, we ensure successful project
-              completion within budget and timeline. Our collaborative approach,
-              proactive problem-solving, and commitment to quality make us the
-              preferred partner for seamless project management. Trust us to
-              bring your projects to fruition with excellence.
+              Weam and Company Limited excels in project management, delivering exceptional
+              solutions across industries. With a dedicated team of experienced project managers, we
+              ensure successful project completion within budget and timeline. Our collaborative
+              approach, proactive problem-solving, and commitment to quality make us the preferred
+              partner for seamless project management. Trust us to bring your projects to fruition
+              with excellence.
             </p>
           </Slide>
         </div>
@@ -44,9 +43,7 @@ const ProjectManagementService = () => {
         </div>
       </div>
       <div className="lg:px-32 px-5 lg:mt-14 mt-8">
-        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">
-          Our Operations{" "}
-        </h6>
+        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">Our Operations </h6>
         <div className="grid lg:grid-cols-2 gap-12 ">
           <Slide direction="left" cascade triggerOnce={true}>
             <Accordion items={projectManagementAccordions} />
@@ -61,6 +58,10 @@ const ProjectManagementService = () => {
               alt="projectImage"
             />
           </Zoom>
+        </div>
+
+        <div className="max-w-4xl mx-auto mt-14">
+          <Accordion defaultIndex={0} items={managementProjects} />
         </div>
       </div>
     </PageLayout>
