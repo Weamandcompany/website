@@ -67,6 +67,7 @@ const Services = () => {
           <p className="lg:text-[33px] text-[25px] lg:w-[85%] font-nunito font-[900] leading-[1.5] mb-2">
             Our Services{" "}
           </p>
+
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-4 mt-12">
             <Bounce cascade triggerOnce={true}>
               <ServiceItem

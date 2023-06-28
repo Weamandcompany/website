@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
       colors: {
         wdark: "#0C1239",
         worange: "#E47B0E",
