@@ -14,7 +14,7 @@ export default function PageLayout({
     <>
       <NextTopLoader
         color="#E47B0E"
-        height={3}
+        height={4}
         showSpinner={true}
         easing="ease"
         speed={200}

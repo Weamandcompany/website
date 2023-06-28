@@ -52,7 +52,7 @@ const HeroSupport = () => {
                 <li
                   key={index}
                   className="flex items-center after:border-r after:last:border-r-0 after:border-slate-300 after:h-4 after:mx-4 after:last:mx-0">
-                  <Link
+                  <a
                     href={`#${nav.link}`}
                     onClick={() => setActiveIndex(index)}
                     className={cn(
@@ -60,7 +60,7 @@ const HeroSupport = () => {
                       { active: index == activeIndex }
                     )}>
                     {nav.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -74,7 +74,7 @@ const HeroSupport = () => {
           }}>
           <div className="container grid md:grid-cols-12 gap-x-4 pt-16 pb-12">
             <div className="col-span-6" id="who-we-are">
-              <Slide duration={500} cascade triggerOnce={false}>
+              <Slide duration={500} cascade triggerOnce={true}>
                 <h6 className="text-worange lg:text-[15px] text-sm font-[500] mb-3">
                   An Excellence Powered By Innovation
                 </h6>
