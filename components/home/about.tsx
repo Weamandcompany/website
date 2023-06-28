@@ -8,7 +8,7 @@ import tw from "tailwind-styled-components";
 
 const HomeAbout = () => {
   return (
-    <div className="bg-bgabout bg-no-repeat bg-cover lg:py-20 py-12">
+    <div className="bg-bgabout bg-no-repeat bg-cover lg:py-20 py-12 lg:mt-0 mt-12">
       <div className="lg:px-24 px-5 grid lg:grid-cols-2 grid-cols-1 gap-16  items-center">
         <Slide cascade triggerOnce={true}>
           {" "}

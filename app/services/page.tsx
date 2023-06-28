@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <PageLayout>
       <>
-        <div className="lg:mt-[6.5rem] lg:pt-0 pt-[3.5rem] relative ">
+        <div className="lg:mt-[6.5rem] lg:pt-0 pt-[4.5rem] relative ">
           <Fade triggerOnce={false}>
             <Image
               src="/images/service.svg"
@@ -24,7 +24,7 @@ const Services = () => {
               className="mx-auto absolute right-[6%] top-[12%] lg:block hidden"
             />
           </Fade>
-          <div className="bg-[#0C1239] lg:py-[5.5rem] lg:px-32 py-5  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white ">
+          <div className="bg-[#0C1239] lg:py-[5.5rem] lg:px-32 py-8  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white ">
             <Slide cascade triggerOnce={true}>
               <div className="lg:w-[75%] font-nunito">
                 <Fade triggerOnce={false}>
@@ -37,11 +37,11 @@ const Services = () => {
                     className="mx-auto lg:hidden block mb-5"
                   />
                 </Fade>
-                <h6 className=" font-[900] lg:text-[40px] text-[25px] leading-[1.4]">
+                <h6 className=" font-[900] lg:text-[40px] text-[25px] lg:text-left text-center leading-[1.4]">
                   Unleashing Possibilities: Our Dynamic Services at Weam and
                   Company Limited
                 </h6>
-                <p className="lg:text-[16px] lg:my-8 my-4 lg:leading-9">
+                <p className="lg:text-[16px] lg:my-8 my-4 lg:leading-9 lg:text-left text-center">
                   Our dynamic services at Weam and Company Limited empower your
                   success. With a customer-centric approach, we deliver tailored
                   solutions for digital transformation, process optimization,
@@ -50,12 +50,15 @@ const Services = () => {
                   services today and experience the power of Weam and Company
                   Limited.
                 </p>
-                <Button
-                  href="/contact"
-                  className="font-poppins flex items-center gap-2 w-fit hover:opacity-80 "
-                >
-                  Contact Us <Icon icon="ph:arrow-right-bold"></Icon>
-                </Button>
+
+                <div className="flex lg:justify-start justify-center">
+                  <Button
+                    href="/contact"
+                    className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 "
+                  >
+                    Contact Us <Icon icon="ph:arrow-right-bold"></Icon>
+                  </Button>
+                </div>
               </div>
             </Slide>
           </div>
@@ -120,5 +123,5 @@ const Services = () => {
   );
 };
 
-const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[600] text-[14px] font-roboto flex items-center gap-2 w-fit hover:opacity-80`;
+const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-3 px-4 font-[600] text-[14px] font-roboto flex items-center gap-2 w-fit hover:opacity-80`;
 export default Services;

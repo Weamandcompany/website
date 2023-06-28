@@ -25,18 +25,17 @@ export default function Home() {
       />
       <HomeCarousel />
       <div className="relative  lg:mb-0 mb-6">
-        <div className=" absolute lg:top-[0px] top-[10px] lg:w-[64%] 2xl:w-[64%] w-[90%] lg:right-0 right-[5%]">
-          <div className="flex gap-3 bg-[#F4F6FF] lg:py-4 py-2 lg:px-3 px-2 justify-end">
+        <div className=" absolute lg:top-[0px] top-[10px] lg:w-[64%] 2xl:w-[64%] w-[100%] lg:right-0 ">
+          <div className="flex gap-3 bg-[#F4F6FF] lg:py-4 py-2 lg:px-3 px-2 lg:justify-end overflow-x-scroll">
             {SponsorImages?.map((item, i) => (
-              <div key={i} className="bg-white p-1">
-                <Image
-                  src={item}
-                  width={0}
-                  height={0}
-                  style={{ width: "100%", height: "auto" }}
-                  alt={`SponsorImages${i}`}
-                />
-              </div>
+              <Image
+                src={item}
+                width={0}
+                height={0}
+                className="lg:w-[100%] lg:h-[auto] w-[150px] bg-white p-1"
+                alt={`SponsorImages${i}`}
+                key={i}
+              />
             ))}
           </div>
         </div>
