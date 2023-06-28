@@ -1,7 +1,11 @@
+"use client";
+
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { usePathname, useRouter } from "next/navigation";
 import NextTopLoader from "nextjs-toploader";
+import { useEffect } from "react";
 
 export default function PageLayout({
   children,
@@ -10,6 +14,13 @@ export default function PageLayout({
   children: React.ReactNode;
   showContact?: boolean;
 }) {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    router.push(pathname + "#top");
+  }, [pathname, router]);
+
   return (
     <>
       <NextTopLoader
