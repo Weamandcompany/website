@@ -132,9 +132,9 @@ const HomeCarousel = () => {
       </div>
     </>
   );
-};
+};  
 
 const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2  px-3 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
-const Wrapper = tw.div`absolute lg:top-[20%]  lg:w-[36.7%] lg:h-[80%] w-[43%]  2xl:h-[51%] h-[50%] top-[6%] text-white z-[30]`;
+const Wrapper = tw.div`absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] 2xl:h-[51%] h-[50%] top-[6%] text-white z-[30]`;
 
 export default HomeCarousel;
