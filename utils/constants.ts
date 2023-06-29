@@ -191,16 +191,16 @@ export const facilityImages = [
     thumbnail: "/images/facility/1.JPG",
   },
   {
-    original: "/images/facility/2.JPG",
-    thumbnail: "/images/facility/2.JPG",
+    original: "/images/facility/2.jpg",
+    thumbnail: "/images/facility/2.jpg",
   },
   {
-    original: "/images/facility/3.JPG",
-    thumbnail: "/images/facility/3.JPG",
+    original: "/images/facility/3.jpg",
+    thumbnail: "/images/facility/3.jpg",
   },
   {
-    original: "/images/facility/4.JPG",
-    thumbnail: "/images/facility/4.JPG",
+    original: "/images/facility/4.jpg",
+    thumbnail: "/images/facility/4.jpg",
   },
   {
     original: "/images/facility/5.JPG",
