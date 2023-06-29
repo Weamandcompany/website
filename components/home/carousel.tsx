@@ -42,17 +42,17 @@ const HomeCarousel = () => {
             {carouselData.map((data, index) => (
               <div
                 key={index}
-                className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-12 2xl:pr-12 pr-4 ${
+                className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-10 2xl:pr-10 pr-4 ${
                   index === currentIndex ? "active" : ""
                 }`}
               >
-                <h6 className="text-[#E47B0E] lg:text-sm text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
+                <h6 className="text-[#E47B0E] lg:text-base text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
                   {data.title}
                 </h6>
-                <p className="lg:text-[30px] text-white text-[8px] font-nunito font-[900] leading-[1.5] lg:mb-6 mb-1">
+                <p className="lg:text-[32px] text-white text-[8px] font-nunito font-[900] leading-[1.5] lg:mb-6 mb-1">
                   {data.subtitle}
                 </p>
-                <p className="lg:text-sm  text-white lg:leading-8 text-[6px] font-nunito lg:mb-6 mb-2 ">
+                <p className="lg:text-base  text-white lg:leading-8 text-[6px] font-nunito lg:mb-6 mb-2 ">
                   {data.description}
                 </p>
                 <Button href="/about">
