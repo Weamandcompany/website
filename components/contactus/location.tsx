@@ -1,8 +1,7 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Map from "./map";
-import axios from "axios";
 
 const data = [
   "Plot 42C, Road 22, Federal Housing Estate, Rumueme(Agip), P.O.Box 12450, Port Harcourt, Rivers State, Nigeria.",
@@ -11,31 +10,6 @@ const data = [
 
 const Location = () => {
   const [isActive, setIsActive] = useState(0);
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null);
-
-  useEffect(() => {
-    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
-
-    const geocodeAddress = async () => {
-      try {
-        const address = encodeURI(data[isActive]);
-        const response = await axios.get(
-          `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${apiKey}`
-        );
-        const { results } = response.data;
-        if (results.length > 0) {
-          const { lat, lng } = results[0].geometry.location;
-          setLatitude(lat);
-          setLongitude(lng);
-        }
-      } catch (error) {
-        console.error("Error geocoding address:", error);
-      }
-    };
-
-    geocodeAddress();
-  }, [isActive]);
 
   return (
     <div className="border-[1px] border-[#61657E] p-5 border-dashed rounded">
@@ -76,7 +50,10 @@ const Location = () => {
         ))}
       </div>
       <div>
-        <Map longitude={longitude} latitude={latitude} />
+        {isActive === 0 && <Map longitude={6.9794509} latitude={4.8158563} />}
+        {isActive === 1 && (
+          <Map longitude={7.407276500000001} latitude={9.0437826} />
+        )}
       </div>
     </div>
   );
