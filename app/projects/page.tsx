@@ -12,16 +12,14 @@ const Projects = () => {
   return (
     <PageLayout>
       <div className="lg:mt-[8rem] lg:pt-0 pt-[4.5rem]  relative  lg:px-24 px-0 ">
-        <Fade triggerOnce={true}>
-          <Image
-            src="/images/projecthero.svg"
-            alt="projecthero"
-            width={0}
-            height={0}
-            style={{ width: "40%" }}
-            className="mx-auto absolute top-[-7%] right-[6%] hidden lg:block"
-          />
-        </Fade>
+        <Image
+          src="/images/projecthero.svg"
+          alt="projecthero"
+          width={0}
+          height={0}
+          style={{ width: "40%" }}
+          className="mx-auto absolute top-[-7%] right-[6%] hidden lg:block"
+        />
         <div className="bg-[#0C1239] lg:rounded-[34px] rounded-none lg:py-[5rem] lg:px-32 py-8  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white">
           <Slide cascade triggerOnce={true}>
             <div className="lg:w-[75%] font-nunito">
