@@ -1,15 +1,18 @@
 "use client";
 
-import { Icon } from "@iconify/react";
-import Image from "next/image";
 import React from "react";
-import { Fade, Slide } from "react-awesome-reveal";
 import CheckMark from "public/icons/check-mark.svg";
 import HomeMission from "../home/mission";
 
-const CommitCard = ({ title, description }: { title: string; description: string }) => {
+const CommitCard = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) => {
   return (
-    <div className="flex items-start gap-1 hover:shadow-light2 hover:backdrop-blur-md hover:rounded-md hover:p-3 transition-shadow duration-200">
+    <div className="flex items-start gap-1  hover:backdrop-blur-md hover:rounded-md  transition-shadow duration-200">
       <div className="flex-shrink-0 -ml-4 -mt-2">
         <CheckMark className="h-16 w-16" />
       </div>
@@ -39,7 +42,8 @@ const PolicySection = () => {
           className="bg-no-repeat bg-cover pt-7"
           style={{
             backgroundImage: "url('images/narrow-rects.png')",
-          }}>
+          }}
+        >
           <div className="container grid grid-cols-1 sm:grid-cols-12 gap-x-3">
             <div className="col-span-5">
               <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-5">
@@ -48,18 +52,20 @@ const PolicySection = () => {
             </div>
             <div className="col-span-7">
               <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-wdark font-medium">
-                Weam and Company Limited has established its Quality Policy to be consistent with
-                its purpose and context. It provides a framework for the setting and review of
-                objectives in addition to our commitment to satisfy applicable customers’,
-                regulatory and legislative requirements as well as our commitment to continually
-                improve on our management system.
+                Weam and Company Limited has established its Quality Policy to
+                be consistent with its purpose and context. It provides a
+                framework for the setting and review of objectives in addition
+                to our commitment to satisfy applicable customers’, regulatory
+                and legislative requirements as well as our commitment to
+                continually improve on our management system.
               </p>
             </div>
           </div>
 
           <div
             className="container bg-fill bg-no-repeat bg-[center_center] rounded-lg py-16 mt-8 mb-12 h-[280px]"
-            style={{ backgroundImage: "url('/images/commitment.jpg')" }}></div>
+            style={{ backgroundImage: "url('/images/commitment.jpg')" }}
+          ></div>
 
           <h3 className="text-wdark font-nunito font-black leading-normal text-center text-2xl md:text-3xl mb-8">
             Our Commitment
@@ -113,42 +119,49 @@ const PolicySection = () => {
 
           <div className="max-w-4xl mx-auto flex flex-col gap-y-6">
             <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
-              It is the policy of WEAM & Company Limited to conduct its activities in such a manner
-              that will ensure the health and safety of its employees and those of other persons who
-              may be affected, and that at all times adequate attention is given to the protection
-              of the environment.
+              It is the policy of WEAM & Company Limited to conduct its
+              activities in such a manner that will ensure the health and safety
+              of its employees and those of other persons who may be affected,
+              and that at all times adequate attention is given to the
+              protection of the environment.
             </p>
 
             <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
-              It is understood that the achievement of efficient and effective operations requires
-              that Health, Safety and Environment issues be given equal attention as production.
-              Management therefore, has the responsibility of providing a safe and healthy place of
-              work, a safe system of work, effective training, and also establishes an effective
-              schedule of programs with full management support and involvement.
+              It is understood that the achievement of efficient and effective
+              operations requires that Health, Safety and Environment issues be
+              given equal attention as production. Management therefore, has the
+              responsibility of providing a safe and healthy place of work, a
+              safe system of work, effective training, and also establishes an
+              effective schedule of programs with full management support and
+              involvement.
             </p>
 
             <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
-              The company also understands that Health, Safety and Environment concerns are part of
-              management duties and responsibilities for which they are primarily responsible. In
-              line with this therefore, management will continuously give health, safety and
-              environmental issues top priority in policy formulation, as well as in the design,
-              construction, operation and maintenance of facilities and machineries. While
-              management is responsible for all the above, it is hoped that employees on their own
-              part will always carefully conduct themselves, their colleagues and other persons
-              involved in the activity are prevented from accidents and that the operation is not
-              endangered. Workers will also be required to fully comply with all Company HSE
-              regulations.
+              The company also understands that Health, Safety and Environment
+              concerns are part of management duties and responsibilities for
+              which they are primarily responsible. In line with this therefore,
+              management will continuously give health, safety and environmental
+              issues top priority in policy formulation, as well as in the
+              design, construction, operation and maintenance of facilities and
+              machineries. While management is responsible for all the above, it
+              is hoped that employees on their own part will always carefully
+              conduct themselves, their colleagues and other persons involved in
+              the activity are prevented from accidents and that the operation
+              is not endangered. Workers will also be required to fully comply
+              with all Company HSE regulations.
             </p>
 
             <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
-              In an effort and as a starting approach to achieve the above policy, a dedicated
-              position of a Safety Manager/Supervisor will be created, with the responsibility of
-              co-coordinating, health, safety and environmental issues within the organization.
+              In an effort and as a starting approach to achieve the above
+              policy, a dedicated position of a Safety Manager/Supervisor will
+              be created, with the responsibility of co-coordinating, health,
+              safety and environmental issues within the organization.
             </p>
 
             <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-white text-center font-medium">
-              Due to the urgent need to have an effective HSE, that would at all times reflect the
-              latest developments in industry, this policy will be reviewed annually.
+              Due to the urgent need to have an effective HSE, that would at all
+              times reflect the latest developments in industry, this policy
+              will be reviewed annually.
             </p>
           </div>
         </div>
