@@ -40,18 +40,18 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="bg-[#131944] lg:flex grid justify-center items-center lg:justify-between lg:text-left text-center lg:px-32 px-10 py-4 text-white font-poppins">
-        <p className="text-[12px] lg:order-1 order-2">
+      <div className="bg-[#131944] lg:flex grid justify-center items-center lg:text-left text-center lg:px-32 px-10 py-4 text-white font-poppins">
+        <p className="text-[12px] lg:order-1 order-2 text-center">
           © Copyright {new Date().getFullYear()}. All Right Reserved
         </p>
-        <div className="flex items-center gap-12 justify-center lg:order-2 order-1">
+        {/* <div className="flex items-center gap-12 justify-center lg:order-2 order-1">
           <Link href={"/privacy-policy"} className="text-[12px] text-[Orange]">
             Privacy Policy{" "}
           </Link>
           <Link href={"/terms-and-conditions"} className="text-[12px]">
             Terms & Conditions{" "}
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const HeroSection = () => {
                   An Excellence Powered by Innovation.
                 </h3>
 
-                <p className="font-nunito text-[14px] text-center md:text-left leading-loose sm:text-[15px] sm:leading-[2.5] text-white font-normal">
+                <p className="font-nunito text-[14px] text-center md:text-left leading-[2.5] sm:text-[15px] sm:leading-[2.5] text-white font-normal">
                   Welcome to Weam and Company Limited, where innovation thrives and solutions come
                   to life. With our team of experts and a passion for excellence, we push boundaries
                   and deliver remarkable outcomes. Harnessing cutting-edge technologies and creative
@@ -36,10 +36,8 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <div className="">
-              <Fade className={"opacity-0"} triggerOnce={true}>
-                <Image src="/images/upload.svg" width={1500} height={1500} alt="about us" />
-              </Fade>
+            <div>
+              <Image src="/images/upload.svg" width={1500} height={1500} alt="about us" />
             </div>
           </div>
         </div>

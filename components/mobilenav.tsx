@@ -17,17 +17,15 @@ const MobileNavigation = () => {
   };
 
   return (
-    <nav className="bg-white z-[10000] py-2 fixed w-full">
+    <nav className="bg-white z-[10000] py-3 fixed w-full">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="flex items-center justify-between ">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image
                 src={"/images/logo.svg"}
-                // height={30}
-                // width={40}
                 height={35.11}
-                width={45}
+                width={60}
                 alt="logo"
               />
             </div>
@@ -38,9 +36,9 @@ const MobileNavigation = () => {
               onClick={toggleMenu}
             >
               {isOpen ? (
-                <Icon icon={"ion:close-outline"} className="h-5 w-5" />
+                <Icon icon={"ion:close-outline"} className="h-7 w-7" />
               ) : (
-                <Icon icon={"quill:hamburger"} className="h-5 w-5" />
+                <Icon icon={"quill:hamburger"} className="h-7 w-7" />
               )}
             </button>
           </div>
@@ -49,7 +47,7 @@ const MobileNavigation = () => {
       <div className="relative  z-[3000]">
         {isOpen && (
           <div className="md:hidden absolute bg-white w-full h-[100vh] flex justify-center">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col gap-8 mt-10">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col text-center gap-8 mt-10">
               {navLinks?.map((item, i) => (
                 <div key={i}>
                   <Link

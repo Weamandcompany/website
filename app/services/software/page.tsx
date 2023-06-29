@@ -17,7 +17,7 @@ const Row = ({ cellOne, cellTwo }: { cellOne: string; cellTwo: string }) => (
 const SoftwareServices = () => {
   return (
     <PageLayout>
-      <div className="lg:mt-[7.5rem]  lg:pt-0 pt-[3.5rem]  lg:flex lg:gap-20 gap-6 lg:px-32 px-5  mb-8 grid">
+      <div className="lg:mt-[7.5rem]  lg:pt-0 pt-[4.5rem]  lg:flex lg:gap-20 gap-6 lg:px-32 px-5  mb-8 grid">
         <div className="lg:w-[68%] font-roboto order-2 lg:order-1">
           <Image
             src={"/images/software.svg"}
@@ -41,7 +41,7 @@ const SoftwareServices = () => {
           </Slide>
         </div>
         <div className="lg:w-[32%] order-1 lg:order-2">
-          <Fade triggerOnce={false}>
+          <Fade triggerOnce={true}>
             <ServiceSidebar />
           </Fade>
         </div>
