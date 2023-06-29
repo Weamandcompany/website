@@ -25,6 +25,7 @@ const ContactForm = () => {
   );
 };
 
+
 const Button = tw.a`bg-[#E47B0E] justify-center w-full text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 hover:opacity-80`;
 const Input = tw.input`border-[1px] border-[#F4F6FF] p-[.6rem] outline-0 rounded-[9px] placeholder:text-xs text-sm`;
 const Textarea = tw.textarea`border-[1px] border-[#F4F6FF] p-[.6rem] outline-0 rounded-[9px] placeholder:text-xs text-sm mb-4 w-full`;
