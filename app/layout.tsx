@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "react-image-gallery/styles/css/image-gallery.css";
 import cn from "classnames";
 import { Metadata } from "next";
 
@@ -37,7 +38,11 @@ export const metadata: Metadata = {
   robots: "index,follow",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body
@@ -48,7 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           nunito.variable,
           inter.className,
           "antialiased"
-        )}>
+        )}
+      >
         <main className="font-roboto 2xl:container mx-auto">{children}</main>
       </body>
     </html>

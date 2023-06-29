@@ -11,7 +11,10 @@ interface ProjectTabProps {
   imageSrc: string;
   onClick: () => void;
   heading: string;
-  setSelectedImage: React.Dispatch<React.SetStateAction<string>>;
+  setSelectedImage: React.Dispatch<
+    React.SetStateAction<{ original: string; thumbnail: string }[]>
+  >;
+  images: { original: string; thumbnail: string }[];
 }
 
 const ProjectTab: React.FC<ProjectTabProps> = ({
@@ -22,6 +25,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
   onClick,
   heading,
   setSelectedImage,
+  images,
 }) => {
   return (
     <>
@@ -62,7 +66,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
                       objectFit: "cover",
                     }}
                     alt="projectImage"
-                    onClick={() => setSelectedImage(imageSrc)}
+                    onClick={() => setSelectedImage(images)}
                   />
                 </div>
               </Bounce>
@@ -82,7 +86,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
                       objectFit: "cover",
                     }}
                     alt="projectImage"
-                    onClick={() => setSelectedImage(imageSrc)}
+                    onClick={() => setSelectedImage(images)}
                   />
                 </div>
               </Bounce>

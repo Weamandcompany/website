@@ -29,6 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/contactus/map.js"
-  ],
+, "components/common/imageCarousel.js"  ],
   "exclude": ["node_modules"]
 }

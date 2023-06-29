@@ -184,3 +184,126 @@ export const riskManagementData = [
   "Area classification and safety plot plan drawings",
   "Safety design review and Verification. Based on our extensive technical safety expertise, we carry out third-party design verification to ensure that designs comply with industry's codes, standards and national safety requirements.",
 ];
+
+export const facilityImages = [
+  {
+    original: "/images/facility/1.JPG",
+    thumbnail: "/images/facility/1.JPG",
+  },
+  {
+    original: "/images/facility/2.JPG",
+    thumbnail: "/images/facility/2.JPG",
+  },
+  {
+    original: "/images/facility/3.JPG",
+    thumbnail: "/images/facility/3.JPG",
+  },
+  {
+    original: "/images/facility/4.JPG",
+    thumbnail: "/images/facility/4.JPG",
+  },
+  {
+    original: "/images/facility/5.JPG",
+    thumbnail: "/images/facility/5.JPG",
+  },
+  {
+    original: "/images/facility/6.JPG",
+    thumbnail: "/images/facility/6.JPG",
+  },
+  {
+    original: "/images/facility/7.JPG",
+    thumbnail: "/images/facility/7.JPG",
+  },
+  {
+    original: "/images/facility/8.JPG",
+    thumbnail: "/images/facility/8.JPG",
+  },
+  {
+    original: "/images/facility/9.JPG",
+    thumbnail: "/images/facility/9.JPG",
+  },
+  {
+    original: "/images/facility/10.JPG",
+    thumbnail: "/images/facility/10.JPG",
+  },
+];
+
+export const deltaImages = [
+  {
+    original: "/images/delta/2.jpeg",
+    thumbnail: "/images/delta/2.jpeg",
+  },
+  {
+    original: "/images/delta/1.jpeg",
+    thumbnail: "/images/delta/1.jpeg",
+  },
+  {
+    original: "/images/delta/3.jpeg",
+    thumbnail: "/images/delta/3.jpeg",
+  },
+];
+
+export const calabarImages = [
+  {
+    original: "/images/calabar/1.jpeg",
+    thumbnail: "/images/calabar/1.jpeg",
+  },
+  {
+    original: "/images/calabar/2.jpeg",
+    thumbnail: "/images/calabar/2.jpeg",
+  },
+  {
+    original: "/images/calabar/3.jpeg",
+    thumbnail: "/images/calabar/3.jpeg",
+  },
+  {
+    original: "/images/calabar/4.jpeg",
+    thumbnail: "/images/calabar/4.jpeg",
+  },
+  {
+    original: "/images/calabar/5.jpeg",
+    thumbnail: "/images/calabar/5.jpeg",
+  },
+  {
+    original: "/images/calabar/6.jpeg",
+    thumbnail: "/images/calabar/6.jpeg",
+  },
+];
+
+export const omlImages = [
+  {
+    original: "/images/oml/1.jpg",
+    thumbnail: "/images/oml/1.jpg",
+  },
+  {
+    original: "/images/oml/2.jpg",
+    thumbnail: "/images/oml/2.jpg",
+  },
+  {
+    original: "/images/oml/3.jpg",
+    thumbnail: "/images/oml/3.jpg",
+  },
+  {
+    original: "/images/oml/4.jpg",
+    thumbnail: "/images/oml/4.jpg",
+  },
+  {
+    original: "/images/oml/5.jpg",
+    thumbnail: "/images/oml/5.jpg",
+  },
+];
+
+export const trainingImages = [
+  {
+    original: "/images/training/1.jpeg",
+    thumbnail: "/images/training/1.jpeg",
+  },
+  {
+    original: "/images/training/2.jpeg",
+    thumbnail: "/images/training/2.jpeg",
+  },
+  {
+    original: "/images/training/3.jpeg",
+    thumbnail: "/images/training/3.jpeg",
+  },
+];

@@ -4,16 +4,38 @@ import React, { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import tw from "tailwind-styled-components";
 import ProjectTab from "./projectTab";
-import Image from "next/image";
 import { Icon } from "@iconify/react";
+import ImageCarousel from "./imageCarousel";
+import {
+  calabarImages,
+  deltaImages,
+  facilityImages,
+  omlImages,
+  trainingImages,
+} from "@/utils/constants";
 
 const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
-  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedImage, setSelectedImage] = useState<
+    {
+      original: string;
+      thumbnail: string;
+    }[]
+  >([]);
 
   const [activeTab, setActiveTab] = useState(1);
+
   const handleTabClick = (tabIndex: number) => {
     setActiveTab(tabIndex);
   };
+
+  const handleCloseModal = () => {
+    setSelectedImage([]);
+  };
+
+  const handleCarouselClick = (e: any) => {
+    e.stopPropagation();
+  };
+
   return (
     <>
       <div className="bg-bgblue bg-no-repeat bg-cover lg:px-32 px-5 lg:py-16 py-12">
@@ -38,6 +60,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               onClick={() => handleTabClick(1)}
               heading="Facility Models"
               setSelectedImage={setSelectedImage}
+              images={facilityImages}
             />
             <ProjectTab
               isActive={activeTab === 2}
@@ -47,6 +70,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               onClick={() => handleTabClick(2)}
               heading="Delta IV Site Plant"
               setSelectedImage={setSelectedImage}
+              images={deltaImages}
             />
             <ProjectTab
               isActive={activeTab === 3}
@@ -56,6 +80,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               onClick={() => handleTabClick(3)}
               heading="Calabar Power Plant"
               setSelectedImage={setSelectedImage}
+              images={calabarImages}
             />
             <ProjectTab
               isActive={activeTab === 4}
@@ -65,6 +90,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               onClick={() => handleTabClick(4)}
               heading="OML-26 As built"
               setSelectedImage={setSelectedImage}
+              images={omlImages}
             />
             <ProjectTab
               isActive={activeTab === 5}
@@ -74,35 +100,26 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               onClick={() => handleTabClick(5)}
               heading="Training"
               setSelectedImage={setSelectedImage}
+              images={trainingImages}
             />
           </div>
         </Slide>
       </div>
 
       <div className="flex flex-wrap justify-center">
-        {selectedImage && (
+        {selectedImage?.length > 0 && (
           <div
-            className="fixed top-0  left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-50"
-            onClick={() => setSelectedImage("")}
+            className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-50"
+            onClick={handleCloseModal}
           >
-            <Image
-              src={selectedImage}
-              className=" lg:h-[60%] lg:w-[50%] w-[80%] absolute rounded-lg my-3"
-              width={0}
-              height={0}
-              style={{
-                objectFit: "contain",
-              }}
-              alt="Selected Image"
-            />
-            <button
-              className="relative flex justify-end lg:top-[-30%] w-full -top-[15%] right-8 lg:right-[20%] cursor-pointer"
-              onClick={() => setSelectedImage("")}
+            <div
+              onClick={handleCarouselClick}
+              className="relative lg:w-[45%] w-[90%] lg:left-[30%] md:left-[25%] left-[5%]"
             >
-              <Icon
-                icon={"ic:baseline-close"}
-                className="h-6 w-6 text-white "
-              />
+              <ImageCarousel items={selectedImage} />
+            </div>
+            <button className="relative flex justify-end lg:top-[-30%] w-full -top-[25%] right-8 lg:right-[20%] cursor-pointer">
+              <Icon icon="ic:baseline-close" className="h-6 w-6 text-white" />
             </button>
           </div>
         )}
