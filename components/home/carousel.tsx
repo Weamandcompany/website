@@ -28,32 +28,42 @@ const HomeCarousel = () => {
 
   return (
     <>
-      <Wrapper className="bg-bgblueframe  bg-no-repeat bg-contain lg:block hidden">
-        <div className="carousel relative">
-          {carouselData.map((data, index) => (
-            <div
-              key={index}
-              className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-12 2xl:pr-12 pr-4 ${
-                index === currentIndex ? "active" : ""
-              }`}
-            >
-              <h6 className="text-[#E47B0E] lg:text-sm text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
-                {data.title}
-              </h6>
-              <p className="lg:text-[30px] text-[8px] font-nunito font-[900] leading-[1.5] lg:mb-6 mb-1">
-                {data.subtitle}
-              </p>
-              <p className="lg:text-sm lg:leading-8 text-[6px] font-nunito lg:mb-6 mb-2 ">
-                {data.description}
-              </p>
-              <Button href="/about">
-                About Us
-                <Icon icon="ph:arrow-right-bold"></Icon>
-              </Button>
-            </div>
-          ))}
+      <div className="absolute lg:top-[20%] top-[6%] z-30  lg:block hidden">
+        <Image
+          src="/images/blueframe.svg"
+          alt="blueframe"
+          className="w-fit h-auto"
+          width={0}
+          height={0}
+        />
+
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="carousel ">
+            {carouselData.map((data, index) => (
+              <div
+                key={index}
+                className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-12 2xl:pr-12 pr-4 ${
+                  index === currentIndex ? "active" : ""
+                }`}
+              >
+                <h6 className="text-[#E47B0E] lg:text-sm text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
+                  {data.title}
+                </h6>
+                <p className="lg:text-[30px] text-white text-[8px] font-nunito font-[900] leading-[1.5] lg:mb-6 mb-1">
+                  {data.subtitle}
+                </p>
+                <p className="lg:text-sm  text-white lg:leading-8 text-[6px] font-nunito lg:mb-6 mb-2 ">
+                  {data.description}
+                </p>
+                <Button href="/about">
+                  About Us
+                  <Icon icon="ph:arrow-right-bold"></Icon>
+                </Button>
+              </div>
+            ))}
+          </div>
         </div>
-      </Wrapper>
+      </div>
 
       <div className="carousel lg:hidden absolute  w-[100%] top-[4%] z-[100] pt-8 pb-5">
         <div className="relative flex items-center">
@@ -132,9 +142,8 @@ const HomeCarousel = () => {
       </div>
     </>
   );
-};  
+};
 
 const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2  px-3 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
-const Wrapper = tw.div`absolute lg:top-[20%] lg:w-[36.7%] lg:h-[70%] w-[43%] 2xl:h-[51%] h-[50%] top-[6%] text-white z-[30]`;
 
 export default HomeCarousel;
