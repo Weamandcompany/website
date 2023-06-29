@@ -32,7 +32,7 @@ export default function Home() {
                 src={item}
                 width={0}
                 height={0}
-                className="lg:w-[100%] lg:h-[auto] w-[150px] bg-white p-1"
+                className="lg:w-[19%] lg:h-[auto] w-[150px] bg-white p-1"
                 alt={`SponsorImages${i}`}
                 key={i}
               />
