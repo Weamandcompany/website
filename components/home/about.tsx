@@ -33,7 +33,7 @@ const HomeAbout = () => {
           </div>
         </Slide>
 
-        <Fade triggerOnce={false}>
+        <Fade triggerOnce={true}>
           {" "}
           <Image
             src="/images/experience2.svg"

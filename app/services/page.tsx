@@ -14,7 +14,7 @@ const Services = () => {
     <PageLayout>
       <>
         <div className="lg:mt-[6.5rem] lg:pt-0 pt-[4.5rem] relative ">
-          <Fade triggerOnce={false}>
+          <Fade triggerOnce={true}>
             <Image
               src="/images/service.svg"
               alt="service"
@@ -27,7 +27,7 @@ const Services = () => {
           <div className="bg-[#0C1239] lg:py-[5.5rem] lg:px-32 py-8  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white ">
             <Slide cascade triggerOnce={true}>
               <div className="lg:w-[75%] font-nunito">
-                <Fade triggerOnce={false}>
+                <Fade triggerOnce={true}>
                   <Image
                     src="/images/service.svg"
                     alt="service"

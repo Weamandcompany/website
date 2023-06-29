@@ -28,7 +28,7 @@ const ClientSection = () => {
           </p>
         </div>
 
-        <Fade triggerOnce={false} cascade>
+        <Fade triggerOnce={true} cascade>
           <ul className="max-w-[800px] mx-auto grid grid-cols-1 gap-y-7 list-none">
             <li className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3 rounded-md bg-[#F4F6FF] shadow-light py-3 px-3">
               <ClientCard src="/images/clients/client-5.png" />

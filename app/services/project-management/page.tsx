@@ -37,7 +37,7 @@ const ProjectManagementService = () => {
           </Slide>
         </div>
         <div className="lg:w-[32%] order-1 lg:order-2">
-          <Fade triggerOnce={false}>
+          <Fade triggerOnce={true}>
             <ServiceSidebar />
           </Fade>
         </div>
