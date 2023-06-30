@@ -26,8 +26,7 @@ username:
 acc87460911
 
 command
-scp -P 22 out/* acc87460911@home289890466.1and1-data.host:/demo
-scp -P 22 -r out/ acc87460911@home289890466.1and1-data.host:/demo/
+scp -P 22 -r out/* acc87460911@home289890466.1and1-data.host:/
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
