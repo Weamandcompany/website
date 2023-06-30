@@ -1,0 +1,32 @@
+name: Copy Root Directory to FTP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  copy_files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Create target directory
+        run: |
+          mkdir target
+
+      - name: Copy files
+        run: |
+          cp -r . target/
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: '/path/to/destination/folder'
+          local-dir: './target'
+          timeout: 300
