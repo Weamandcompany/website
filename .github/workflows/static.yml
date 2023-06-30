@@ -19,6 +19,6 @@ jobs:
           host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_file: "./out/*"
-          remote_path: "/demo/"
+          source: "./out/*"
+          target: "/demo/"
           port: 22
