@@ -12,12 +12,12 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
 
   return (
     <>
-      <div className="fixed 2xl:container lg:block hidden top-2 z-[100] w-full">
+      <div className="fixed 2xl:container lg:block md:block hidden top-2 z-[100] w-full">
         <ul
           style={{
             background: bgcolor ? bgcolor : "bg-white",
           }}
-          className={`w-[60%] bg-white mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
+          className={`lg:w-[60%] w-[90%] bg-white mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
         >
           {bgcolor ? (
             <Image
@@ -64,7 +64,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
           </li>
         </ul>
       </div>
-      <div className="lg:hidden block">
+      <div className="lg:hidden md:hidden  block">
         <MobileNavigation />
       </div>
     </>

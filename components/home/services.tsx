@@ -20,7 +20,7 @@ const HomeServices: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-14 gap-4 mt-12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 lg:gap-14 gap-4 mt-12">
         <Bounce cascade triggerOnce={true}>
           <ServiceItem
             title="Engineering"

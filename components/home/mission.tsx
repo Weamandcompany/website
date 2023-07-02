@@ -27,7 +27,7 @@ const HomeMission = () => {
       spaceBetween={30}
       centeredSlides={true}
       autoplay={{
-        delay: 5000,
+        delay: 18000,
         disableOnInteraction: false,
       }}
       pagination={{

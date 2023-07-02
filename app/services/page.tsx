@@ -34,7 +34,7 @@ const Services = () => {
                     width={0}
                     height={0}
                     style={{ width: "100%" }}
-                    className="mx-auto lg:hidden block mb-5"
+                    className="mx-auto lg:hidden block mb-5 h-[400px] object-cover rounded-lg"
                   />
                 </Fade>
                 <h6 className=" font-[900] lg:text-[40px] text-[25px] lg:text-left text-center leading-[1.4]">
@@ -71,7 +71,7 @@ const Services = () => {
             Our Services{" "}
           </p>
 
-          <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-8 gap-4 mt-12">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mt-12">
             <Bounce cascade triggerOnce={true}>
               <ServiceItem
                 title="Engineering"

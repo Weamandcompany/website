@@ -31,10 +31,8 @@ const CommitCard = ({
 const PolicySection = () => {
   return (
     <>
-      <section className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
-        <div className="pt-5 pb-12">
-          <HomeMission />
-        </div>
+      <section className="pt-10 pb-16">
+        <HomeMission />
       </section>
 
       <section id="policy-Statement" className="px-4 xs:px-5 sm:px-6">
@@ -44,7 +42,7 @@ const PolicySection = () => {
             backgroundImage: "url('images/narrow-rects.png')",
           }}
         >
-          <div className="container grid grid-cols-1 sm:grid-cols-12 gap-x-3">
+          <div className="lg:container lg:w-full md:w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-12 gap-x-3">
             <div className="col-span-5">
               <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-5">
                 Weam and Company Quality Policy Statement
@@ -63,15 +61,15 @@ const PolicySection = () => {
           </div>
 
           <div
-            className="container bg-fill bg-no-repeat bg-[center_center] rounded-lg py-16 mt-8 mb-12 h-[280px]"
+            className="container bg-fill bg-no-repeat bg-[center_center] mx-auto rounded-lg py-16 mt-8 mb-12 h-[320px]"
             style={{ backgroundImage: "url('/images/commitment.jpg')" }}
           ></div>
 
-          <h3 className="text-wdark font-nunito font-black leading-normal text-center text-2xl md:text-3xl mb-8">
+          <h3 className="text-wdark font-nunito  font-black leading-normal text-center text-2xl md:text-3xl mb-8">
             Our Commitment
           </h3>
 
-          <div className="container grid sm:grid-cols-2 gap-7 lg:gap-x-14">
+          <div className="container mx-auto grid sm:grid-cols-2 gap-7 lg:gap-x-14">
             <CommitCard
               title="Customer focus"
               description="As an organization, we have made a commitment to understand our current and future customers’ needs; meet their requirements and strive to exceed their expectations."
@@ -112,7 +110,7 @@ const PolicySection = () => {
 
       {/* policy Statement */}
       <section id="hse-policy" className="px-0 xs:px-5 sm:px-6">
-        <div className="container bg-bgcommunity bg-repeat-x bg-[size:150%] sm:bg-contain bg-bottom bg-wdark pt-16 pb-20 sm:pb-24 md:pb-32 mt-14 mb-16 px-4 sm:px-6 md:px-10 xs:rounded-3xl">
+        <div className="container mx-auto bg-bgcommunity bg-repeat-x bg-[size:150%] sm:bg-contain bg-bottom bg-wdark pt-16 pb-20 sm:pb-24 md:pb-32 mt-14 mb-16 px-4 sm:px-6 md:px-10 xs:rounded-3xl">
           <h3 className="text-white font-nunito font-black leading-normal text-center text-2xl md:text-3xl lg:text-4xl mb-8">
             HSE Policy Statement
           </h3>

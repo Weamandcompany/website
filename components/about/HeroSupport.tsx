@@ -39,7 +39,7 @@ const HeroSupport = () => {
 
   return (
     <>
-      <section className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
+      <section className="pt-10 pb-12">
         <div
           ref={divRef}
           className={cn("max-w-4xl mx-auto mb-10", {
@@ -72,7 +72,7 @@ const HeroSupport = () => {
           style={{
             backgroundImage: "url('images/narrow-rects.png')",
           }}>
-          <div className="container grid md:grid-cols-12 gap-x-4 pt-16 pb-12">
+          <div className="lg:container lg:w-full md:w-[90%] mx-auto grid md:grid-cols-12 gap-x-4 pt-16">
             <div className="col-span-6" id="who-we-are">
               <Slide duration={500} cascade triggerOnce={true}>
                 <h6 className="text-worange lg:text-[15px] text-sm font-[500] mb-3">
@@ -135,7 +135,7 @@ const HeroSupport = () => {
               </Slide>
             </div>
 
-            <div className="col-span-6">
+            <div className="col-span-6 flex items-center justify-end">
               <Fade className={"opacity-0"} triggerOnce={true}>
                 <Image src="/images/engineer.png" width={1000} height={1000} alt="about us" />
               </Fade>
@@ -144,7 +144,7 @@ const HeroSupport = () => {
         </div>
       </section>
 
-      <section id="certificates" className="pt-10 pb-16 px-4 xs:px-5 sm:px-6">
+      <section id="certificates" className="pb-16 px-4 xs:px-5 sm:px-6">
         <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-5 text-center">
           Our Certificates and Permits
         </h3>

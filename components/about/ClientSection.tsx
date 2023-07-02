@@ -1,11 +1,8 @@
 "use client";
 
-import { Icon } from "@iconify/react";
 import Image from "next/image";
 import React from "react";
-import { Fade, Slide } from "react-awesome-reveal";
-import CheckMark from "public/icons/check-mark.svg";
-import HomeMission from "../home/mission";
+import { Fade } from "react-awesome-reveal";
 
 const ClientCard = ({ src }: { src: string }) => (
   <div className="bg-white rounded p-2">
@@ -16,15 +13,16 @@ const ClientCard = ({ src }: { src: string }) => (
 const ClientSection = () => {
   return (
     <>
-      <section id="our-clientele" className="bg-[#F9F4FF] px-4 xs:px-5 sm:px-6 pt-10 pb-14">
+      <section id="our-clientele" className="bg-[#F9F4FF] mx-8 pt-10 pb-14">
         <div className="max-w-lg mx-auto mb-6">
           <h3 className="text-wdark text-center font-nunito font-black leading-normal text-2xl md:text-3xl mb-3">
             OUR CLIENTELE
           </h3>
           <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-wdark font-medium text-center">
-            Our engineering expertise has earned us the trust of industry leaders across sectors,
-            including manufacturing, construction, aerospace, automotive, and energy. Join our
-            esteemed clientele and experience our trusted solutions firsthand.
+            Our engineering expertise has earned us the trust of industry
+            leaders across sectors, including manufacturing, construction,
+            aerospace, automotive, and energy. Join our esteemed clientele and
+            experience our trusted solutions firsthand.
           </p>
         </div>
 
