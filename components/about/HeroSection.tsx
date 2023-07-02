@@ -37,7 +37,13 @@ const HeroSection = () => {
             </div>
 
             <div>
-              <Image src="/images/upload.webp" width={1500} height={1500} alt="about us" />
+              <Image
+                src="/images/upload.webp"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+                alt={`about us`}
+              />
             </div>
           </div>
         </div>
