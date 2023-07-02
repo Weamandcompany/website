@@ -36,7 +36,7 @@ const HomeAbout = () => {
         <Fade triggerOnce={true}>
           {" "}
           <Image
-            src="/images/experience2.svg"
+            src="/images/experience.svg"
             width={0}
             height={0}
             style={{ width: "100%", height: "auto" }}
