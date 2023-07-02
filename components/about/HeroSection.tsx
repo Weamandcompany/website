@@ -37,7 +37,7 @@ const HeroSection = () => {
             </div>
 
             <div>
-              <Image src="/images/upload.svg" width={1500} height={1500} alt="about us" />
+              <Image src="/images/upload.webp" width={1500} height={1500} alt="about us" />
             </div>
           </div>
         </div>
