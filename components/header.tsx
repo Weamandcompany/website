@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import MobileNavigation from "./mobilenav";
-import { navLinks } from "@/utils/constants";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import MobileNavigation from './mobilenav';
+import { navLinks } from '@/utils/constants';
 
 const Header = ({ bgcolor }: { bgcolor?: string }) => {
   const pathname = usePathname();
@@ -15,23 +15,25 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
       <div className="fixed 2xl:container lg:block md:block hidden top-2 z-[100] w-full">
         <ul
           style={{
-            background: bgcolor ? bgcolor : "bg-white",
+            background: bgcolor ? bgcolor : 'bg-white',
           }}
           className={`lg:w-[60%] w-[90%] bg-white mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
         >
           {bgcolor ? (
             <Image
-              src={"/images/logowhite.svg"}
-              height={35.11}
-              width={48.5}
+              src={'/images/logowhite.svg'}
+              height={0}
+              width={0}
               alt="logo"
+              className="h-[46px] w-auto"
             />
           ) : (
             <Image
-              src={"/images/logo.svg"}
-              height={35.11}
-              width={48.5}
+              src={'/images/logo.svg'}
+              height={0}
+              width={0}
               alt="logo"
+              className="h-[46px] w-auto"
             />
           )}
           <div className="flex items-center gap-10  font-[600] text-sm font-roboto">
@@ -44,10 +46,10 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
                     (item?.subLinks || []).some((link) =>
                       pathname.includes(link)
                     )
-                      ? "px-6 border-b-[1px] border-[#E47B0E] pb-1 "
-                      : "px-6"
+                      ? 'px-6 border-b-[1px] border-[#E47B0E] pb-1 '
+                      : 'px-6'
                   }`}
-                  style={{ color: bgcolor ? "white" : "#0C1239" }}
+                  style={{ color: bgcolor ? 'white' : '#0C1239' }}
                 >
                   {item?.name}
                 </Link>

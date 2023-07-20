@@ -1,6 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 html,
 body,
@@ -14,9 +14,9 @@ body,
   --swiper-navigation-color: #fff;
   --swiper-theme-color: #e47b0e !important;
   --swiper-pagination-bullet-inactive-color: #fff !important;
-  --font-nunito: "Nunito";
-  --font-roboto: "Roboto";
-  --font-poppins: "Poppins";
+  --font-nunito: 'Nunito';
+  --font-roboto: 'Roboto';
+  --font-poppins: 'Poppins';
 }
 
 @layer components {
@@ -39,7 +39,7 @@ body,
 .myswiper .swiper-rtl .swiper-button-prev:after,
 .myswiper .swiper-button-prev:after,
 .myswiper .swiper-rtl .swiper-button-next:after {
-  content: "" !important;
+  content: '' !important;
 }
 
 .myswiper .swiper-horizontal > .swiper-pagination-bullets,
@@ -199,7 +199,7 @@ body,
 
 .curve:before,
 .curve:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 100%;
   width: 30%;

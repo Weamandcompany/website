@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useEffect, useState, useRef } from "react";
-import { Navigation, A11y, Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Icon } from "@iconify/react";
-import { CarouselImages, carouselData } from "@/utils/constants";
-import tw from "tailwind-styled-components";
+import Image from 'next/image';
+import React, { useEffect, useState, useRef } from 'react';
+import { Navigation, A11y, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Icon } from '@iconify/react';
+import { CarouselImages, carouselData } from '@/utils/constants';
+import tw from 'tailwind-styled-components';
 
 const HomeCarousel = () => {
   const prevRef = useRef(null);
@@ -15,7 +15,7 @@ const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(showNextElement, 7000);
+    const interval = setInterval(showNextElement, 10000);
 
     return () => {
       clearInterval(interval);
@@ -43,7 +43,7 @@ const HomeCarousel = () => {
               <div
                 key={index}
                 className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-10 2xl:pr-10 pr-4 ${
-                  index === currentIndex ? "active" : ""
+                  index === currentIndex ? 'active' : ''
                 }`}
               >
                 <h6 className="text-[#E47B0E] lg:text-base text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
@@ -72,7 +72,7 @@ const HomeCarousel = () => {
               <div
                 key={index}
                 className={`fade-in w-[100%] p-8 ${
-                  index === currentIndex ? "active" : ""
+                  index === currentIndex ? 'active' : ''
                 }`}
               >
                 <h6 className="text-[#E47B0E] text-sm text-center font-poppins font-[500] lg:mb-3 mb-2">
@@ -107,7 +107,7 @@ const HomeCarousel = () => {
           }}
           className="myswiper 2xl:h-[515px] lg:h-[483px] h-[280px]"
           autoplay={{
-            delay: 4000,
+            delay: 10000,
             disableOnInteraction: true,
           }}
         >
