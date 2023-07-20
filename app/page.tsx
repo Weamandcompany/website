@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import HomeCarousel from "@/components/home/carousel";
-import HomeServices from "@/components/home/services";
-import HomeAbout from "@/components/home/about";
-import HomeMission from "@/components/home/mission";
-import ProjectSection from "@/components/common/projects";
-import PageLayout from "@/layouts/PageLayout";
-import { SponsorImages } from "@/utils/constants";
-import Loader from "@/components/loader";
-import { useEffect, useState } from "react";
+import Image from 'next/image';
+import HomeCarousel from '@/components/home/carousel';
+import HomeServices from '@/components/home/services';
+import HomeAbout from '@/components/home/about';
+import HomeMission from '@/components/home/mission';
+import ProjectSection from '@/components/common/projects';
+import PageLayout from '@/layouts/PageLayout';
+import { SponsorImages } from '@/utils/constants';
+import Loader from '@/components/loader';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,18 +36,24 @@ export default function Home() {
           />
           <HomeCarousel />
           <div className="relative  lg:mb-0 mb-6">
-            <div className=" absolute lg:top-[0px] top-[10px] lg:w-[64%] 2xl:w-[64%] w-[100%] lg:right-0 ">
-              <div className="flex gap-3 bg-[#F4F6FF] lg:py-4 py-2 lg:px-3 px-2 lg:justify-end overflow-x-scroll">
-                {SponsorImages?.map((item, i) => (
-                  <Image
-                    src={item}
-                    width={0}
-                    height={0}
-                    className="lg:w-[19%] lg:h-[auto] w-[150px] bg-white p-1"
-                    alt={`SponsorImages${i}`}
-                    key={i}
-                  />
-                ))}
+            <div className=" flex justify-end ">
+              <div>
+                <h2 className="mt-6 mb-4 text-center text-[#0C1239] lg:text-[32px] text-[28px] font-[900] font-nunito">
+                  Corporate Partners
+                </h2>
+
+                <div className="flex gap-3 bg-[#F4F6FF] lg:py-4 py-2 lg:px-3 px-2 lg:justify-end overflow-x-scroll">
+                  {SponsorImages?.map((item, i) => (
+                    <Image
+                      src={item}
+                      width={0}
+                      height={0}
+                      className="lg:w-[19%] lg:h-[auto] w-[150px] bg-white p-1"
+                      alt={`SponsorImages${i}`}
+                      key={i}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(showNextElement, 7000);
+    const interval = setInterval(showNextElement, 10000);
 
     return () => {
       clearInterval(interval);
@@ -103,7 +103,7 @@ const HomeCarousel = () => {
           }}
           className="myswiper 2xl:h-[515px] lg:h-[483px] h-[280px]"
           autoplay={{
-            delay: 4000,
+            delay: 10000,
             disableOnInteraction: true,
           }}>
           {CarouselImages?.map((item, i) => (

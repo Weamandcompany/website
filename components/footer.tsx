@@ -1,22 +1,23 @@
-"use client";
+'use client';
 
-import { Icon } from "@iconify/react";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { Icon } from '@iconify/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import Footernav from './footernav';
 
 const Footer = () => {
   return (
     <div className="bg-[#0F1437] ">
-      <div className="lg:px-32 p-3 lg:py-10"></div>
-
-      <div className="bg-[#131944] p-8  lg:mx-32 mx-5 lg:mb-[4.5rem] my-6 mb-10 rounded-[4px] lg:flex items-center justify-between font-poppins text-white gap-24">
+      <Footernav />
+      <div className="bg-[#131944] p-8  lg:mx-32 mx-5 lg:mb-[3.5rem] lg:mt-[2.5rem] my-6 mb-10 rounded-[4px] lg:flex items-center justify-between font-poppins text-white gap-24">
         <div className="lg:flex items-start gap-6 lg:w-[85%]">
-          {" "}
+          {' '}
           <Image
-            src={"/images/logowhite.svg"}
-            height={56.07}
-            width={77.45}
+            src={'/images/logowhite.svg'}
+            height={0}
+            width={0}
+            className="h-[80px] w-auto"
             alt="logo"
           />
           <p className="font-roboto text-[#FFFFFF] text-xs leading-6 lg:w-[65%]">
@@ -28,13 +29,13 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center gap-6 lg:w-[15%] lg:mt-0 mt-8">
-          Find us on:{" "}
+          Find us on:{' '}
           <Link
-            href={"https://ng.linkedin.com/company/weam-and-company"}
+            href={'https://ng.linkedin.com/company/weam-and-company'}
             target="_blank"
           >
             <Icon
-              icon={"ri:linkedin-fill"}
+              icon={'ri:linkedin-fill'}
               className="text-[#E47B0E] p-[7px] bg-white h-[32px] w-[32px] rounded-full"
             />
           </Link>

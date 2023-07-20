@@ -6,11 +6,11 @@ export const CarouselImages = [
 ];
 
 export const SponsorImages = [
-  "/images/sponsor1.svg",
-  "/images/sponsor2.svg",
   "/images/sponsor3.svg",
   "/images/sponsor4.svg",
+  "/images/sponsor1.svg",
   "/images/sponsor5.svg",
+  "/images/sponsor2.svg",
 ];
 
 export const carouselData = [
@@ -311,5 +311,28 @@ export const trainingImages = [
   {
     original: "/images/training/3.jpeg",
     thumbnail: "/images/training/3.jpeg",
+  },
+];
+
+export const quickLinks = [
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    name: "Services",
+    link: "/services",
+  },
+  {
+    name: "About Us",
+    link: "/about",
+  },
+  {
+    name: "Gallery",
+    link: "/projects",
+  },
+  {
+    name: "Contact Us",
+    link: "/contact",
   },
 ];

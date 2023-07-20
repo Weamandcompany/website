@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { Icon } from "@iconify/react";
-import Image from "next/image";
-import { navLinks } from "@/utils/constants";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import React, { useState } from 'react';
+import { Icon } from '@iconify/react';
+import Image from 'next/image';
+import { navLinks } from '@/utils/constants';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const MobileNavigation = () => {
   const pathname = usePathname();
@@ -23,10 +23,11 @@ const MobileNavigation = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image
-                src={"/images/logo.svg"}
-                height={35.11}
-                width={60}
+                src={'/images/logo.svg'}
+                height={0}
+                width={0}
                 alt="logo"
+                className="h-[46px] w-auto"
               />
             </div>
           </div>
@@ -36,9 +37,9 @@ const MobileNavigation = () => {
               onClick={toggleMenu}
             >
               {isOpen ? (
-                <Icon icon={"ion:close-outline"} className="h-7 w-7" />
+                <Icon icon={'ion:close-outline'} className="h-7 w-7" />
               ) : (
-                <Icon icon={"quill:hamburger"} className="h-7 w-7" />
+                <Icon icon={'quill:hamburger'} className="h-7 w-7" />
               )}
             </button>
           </div>
@@ -57,8 +58,8 @@ const MobileNavigation = () => {
                       (item?.subLinks || []).some((link) =>
                         pathname.includes(link)
                       )
-                        ? "px-6 border-b-[1px] border-[#E47B0E] pb-1 "
-                        : "px-6"
+                        ? 'px-6 border-b-[1px] border-[#E47B0E] pb-1 '
+                        : 'px-6'
                     }`}
                     onClick={toggleMenu}
                   >
