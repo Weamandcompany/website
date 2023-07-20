@@ -76,7 +76,7 @@ const HeroSupport = () => {
             <div className="col-span-6" id="who-we-are">
               <Slide duration={500} cascade triggerOnce={true}>
                 <h6 className="text-worange lg:text-[15px] text-sm font-[500] mb-3 px-4 md:px-0">
-                  An Excellence Powered By Innovation
+                  Excellence Powered By Innovation
                 </h6>
                 <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-2 px-4 md:px-0">
                   Driving Excellence: Unleashing the Power of Seamless Operations.

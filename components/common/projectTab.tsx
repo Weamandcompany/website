@@ -6,15 +6,14 @@ import { Bounce } from "react-awesome-reveal";
 
 interface ProjectTabProps {
   isActive: boolean;
-  title: string;
+  title?: string;
   description: string;
   imageSrc: string;
   onClick: () => void;
   heading: string;
-  setSelectedImage: React.Dispatch<
-    React.SetStateAction<{ original: string; thumbnail: string }[]>
-  >;
+  setSelectedImage: React.Dispatch<React.SetStateAction<{ original: string; thumbnail: string }[]>>;
   images: { original: string; thumbnail: string }[];
+  client?: string;
 }
 
 const ProjectTab: React.FC<ProjectTabProps> = ({
@@ -26,6 +25,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
   heading,
   setSelectedImage,
   images,
+  client,
 }) => {
   return (
     <>
@@ -33,26 +33,20 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
         className={`${
           isActive ? "bg-white lg:my-12 my-6" : "bg-[#161C49] mb-4"
         } lg:p-10 p-6 rounded-[8px] font-poppins cursor-pointer`}
-        onClick={onClick}
-      >
+        onClick={onClick}>
         <div className="flex lg:gap-5 gap-8 items-center justify-between relative">
           <div>
             <h6 className="text-[#E47B0E] lg:text-[14px] text-[13.5px] mb-2">
               {isActive ? heading : title}
             </h6>
-            <p
-              className={`text-white  text-[19.5px] font[600] ${
-                isActive ? "hidden" : ""
-              }`}
-            >
+            <p className={`text-white  text-[19.5px] font[600] ${isActive ? "hidden" : ""}`}>
               {heading}
             </p>
 
             <div
               className={`text-[#61657E] lg:text-[13px] text-xs lg:w-[45%] ${
                 isActive ? "" : "hidden"
-              }`}
-            >
+              }`}>
               <Bounce cascade triggerOnce={true}>
                 <div className="lg:hidden block">
                   <Image
@@ -71,6 +65,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
                 </div>
               </Bounce>
               {description}
+              <div className="mt-3 font-semibold">{client}</div>
             </div>
             {isActive && (
               <Bounce cascade triggerOnce={true}>

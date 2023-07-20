@@ -67,7 +67,7 @@ const SimulationStudiesService = () => {
 
       <div className="lg:px-32 px-5 lg:mt-14 mt-20">
         <h6 className="text-[#1C1C1C] lg:text-[24px] text-[20px] text-center font-[600] lg:mb-7 mb-5">
-          Engineering and Simulation studies done for our Clients
+          Simulation studies done for our Clients
         </h6>
         <Accordion defaultIndex={0} items={simulations} />
       </div>
@@ -84,20 +84,9 @@ const simulations = [
         description: "Project Description",
       },
       {
-        title:
-          "As-Built Documentation Campaign Project for Ubie, Diebu, Kolo Creek and Nun River Flow Stations",
+        title: "Oguta Flow Station Debottlenecking Studies",
         description:
-          "Site mark-up drawing and As-built drawing compilation for Ubie, Diebu, Kolo Creek and Nun River Flow Stations",
-      },
-      {
-        title: "Oguta Flow station Debottlenecking Studies",
-        description:
-          "Performed process checks on flare system and debottlenecks facility to reduce system backpressure on surge vessel. Recommended and sized new process lines, valves, vessels, flare barrel to handle the gas from the separator. Redesigned of instrumentation and control system to incorporate new system",
-      },
-      {
-        title: "Kolocreek Debottlenecking Project",
-        description:
-          "Debottlenecked facility to reduce system backpressure on surge vessel. Installation of new flare barrel to receive gases from separators.",
+          "Performed process checks on flare system and debottlenecks facility to reduce system backpressure on surge vessel. Recommended and sized new process lines, valves, vessels, flare barrel to handle the gas from the separator. Redesigned instrumentation and control system to incorporate the new system.",
       },
       {
         title: "Soku Gas Plant Process Studies",
@@ -107,22 +96,22 @@ const simulations = [
       {
         title: "Santa Barbara Process Engineering Studies",
         description:
-          "Determined maximum throughput of the facilities. Identified design and process constraints of the facilities, and rated the ability of the relief systems to curtail over-pressure.",
+          "Determined maximum throughput of the facilities. Identified design and process constraints of the facilities, and rated the ability of the relief systems to curtail overpressure.",
       },
       {
         title: "Belema Process Engineering Studies",
         description:
-          "Determined maximum throughput of the facilities. Identified design and process constraints of the facilities, and rated the ability of the relief systems to curtail over-pressure.",
+          "Determined maximum throughput of the facilities. Identified design and process constraints of the facilities, and rated the ability of the relief systems to curtail overpressure.",
       },
       {
-        title: "Soku Flow station Process Engineering Studies",
+        title: "Soku Flow Station Process Engineering Studies",
         description:
-          "Determined maximum throughput of the facilities. Identified design and process constraints of the facilities, and rated the ability of the relief systems to curtail over-pressure",
+          "Determined maximum throughput of the facilities. Identified design and process constraints of the facilities, and rated the ability of the relief systems to curtail overpressure.",
       },
       {
         title: "Simulation Studies on the Nembe Creek Trunk Line",
         description:
-          "Optimized the crude oil handling capacity of the pipeline network across Nembe axis.",
+          "Optimized the crude oil handling capacity of the pipeline network across the Nembe axis.",
       },
     ],
   },
@@ -135,14 +124,14 @@ const simulations = [
         description: "Project Description",
       },
       {
-        title: "System wide study on the Agbami FPSO Seawater system",
+        title: "System-wide study on the Agbami FPSO Seawater system.",
         description:
-          "Built model for the Agbami FPSO Seawater system to identify and analyze system problems in order to propose solutions to the problems.",
+          "Built a model for the Agbami FPSO Seawater system to identify and analyze system problems, in order to propose solutions to the problems.",
       },
       {
         title: "Malu and West Isan Water Injection Pump Rating Study",
         description:
-          "Carried out pump rating studies to determine the duty and capacity of the water re-injection pump. Carried out sensitivity analysis to determine the best pipe size and flow rate for re-injection process.",
+          "Carried out pump rating studies to determine the duty and capacity of the water re-injection pump. Carried out sensitivity analysis to determine the best pipe size and flow rate for the re-injection process.",
       },
     ],
   },
@@ -158,44 +147,6 @@ const simulations = [
         title: "Funiwa Export Pipeline Sizing Studies",
         description:
           "Carried out optimal pipeline sizing for fluid export from Funiwa to Escravos for different flow scenarios. Determined the maximum liquid capacity of the proposed pipeline sizes.",
-      },
-      {
-        title: "North Apoi/Funiwa Revamp Project (Conceptual and Front End Engineering Design)",
-        description:
-          "Carried out capacity check on existing North Apoi and Funiwa processing facilities. Performed sizing of new recommended vessel, Air coolers Compressors, Slug catchers, pumps etc. Carried out optimal pipeline sizing and flow scenario for routing of three phase fluid from North Apoi to Funiwa without production loss.",
-      },
-    ],
-  },
-
-  {
-    title: "Ministry of Petroleum Resources",
-    content: [
-      {
-        title: "Project Name",
-        description: "Project Description",
-      },
-      {
-        title: "Gas Supply Pipeline to PHCN Delta IV",
-        description: (
-          <>
-            <ul>
-              <li>Conceptual Studies</li>
-              <li>Environmental Impact Assessment (EIA) Studies</li>
-              <li>Front End Engineering Design (FEED)</li>
-              <li>Detailed Engineering Design</li>
-              <li>Flow Assurance Modelling</li>
-              <li>Contracting /Project Management Services for Engineering</li>
-              <li>Procurement & Constuction (EPC) Phase</li>
-              <li>Capacity Building on Advanced Project Management & Pipeline Management</li>
-            </ul>
-          </>
-        ),
-      },
-      {
-        title:
-          "Project Management Consultancy Service on Calabar-Umuahia-Ajaokuta Gas Pipeline (Detailed Engineering Design)",
-        description:
-          "Project Monitoring Services and Review of Detailed Engineering Design Deliverables",
       },
     ],
   },
@@ -219,7 +170,6 @@ const simulations = [
       },
     ],
   },
-
   {
     title: "TOTAL",
     content: [
@@ -261,25 +211,6 @@ const simulations = [
   },
 
   {
-    title: " INDORAMA ELEME PETROCHEMICALS COMPANY LIMITED",
-    content: [
-      {
-        title: "Project Name",
-        description: "Project Description",
-      },
-      {
-        title: "Hydrocarbon Recovery",
-        description:
-          "Detailed engineering design of Piping layout, Equipment layout, Civil foundation and Support allocation.",
-      },
-      {
-        title: "As-built Documentation",
-        description: "Development of 2D As-built drawings of PP, Olefins and Power Plants.",
-      },
-    ],
-  },
-
-  {
     title: "OZONO/SPDC",
     content: [
       {
@@ -312,19 +243,9 @@ const simulations = [
           "The main objective of this project was to develop a Gas Treatment System Simulation model for Robertkiri Production facility using Aspen Hysys software. This will eventually form the basis for the EPC phase of the project.",
       },
       {
-        title: "OML 55 Gas Treatment Flow Assurance study",
+        title: "OML 55 Gas Treatment Flow Assurance Study",
         description:
-          "The Flow Assurance study was done to determine the optimum pipeline sizes considering desired arrival pressures and throughput and also determine potential for slugging and requirement for slug suppression considering steady state operation at various production rates.",
-      },
-    ],
-  },
-
-  {
-    title: "BELEMAOIL PRODUCING",
-    content: [
-      {
-        title: "Project Name",
-        description: "Project Description",
+          "The Flow Assurance study was done to determine the optimum pipeline sizes considering desired arrival pressures and throughput. Additionally, it aimed to determine the potential for slugging and the requirement for slug suppression, considering steady-state operation at various production rates.",
       },
       {
         title:
@@ -356,7 +277,7 @@ const simulations = [
   },
 
   {
-    title: "POINT ENG. LTD",
+    title: "POINT ENGINEERING",
     content: [
       {
         title: "Project Name",
@@ -365,33 +286,6 @@ const simulations = [
       {
         title: "Hydrate formation monitoring in Gas Pipeline Network",
         description: "Monitoring of Hydrate formation in Gas Pipeline Network.",
-      },
-    ],
-  },
-
-  {
-    title: "NGIC (subsidiary of NNPC)",
-    content: [
-      {
-        title: "Project Name",
-        description: "Project Description",
-      },
-      {
-        title:
-          "Detailed Engineering Design for Rehabilitation/Upgrade of Delta IV Metering Station, Ughelli",
-        description:
-          "Detailed Engineering Design for rehabilitation and upgrade of process equipment, field instruments, Fire and Gas Systems, Electrical installations, control and security building to a much modern status and also guarantee reliability of operations and security of the facility",
-      },
-      {
-        title: "Detailed Engineering Design for EPC of the New Egbin Metering Station",
-        description:
-          "Provision of FEED verification and Detailed Engineering Design for the New Egbin Metering Station",
-      },
-      {
-        title:
-          "FEED, Detailed Engineering Design, Follow-on Engineering and As-built documentation for EPC of Pipeline Infrastructure for Gas Supply to Escravos Environs Power Supply Project",
-        description:
-          "Provision of FEED and Detailed Engineering for Pipelines, Pressure Reduction, and Metering Systems for the EPC project and also Construction Support, Management and As-built documentation",
       },
     ],
   },
@@ -407,44 +301,6 @@ const simulations = [
         title: "Computer Simulation and Plant Modeling",
         description:
           "Development of steady-state models for Crude distillation unit, Vacuum distillation unit, Fluidized Catalytic Cracking unit, Naphtha Hydro treating unit, and Catalytic Reformer unit.",
-      },
-    ],
-  },
-
-  {
-    title: "NDPHC LIMITED",
-    content: [
-      {
-        title: "Project Name",
-        description: "Project Description",
-      },
-
-      {
-        title: "Detailed Engineering Design for EPC of the New Egbin Metering Station",
-        description:
-          "To carry out supply, repair and service of gas equipment for CALABAR power station at Odukpani, Cross River state, to improve and optimize its working condition.",
-      },
-      {
-        title: "Supply, Repair, and Service of Gas Equipment in Geregu Power Station",
-        description:
-          "To carry out supply, repair and service of gas equipment for GEREGU power station at Ajaokuta, Kogi state as part of efforts to improve and optimize its working condition.",
-      },
-    ],
-  },
-
-  {
-    title: "NEPL",
-    content: [
-      {
-        title: "Project Name",
-        description: "Project Description",
-      },
-
-      {
-        title:
-          "Update of Hazardous Area Classification and As-Built Drawings of Facilities in OML-26",
-        description:
-          "The Nigerian National Petroleum Corporation (NNPC) and E&P Limited (As operators of OML 26) in joint venture with NEPL and FHN 26 Limited intend to carry-out update of hazardous area classification and as-built drawings of facilities in OML 26. This entails reviews and back drafting of existing drawings, deployment of Laser scanner (2D/3D technology) and generation of new as-built documentations. To this end Weam and company limited was contracted to do the aforementioned SOW.",
       },
     ],
   },

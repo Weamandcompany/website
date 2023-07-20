@@ -9,13 +9,16 @@ interface AccordionItem {
 interface AccordionProps {
   items: AccordionItem[];
   defaultIndex?: number;
+  noclick?: boolean;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ items, defaultIndex }) => {
+const Accordion: React.FC<AccordionProps> = ({ items, defaultIndex, noclick = false }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(defaultIndex ?? null);
 
   const handleClick = (index: number) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    if (!noclick) {
+      setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    }
   };
 
   return (
@@ -40,11 +43,13 @@ const Accordion: React.FC<AccordionProps> = ({ items, defaultIndex }) => {
                   height={25}
                 />
               ) : (
-                <Icon
-                  icon={"iconamoon:arrow-right-2-duotone"}
-                  className=" text-[#111111]"
-                  height={25}
-                />
+                !noclick && (
+                  <Icon
+                    icon={"iconamoon:arrow-right-2-duotone"}
+                    className=" text-[#111111]"
+                    height={25}
+                  />
+                )
               )}
             </div>
           </div>

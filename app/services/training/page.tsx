@@ -30,8 +30,12 @@ const TrainingService = () => {
               your team. Our tailored approach combines theoretical knowledge with practical
               applications to enhance skills and drive results. From customer service excellence to
               technical proficiency, our training equips your workforce for success. Partner with
-              Weam & Company Limited to unlock your team&aapos;s potential and elevate your service
-              standards
+              Weam & Company Limited to unlock your team&apos;s potential and elevate your service
+              standards.
+            </p>
+            <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
+              Participants are given recognized and verifiable certificates upon training
+              completion.
             </p>
           </Slide>
         </div>
@@ -42,7 +46,7 @@ const TrainingService = () => {
         </div>
       </div>
       <div className="lg:px-32 px-5 lg:mt-14 mt-8">
-        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">Our Operations </h6>
+        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">Training Programs</h6>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 ">
           <div>
             <Slide direction="left" cascade triggerOnce={true}>

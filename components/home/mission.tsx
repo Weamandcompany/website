@@ -35,8 +35,7 @@ const HomeMission = () => {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials lg:w-[85%] w-[90%] mx-auto rounded-[32px]  text-white font-roboto"
-    >
+      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials lg:w-[85%] w-[90%] mx-auto rounded-[32px]  text-white font-roboto">
       <SwiperSlide>
         <Wrapper>
           <Title>
@@ -70,6 +69,14 @@ const HomeMission = () => {
             <CoreValueItem icon="zondicons:checkmark" text="Culture of Continuous Improvement" />
             <CoreValueItem icon="zondicons:checkmark" text="Building Lasting Relationships" />
           </div>
+        </Wrapper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Wrapper>
+          <Title>
+            <span className="text-[#C9D0FC78]"> Our </span>Motto
+          </Title>
+          <Value>Excellence Powered by Innovation.</Value>
         </Wrapper>
       </SwiperSlide>
     </Swiper>

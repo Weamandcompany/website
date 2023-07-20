@@ -13,24 +13,22 @@ const HeroSection = () => {
           <div className="">
             <Slide duration={700} triggerOnce={true}>
               <h3 className="text-white text-center md:text-left font-nunito font-extrabold lg:text-[40px] text-[25px] leading-[1.4] mb-4">
-                An Excellence Powered by Innovation.
+                Excellence Powered by Innovation.
               </h3>
 
               <p className="font-nunito text-[14px] text-center md:text-left leading-[2.5] sm:text-[15px] sm:leading-[2.5] text-white font-normal">
-                Welcome to Weam and Company Limited, where innovation thrives
-                and solutions come to life. With our team of experts and a
-                passion for excellence, we push boundaries and deliver
-                remarkable outcomes. Harnessing cutting-edge technologies and
-                creative thinking, we ignite innovation to shape a brighter
-                future. Experience the power of Weam and Company Limited and let
-                us inspire the solutions you&apos;ve been searching for.
+                Welcome to Weam and Company Limited, where innovation thrives and solutions come to
+                life. With our team of experts and a passion for excellence, we push boundaries and
+                deliver remarkable outcomes. Harnessing cutting-edge technologies and creative
+                thinking, we ignite innovation to shape a brighter future. Experience the power of
+                Weam and Company Limited and let us inspire the solutions you&apos;ve been searching
+                for.
               </p>
             </Slide>
             <div className="flex justify-center md:justify-start md:mb-0 mb-10">
               <a
                 href="#"
-                className="mt-8 btn-yellow font-poppins flex items-center gap-2 w-fit hover:opacity-80 px-7"
-              >
+                className="mt-8 btn-yellow font-poppins flex items-center gap-2 w-fit hover:opacity-80 px-7">
                 Contact Us
                 <Icon icon="ph:arrow-right-bold"></Icon>
               </a>
