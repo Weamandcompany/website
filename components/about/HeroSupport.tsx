@@ -11,10 +11,12 @@ import Link from "next/link";
 const HeroSupport = () => {
   const [navItems, setNavItems] = useState([
     { name: "Who we are", link: "who-we-are" },
+    { name: "Our Clientele", link: "our-clientele" },
+    { name: "Partners", link: "partners" },
     { name: "Certificates", link: "certificates" },
     { name: "HSE Policy", link: "hse-policy" },
     { name: "Quality Policy Statement", link: "policy-Statement" },
-    { name: "Our Clientele", link: "our-clientele" },
+    { name: "Cooperate social responsibility", link: "cooperate-social-responsibility" },
   ]);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -42,12 +44,12 @@ const HeroSupport = () => {
       <section className="pt-10 pb-12">
         <div
           ref={divRef}
-          className={cn("max-w-4xl mx-auto mb-10", {
+          className={cn("max-w-7xl mx-auto mb-10", {
             "fixed bottom-[0] md:bottom-[12px] inset-x-[0] z-[2] !mb-0 [&_.xnav]:md:p-1.5 [&_.xnav]:p-0 [&_.xnav]:md:rounded-md [&_.xnav]:rounded-none [&_.navb]:md:rounded [&_.navb]:rounded-none":
               isFixed,
           })}>
           <div className="flex justify-center overflow-x-auto">
-            <ul className="xnav list-none flex flex-nowrap overflow-x-auto items-center rounded-md shadow-light2 bg-[#fdf4ec]">
+            <ul className="xnav list-none flex flex-nowrap overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 items-center rounded-md shadow-light2 bg-[#fdf4ec]">
               {navItems.map((nav, index) => (
                 <li
                   key={index}
