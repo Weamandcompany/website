@@ -54,7 +54,7 @@ const HomeMission = () => {
           </Title>
           <Value>
             To be the reliable indigenous company in the West African sub-region, delivering
-            world-class engineering services and simulation software to the oil and gas industry.
+            world-class engineering services and simulation software to the Oil and Gas industry.
           </Value>
         </Wrapper>
       </SwiperSlide>

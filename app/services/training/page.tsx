@@ -7,6 +7,7 @@ import ServiceSidebar from "@/components/common/serviceSidebar";
 import { Icon } from "@iconify/react";
 import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import { trainingData } from "@/utils/constants";
+import tw from "tailwind-styled-components";
 
 const TrainingService = () => {
   return (
@@ -37,6 +38,12 @@ const TrainingService = () => {
               Participants are given recognized and verifiable certificates upon training
               completion.
             </p>
+
+            <Button
+              href="https://forms.google.com"
+              className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 mt-3">
+              Register <Icon icon="ph:arrow-right-bold"></Icon>
+            </Button>
           </Slide>
         </div>
         <div className="lg:w-[32%] order-1 lg:order-2">
@@ -251,4 +258,5 @@ const TrainingService = () => {
   );
 };
 
+const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-3 px-4 font-[600] text-[14px] font-roboto flex items-center gap-2 w-fit hover:opacity-80`;
 export default TrainingService;
