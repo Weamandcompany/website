@@ -13,7 +13,7 @@ import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
 
 const nunito = Nunito({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-nunito",
 });
@@ -38,11 +38,7 @@ export const metadata: Metadata = {
   robots: "index,follow",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body
@@ -53,9 +49,8 @@ export default function RootLayout({
           nunito.variable,
           inter.className,
           "antialiased"
-        )}
-      >
-        <main className="font-roboto 2xl:container mx-auto">{children}</main>
+        )}>
+        <main className="font-roboto">{children}</main>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 
 const HeroSection = () => {
   return (
-    <div className="lg:container lg:w-full md:w-[90%] mx-auto">
+    <div className="container lg:w-full md:w-[90%] mx-auto">
       <div className="bg-wdark rounded-none md:rounded-3xl pt-[100px] md:pt-[74px] pb-16 px-4 xs:px-5 sm:px-6 md:px-10 lg:px-14">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-6 lg:gap-x-14 md:items-center lg:items-center">
           <div className="">

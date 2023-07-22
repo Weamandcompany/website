@@ -13,21 +13,20 @@ const ClientCard = ({ src }: { src: string }) => (
 const ClientSection = () => {
   return (
     <>
-      <section id="our-clientele" className="bg-[#F9F4FF] mx-8 pt-10 pb-14">
+      <section id="our-clientele" className="bg-[#F9F4FF] px-8 pt-10 pb-14">
         <div className="max-w-lg mx-auto mb-6">
-          <h3 className="text-wdark text-center font-nunito font-black leading-normal text-2xl md:text-3xl mb-3">
+          <h3 className="text-wdark text-center !font-black leading-normal text-2xl md:text-[25px] mb-3 font-nunito">
             OUR CLIENTELE
           </h3>
           <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-wdark font-medium text-center">
-            Our engineering expertise has earned us the trust of industry
-            leaders across sectors, including manufacturing, construction,
-            aerospace, automotive, and energy. Join our esteemed clientele and
-            experience our trusted solutions firsthand.
+            Our engineering expertise has earned us the trust of industry leaders across sectors,
+            including manufacturing, construction, aerospace, automotive, and energy. Join our
+            esteemed clientele and experience our trusted solutions firsthand.
           </p>
         </div>
 
         <Fade triggerOnce={true} cascade>
-          <ul className="max-w-[800px] mx-auto grid grid-cols-1 gap-y-7 list-none">
+          <ul className="max-w-[900px] mx-auto grid grid-cols-1 gap-y-7 list-none">
             <li className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3 rounded-md bg-[#F4F6FF] shadow-light py-3 px-3">
               <ClientCard src="/images/clients/client-5.png" />
               <ClientCard src="/images/clients/client-12.png" />

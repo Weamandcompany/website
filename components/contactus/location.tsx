@@ -4,8 +4,20 @@ import React, { useState } from "react";
 import Map from "./map";
 
 const data = [
-  "Plot 42C, Road 22, Federal Housing Estate, Rumueme(Agip), P.O.Box 12450, Port Harcourt, Rivers State, Nigeria.",
-  "8, B1-Close, 69 Road, Gwarinpa II Estate,Box 21, PSIN Post Office, Gwarinpa, Abuja, Nigeria.",
+  <>
+    <p className="lg:text-left text-center">
+      Plot 42C, Road 22, Federal Housing Estate, Rumueme(Agip), P.O.Box 12450, Port Harcourt, Rivers
+      State, Nigeria. <br />
+      <br /> +234 818 152 7677
+    </p>
+  </>,
+  <>
+    <p className="lg:text-left text-center">
+      "8, B1-Close, 69 Road, Gwarinpa II Estate,Box 21, PSIN Post Office, Gwarinpa, Abuja,
+      Nigeria.",
+      <br /> <br /> +234 818 152 7676
+    </p>
+  </>,
 ];
 
 const Location = () => {
@@ -37,23 +49,20 @@ const Location = () => {
               isActive === i && "bg-[#F4F6FF]"
             } lg:w-[31%] p-4 text-xs font-roboto cursor-pointer`}
             key={i}
-            onClick={() => setIsActive(i)}
-          >
+            onClick={() => setIsActive(i)}>
             <Icon
               icon={"mi:location"}
               className={`${
                 isActive == i ? "bg-[#0C1239]" : "bg-[#FE5D14]"
               } h-[42px] w-[42px]  text-white p-[.6rem] rounded-full mb-4 lg:mx-0 mx-auto`}
             />
-            <p className="lg:text-left text-center"> {item}</p>
+            {item}
           </div>
         ))}
       </div>
       <div>
         {isActive === 0 && <Map longitude={6.9794509} latitude={4.8158563} />}
-        {isActive === 1 && (
-          <Map longitude={7.407276500000001} latitude={9.0437826} />
-        )}
+        {isActive === 1 && <Map longitude={7.407276500000001} latitude={9.0437826} />}
       </div>
     </div>
   );

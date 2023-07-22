@@ -7,6 +7,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import CheckMark from "public/icons/check-mark.svg";
 import cn from "classnames";
 import Link from "next/link";
+import { SponsorImages } from "@/utils/constants";
 
 const HeroSupport = () => {
   const [navItems, setNavItems] = useState([
@@ -16,7 +17,7 @@ const HeroSupport = () => {
     { name: "Certificates", link: "certificates" },
     { name: "HSE Policy", link: "hse-policy" },
     { name: "Quality Policy Statement", link: "policy-Statement" },
-    { name: "Cooperate social responsibility", link: "cooperate-social-responsibility" },
+    { name: "social responsibility", link: "cooperate-social-responsibility" },
   ]);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -44,7 +45,7 @@ const HeroSupport = () => {
       <section className="pt-10 pb-12">
         <div
           ref={divRef}
-          className={cn("max-w-7xl mx-auto mb-10", {
+          className={cn("container mx-auto mb-10", {
             "fixed bottom-[0] md:bottom-[12px] inset-x-[0] z-[2] !mb-0 [&_.xnav]:md:p-1.5 [&_.xnav]:p-0 [&_.xnav]:md:rounded-md [&_.xnav]:rounded-none [&_.navb]:md:rounded [&_.navb]:rounded-none":
               isFixed,
           })}>
@@ -74,7 +75,7 @@ const HeroSupport = () => {
           style={{
             backgroundImage: "url('images/narrow-rects.png')",
           }}>
-          <div className="lg:container lg:w-full md:w-[90%] mx-auto grid md:grid-cols-12 gap-x-4 pt-16">
+          <div className="container lg:w-full md:w-[90%] mx-auto grid md:grid-cols-12 gap-x-4 pt-16">
             <div className="col-span-6" id="who-we-are">
               <Slide duration={500} cascade triggerOnce={true}>
                 <h6 className="text-worange lg:text-[15px] text-sm font-[500] mb-3 px-4 md:px-0">
@@ -142,64 +143,6 @@ const HeroSupport = () => {
                 <Image src="/images/engineer.png" width={1000} height={1000} alt="about us" />
               </Fade>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="certificates" className="pb-16 px-4 xs:px-5 sm:px-6">
-        <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-5 text-center">
-          Our Certificates and Permits
-        </h3>
-
-        <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 justify-center max-w-4xl mx-auto gap-3">
-          <div className="rounded-md bg-white shadow-air p-1">
-            <Image
-              src="/images/cert-1.png"
-              width={200}
-              height={100}
-              className="w-auto h-20 object-cover"
-              alt="Certificates"
-            />
-          </div>
-
-          <div className="rounded-md bg-white shadow-air p-1">
-            <Image
-              src="/images/cert-2.png"
-              width={200}
-              height={100}
-              className="w-auto h-20 object-cover"
-              alt="Certificates"
-            />
-          </div>
-
-          <div className="rounded-md bg-white shadow-air p-1">
-            <Image
-              src="/images/cert-3.png"
-              width={200}
-              height={100}
-              className="w-auto h-20 object-cover"
-              alt="Certificates"
-            />
-          </div>
-
-          <div className="rounded-md bg-white shadow-air p-1">
-            <Image
-              src="/images/cert-4.png"
-              width={200}
-              height={100}
-              className="w-auto h-20 object-cover"
-              alt="Certificates"
-            />
-          </div>
-
-          <div className="rounded-md bg-white shadow-air p-1">
-            <Image
-              src="/images/cert-5.png"
-              width={200}
-              height={100}
-              className="w-auto h-20 object-cover"
-              alt="Certificates"
-            />
           </div>
         </div>
       </section>

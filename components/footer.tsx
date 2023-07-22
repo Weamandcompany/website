@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="lg:flex items-start gap-6 lg:w-[85%]">
           {" "}
           <Image
-            src={"/images/logo-lg.png"}
+            src={"/images/wm-logo.png"}
             height={0}
             width={0}
             className="h-[80px] w-auto"

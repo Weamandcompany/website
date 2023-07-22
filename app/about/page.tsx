@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <PageLayout>
-      <div className="lg:mt-[7rem] md:mt-[2rem] lg:pt-0 pt-[4.5rem]  relative  lg:px-24 px-0 ">
+      <div className="lg:mt-[7rem] md:mt-[2rem] lg:pt-0 pt-[4.5rem] relative px-0">
         <HeroSection />
         <HeroSupport />
-        <PolicySection />
         <ClientSection />
+        <PolicySection />
       </div>
     </PageLayout>
   );
