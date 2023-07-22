@@ -9,10 +9,10 @@
 # # Custom error page handling
 # ErrorDocument 404 /out/404.html
 
-RewriteEngine On
-RewriteBase /
-RewriteRule ^$ out/index.html [L]
-RewriteRule ^((?!out/).*)$ out/$1 [L,NC]
+# RewriteEngine On
+# RewriteBase /
+# RewriteRule ^$ out/index.html [L]
+# RewriteRule ^((?!out/).*)$ out/$1 [L,NC]
 
 # RewriteEngine On
 
