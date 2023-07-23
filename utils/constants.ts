@@ -329,10 +329,32 @@ export const quickLinks = [
   },
   {
     name: "Gallery",
-    link: "/projects",
+    link: "/gallery",
   },
   {
     name: "Contact Us",
     link: "/contact",
+  },
+];
+
+export const facilityGallery = [
+  "/images/facility/1.JPG",
+  "/images/facility/2.jpg",
+  "/images/facility/3.jpg",
+  "/images/facility/4.jpg",
+  "/images/facility/5.JPG",
+  "/images/facility/6.JPG",
+  "/images/facility/7.JPG",
+  "/images/facility/8.JPG",
+  "/images/facility/9.JPG",
+  "/images/facility/10.JPG",
+];
+
+export const collections = [
+  {
+    photos: facilityGallery,
+    title: "Facilities models",
+    subtitle:
+      "Accurate and detailed facility models that bring your engineering projects to life. Our expert team of modelers and designers leverages cutting-edge technology and industry best practices to deliver high-quality facility models.",
   },
 ];
