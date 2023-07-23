@@ -39,7 +39,7 @@ const PolicySection = () => {
           }}>
           <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 w-full gap-3">
             {SponsorImages?.map((item, i) => (
-              <div className="rounded-md bg-white shadow-air p-1">
+              <div key={i} className="rounded-md bg-white shadow-air p-1">
                 <Image
                   src={item}
                   width={200}

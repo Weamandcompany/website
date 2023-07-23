@@ -13,8 +13,7 @@ const data = [
   </>,
   <>
     <p className="lg:text-left text-center">
-      "8, B1-Close, 69 Road, Gwarinpa II Estate,Box 21, PSIN Post Office, Gwarinpa, Abuja,
-      Nigeria.",
+      8, B1-Close, 69 Road, Gwarinpa II Estate,Box 21, PSIN Post Office, Gwarinpa, Abuja, Nigeria.,
       <br /> <br /> +234 818 152 7676
     </p>
   </>,
