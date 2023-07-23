@@ -58,6 +58,7 @@ export const navLinks = [
     subLinks: ["/services/"],
   },
   { name: "Projects", link: "/projects" },
+  { name: "Gallery", link: "/gallery" },
 ];
 
 export const services = [

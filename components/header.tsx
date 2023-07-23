@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import MobileNavigation from './mobilenav';
-import { navLinks } from '@/utils/constants';
-import { Fade } from 'react-awesome-reveal';
-import { services } from '@/utils/constants';
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import MobileNavigation from "./mobilenav";
+import { navLinks } from "@/utils/constants";
+import { Fade } from "react-awesome-reveal";
+import { services } from "@/utils/constants";
 
 const Header = ({ bgcolor }: { bgcolor?: string }) => {
   const pathname = usePathname();
@@ -19,13 +19,12 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
       <div className="fixed 2xl:container lg:block md:block hidden top-2 z-[100] w-full">
         <ul
           style={{
-            background: bgcolor ? bgcolor : 'bg-white',
+            background: bgcolor ? bgcolor : "bg-white",
           }}
-          className={`lg:w-[60%] w-[90%] bg-white mx-auto rounded-[20px]  p-5 flex justify-between items-center`}
-        >
+          className={`lg:w-[60%] w-[90%] bg-white mx-auto rounded-[20px]  p-5 flex justify-between items-center`}>
           {bgcolor ? (
             <Image
-              src={'/images/logowhite.svg'}
+              src={"/images/logowhite.svg"}
               height={0}
               width={0}
               alt="logo"
@@ -33,7 +32,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
             />
           ) : (
             <Image
-              src={'/images/logo.svg'}
+              src={"/images/logo-lg.png"}
               height={0}
               width={0}
               alt="logo"
@@ -47,22 +46,18 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
                   href={item?.link}
                   className={`${
                     pathname === item?.link ||
-                    (item?.subLinks || []).some((link) =>
-                      pathname.includes(link)
-                    )
-                      ? 'px-6 border-b-[1px] border-[#E47B0E] pb-1  '
-                      : 'px-6'
+                    (item?.subLinks || []).some((link) => pathname.includes(link))
+                      ? "px-3 border-b-[1px] border-[#E47B0E] pb-1  "
+                      : "px-3"
                   }`}
-                  style={{ color: bgcolor ? 'white' : '#0C1239' }}
+                  style={{ color: bgcolor ? "white" : "#0C1239" }}
                   onMouseEnter={() => {
-                    item?.name === 'Services' &&
-                      setIsDropdownOpen(!isDropdownOpen);
-                  }}
-                >
+                    item?.name === "Services" && setIsDropdownOpen(!isDropdownOpen);
+                  }}>
                   {item?.name}
                 </Link>
                 <div onMouseLeave={() => setIsDropdownOpen(!isDropdownOpen)}>
-                  {isDropdownOpen && item?.name === 'Services' && (
+                  {isDropdownOpen && item?.name === "Services" && (
                     <Fade>
                       <div className="absolute border-t-[5px] border-t-[#42307D] w-[180px] top-10 -left-6 bg-white shadow px-5 py-4">
                         <ul className="space-y-3">
@@ -70,11 +65,8 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
                             <li
                               key={i}
                               className={` font-[400] text-sm ${
-                                pathname === item?.link
-                                  ? 'text-[#42307D]'
-                                  : 'text-[#787878]'
-                              }`}
-                            >
+                                pathname === item?.link ? "text-[#42307D]" : "text-[#787878]"
+                              }`}>
                               <Link href={item?.link}>{item?.name}</Link>
                             </li>
                           ))}
@@ -89,8 +81,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
           <li>
             <a
               href="/contact"
-              className="bg-[#E47B0E] text-white rounded-[3px] py-3 px-8 font-[400] text-[13.5px] font-poppins"
-            >
+              className="bg-[#E47B0E] text-white rounded-md py-3 px-6 font-[400] text-[13.5px] font-poppins">
               Contact
             </a>
           </li>
