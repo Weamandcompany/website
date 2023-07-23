@@ -1,14 +1,18 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import MobileNavigation from './mobilenav';
 import { navLinks } from '@/utils/constants';
+import { Fade } from 'react-awesome-reveal';
+import { services } from '@/utils/constants';
 
 const Header = ({ bgcolor }: { bgcolor?: string }) => {
   const pathname = usePathname();
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <>
@@ -17,7 +21,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
           style={{
             background: bgcolor ? bgcolor : 'bg-white',
           }}
-          className={`lg:w-[60%] w-[90%] bg-white mx-auto rounded-[20px] overflow-hidden p-5 flex justify-between items-center`}
+          className={`lg:w-[60%] w-[90%] bg-white mx-auto rounded-[20px]  p-5 flex justify-between items-center`}
         >
           {bgcolor ? (
             <Image
@@ -36,9 +40,9 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
               className="h-[46px] w-auto"
             />
           )}
-          <div className="flex items-center gap-10  font-[600] text-sm font-roboto">
+          <div className="flex items-center gap-10  font-[600] text-sm font-roboto ">
             {navLinks?.map((item, i) => (
-              <li key={i}>
+              <li key={i} className="relative">
                 <Link
                   href={item?.link}
                   className={`${
@@ -46,13 +50,39 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
                     (item?.subLinks || []).some((link) =>
                       pathname.includes(link)
                     )
-                      ? 'px-6 border-b-[1px] border-[#E47B0E] pb-1 '
+                      ? 'px-6 border-b-[1px] border-[#E47B0E] pb-1  '
                       : 'px-6'
                   }`}
                   style={{ color: bgcolor ? 'white' : '#0C1239' }}
+                  onMouseEnter={() => {
+                    item?.name === 'Services' &&
+                      setIsDropdownOpen(!isDropdownOpen);
+                  }}
                 >
                   {item?.name}
                 </Link>
+                <div onMouseLeave={() => setIsDropdownOpen(!isDropdownOpen)}>
+                  {isDropdownOpen && item?.name === 'Services' && (
+                    <Fade>
+                      <div className="absolute border-t-[5px] border-t-[#42307D] w-[180px] top-10 -left-6 bg-white shadow px-5 py-4">
+                        <ul className="space-y-3">
+                          {services.map((item, i) => (
+                            <li
+                              key={i}
+                              className={` font-[400] text-sm ${
+                                pathname === item?.link
+                                  ? 'text-[#42307D]'
+                                  : 'text-[#787878]'
+                              }`}
+                            >
+                              <Link href={item?.link}>{item?.name}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </Fade>
+                  )}
+                </div>
               </li>
             ))}
           </div>
