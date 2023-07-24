@@ -235,6 +235,133 @@ export const facilityImages = [
   },
 ];
 
+export const projectZero = [
+  {
+    original: "/project-0/1.jpg",
+    thumbnail: "/project-0/1.jpg",
+  },
+  {
+    original: "/project-0/2.jpg",
+    thumbnail: "/project-0/2.jpg",
+  },
+  {
+    original: "/project-0/3.jpg",
+    thumbnail: "/project-0/3.jpg",
+  },
+  {
+    original: "/project-0/4.jpeg",
+    thumbnail: "/project-0/4.jpeg",
+  },
+  {
+    original: "/project-0/5.jpeg",
+    thumbnail: "/project-0/5.jpeg",
+  },
+  {
+    original: "/project-0/6.jpeg",
+    thumbnail: "/project-0/6.jpeg",
+  },
+  {
+    original: "/project-0/7.jpeg",
+    thumbnail: "/project-0/7.jpeg",
+  },
+];
+
+export const projectOne = [
+  {
+    original: "/project-1/1.jpeg",
+    thumbnail: "/project-1/1.jpeg",
+  },
+  {
+    original: "/project-1/2.jpjpeg",
+    thumbnail: "/project-1/2.jpjpeg",
+  },
+  {
+    original: "/project-1/3.jpjpeg",
+    thumbnail: "/project-1/3.jpjpeg",
+  },
+  {
+    original: "/project-1/4.jpjpeg",
+    thumbnail: "/project-1/4.jpjpeg",
+  },
+  {
+    original: "/project-1/5.jpeg",
+    thumbnail: "/project-1/5.jpeg",
+  },
+  {
+    original: "/project-1/6.jpeg",
+    thumbnail: "/project-1/6.jpeg",
+  },
+];
+
+export const projectTwo = [
+  {
+    original: "/project-0/1.JPG",
+    thumbnail: "/project-0/1.JPG",
+  },
+  {
+    original: "/project-0/2.jpg",
+    thumbnail: "/project-0/2.jpg",
+  },
+  {
+    original: "/project-0/3.jpg",
+    thumbnail: "/project-0/3.jpg",
+  },
+];
+
+export const projectThree = [
+  {
+    original: "/project-0/1.JPG",
+    thumbnail: "/project-0/1.JPG",
+  },
+  {
+    original: "/project-0/2.jpg",
+    thumbnail: "/project-0/2.jpg",
+  },
+  {
+    original: "/project-0/3.jpg",
+    thumbnail: "/project-0/3.jpg",
+  },
+];
+
+export const projectFour = [
+  {
+    original: "/project-0/1.jpg",
+    thumbnail: "/project-0/1.jpg",
+  },
+  {
+    original: "/project-0/2.jpg",
+    thumbnail: "/project-0/2.jpg",
+  },
+  {
+    original: "/project-0/3.jpg",
+    thumbnail: "/project-0/3.jpg",
+  },
+  {
+    original: "/project-0/4.jpg",
+    thumbnail: "/project-0/4.jpg",
+  },
+  {
+    original: "/project-0/5.jpeg",
+    thumbnail: "/project-0/5.jpeg",
+  },
+  {
+    original: "/project-0/6.jpeg",
+    thumbnail: "/project-0/6.jpeg",
+  },
+  {
+    original: "/project-0/7.jpeg",
+    thumbnail: "/project-0/7.jpeg",
+  },
+  {
+    original: "/project-0/8.jpeg",
+    thumbnail: "/project-0/8.jpeg",
+  },
+  {
+    original: "/project-0/8.jpeg",
+    thumbnail: "/project-0/8.jpeg",
+  },
+];
+
 export const deltaImages = [
   {
     original: "/images/delta/2.jpeg",
@@ -351,11 +478,85 @@ export const facilityGallery = [
   "/images/facility/10.JPG",
 ];
 
+export const projectZeroCollection = [
+  "/projects/project-0/1.jpg",
+  "/projects/project-0/2.jpg",
+  "/projects/project-0/4.jpeg",
+  "/projects/project-0/5.jpeg",
+  "/projects/project-0/6.jpeg",
+  "/projects/project-0/7.jpeg",
+];
+
+export const projectOneCollection = [
+  "/projects/project-1/1.jpeg",
+  "/projects/project-1/2.jpeg",
+  "/projects/project-1/3.jpeg",
+  "/projects/project-1/4.jpeg",
+  "/projects/project-1/5.jpeg",
+  "/projects/project-1/6.jpeg",
+];
+
+export const projectTwoCollection = [
+  "/projects/project-2/1.JPG",
+  "/projects/project-2/2.jpg",
+  "/projects/project-2/3.jpg",
+];
+
+export const projectThreeCollection = [
+  "/projects/project-3/1.JPG",
+  "/projects/project-3/2.jpg",
+  "/projects/project-3/3.jpg",
+];
+
+export const projectFourCollection = [
+  "/projects/project-4/1.jpg",
+  "/projects/project-4/2.jpg",
+  "/projects/project-4/3.jpg",
+  "/projects/project-4/4.jpg",
+  "/projects/project-4/5.jpeg",
+  "/projects/project-4/6.jpeg",
+  "/projects/project-4/7.jpeg",
+  "/projects/project-4/8.jpeg",
+  "/projects/project-4/8.jpeg",
+];
+
 export const collections = [
   {
     photos: facilityGallery,
     title: "Facilities models",
     subtitle:
       "Accurate and detailed facility models that bring your engineering projects to life. Our expert team of modelers and designers leverages cutting-edge technology and industry best practices to deliver high-quality facility models.",
+  },
+  {
+    photos: projectZeroCollection,
+    title:
+      "ENGINEERING: Update of Hazardous Area Classification and AsBuilt Documentation of Facilities in OML-26",
+    subtitle:
+      "NNPC E&P Limited in joint venture FHN Limited intends to carry-out update of hazardous area classification and As-Built documentation of facilities in OML 26.",
+  },
+  {
+    photos: projectOneCollection,
+    title: "ENGINEERING: Niger Delta Power Holding Company Limited",
+    subtitle:
+      "Procurement, Installation, Configuration, and Commissioning of Gas Metering Instruments (Transmitters, Gauges, Flow Computers, Gas Chromatographs, etc.) for Gas Metering stations and Power Plants at Geregu and Calabar.",
+  },
+  {
+    photos: projectTwoCollection,
+    title:
+      "FEED, DED, and Follow-on for Pipeline Infrastructure for Escravos Environs Power Supply Project",
+    subtitle:
+      "Development of FEED and Detailed Engineering Designs for Pipelines, Pressure Reduction, and Metering Systems, Construction support, Management, and As-built documentation for the Escravos Environs Power Supply Project.",
+  },
+  {
+    photos: projectThreeCollection,
+    title: "ENGINEERING: Detailed Engineering Design for EPC of the New Egbin Metering Station.",
+    subtitle: "Provision of FEED Verification and Detailed Engineering Design for the EPC project.",
+  },
+  {
+    photos: projectFourCollection,
+    title:
+      "ENGINEERING: Detailed Engineering Design for Rehabilitation/Upgrade of Delta IV Metering Station, Ughelli",
+    subtitle:
+      "Detailed Engineering Design for rehabilitation and upgrade of process equipment, field instruments, Fire and Gas Systems, Electrical installations, control and security building to a much modern status and also guarantee reliability of operations and security of the facility.",
   },
 ];

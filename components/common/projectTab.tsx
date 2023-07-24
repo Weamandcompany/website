@@ -8,7 +8,7 @@ interface ProjectTabProps {
   isActive: boolean;
   title?: string;
   description: string;
-  imageSrc: string;
+  imageSrc?: string | null;
   onClick: () => void;
   heading: string;
   setSelectedImage: React.Dispatch<React.SetStateAction<{ original: string; thumbnail: string }[]>>;
@@ -50,7 +50,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
               <Bounce cascade triggerOnce={true}>
                 <div className="lg:hidden block">
                   <Image
-                    src={imageSrc}
+                    src={imageSrc ?? "/images/placeholder.png"}
                     className="relative rounded-lg my-3"
                     width={0}
                     height={0}
@@ -71,7 +71,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
               <Bounce cascade triggerOnce={true}>
                 <div className="lg:block hidden">
                   <Image
-                    src={imageSrc}
+                    src={imageSrc ?? "/images/placeholder.png"}
                     className="absolute lg:top-[-150px] rounded-lg right-[15%]"
                     width={0}
                     height={0}

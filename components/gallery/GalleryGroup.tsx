@@ -15,8 +15,8 @@ export const GalleryGroup = ({
   return (
     <div className={cn("container mb-10", className)}>
       <div className="bg-[#0F1437] rounded-md grid grid-cols-1 gap-3 sm:gap-5 sm:grid-cols-12 py-4 sm:py-7 px-3 sm:px-5 md:px-12 mb-3">
-        <div className="sm:col-span-12 md:col-span-4">
-          <h3 className="text-white/80 font-semibold text-lg sm:text-2xl">{collection?.title}</h3>
+        <div className="sm:col-span-12 md:col-span-5">
+          <h3 className="text-white/80 font-semibold text-lg">{collection?.title}</h3>
         </div>
         <div className="sm:col-span-12 md:col-span-6">
           <p className="text-white/80 font-medium text-xs sm:text-sm line-clamp-2">

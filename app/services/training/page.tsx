@@ -40,7 +40,7 @@ const TrainingService = () => {
             </p>
 
             <Button
-              href="https://forms.google.com"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSckSb2izGWN7TfPPU5XNlxCvmLQOs3M1TUdCZk_G2ho-HyFQw/viewform?vc=0&c=0&w=1&flr=0"
               className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 mt-3">
               Register <Icon icon="ph:arrow-right-bold"></Icon>
             </Button>

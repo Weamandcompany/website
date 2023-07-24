@@ -212,26 +212,38 @@ const PolicySection = () => {
 
             <CommitCard
               title="Process approach"
-              description="As an organization, we recognize that achieving desired outcomes is best facilitated through
-              efficient management of activities and resources, by treating them as interconnected processes."
+              description="As an organisation, we understand that a desired result is achieved more efficiently when
+              activities and related resources are managed as a process or series of interconnected processes."
             />
 
             <CommitCard
               title="Leadership"
-              description="Our top management is dedicated to fostering an engaging work environment where everyone
-              collaborates to achieve organizational objectives."
+              description="Our top Management are committed to creating and maintaining a working environment in
+              which people become fully involved in achieving our objectives."
             />
 
             <CommitCard
               title="Improvement"
-              description="As a primary annual objective, we are committed to continually improving all aspects of our
-              Quality Management System."
+              description="We have committed to achieving continual improvement across all aspects of our Quality
+              Management System; it is one of our main annual objectives."
+            />
+
+            <CommitCard
+              title="Engagement of people"
+              description="As an organisation, we recognise that people are the essence of any good business and that their
+              full involvement enables their abilities to be used for mutual benefits."
             />
 
             <CommitCard
               title="Evidence-based decision making"
               description="As a company, we make decisions regarding our Quality Management System (QMS) only after
               carefully analyzing relevant data and information"
+            />
+
+            <CommitCard
+              title="Relationship management"
+              description="As an organisation, we have committed to only make decisions relating to our QMS following an
+              analysis of relevant data and information."
             />
           </div>
         </div>
