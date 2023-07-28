@@ -2,6 +2,7 @@
 
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
@@ -26,12 +27,12 @@ const HeroSection = () => {
               </p>
             </Slide>
             <div className="flex justify-center md:justify-start md:mb-0 mb-10">
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="mt-8 btn-yellow font-poppins flex items-center gap-2 w-fit hover:opacity-80 px-7">
                 Contact Us
                 <Icon icon="ph:arrow-right-bold"></Icon>
-              </a>
+              </Link>
             </div>
           </div>
 
