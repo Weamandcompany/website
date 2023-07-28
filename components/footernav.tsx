@@ -31,7 +31,7 @@ const Footernav = () => {
       <div>
         <h6 className="font-bold !text-white mb-6">GET IN TOUCH</h6>
         <div className="mb-4">
-          <p className="text-[13px] !text-white font-bold mb-2">Coporate Head Office</p>
+          <p className="text-[13px] !text-white font-bold mb-2">Corporate Head Office</p>
           <p className="text-[15px] font-normal leading-6">
             12 Daniel Yakwo close, 69(A)Road Gawrimpa II Estate, Federal Capital Territory, Abuja.
           </p>

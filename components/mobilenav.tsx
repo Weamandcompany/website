@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { Icon } from '@iconify/react';
-import Image from 'next/image';
-import { navLinks } from '@/utils/constants';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import React, { useState } from "react";
+import { Icon } from "@iconify/react";
+import Image from "next/image";
+import { navLinks } from "@/utils/constants";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MobileNavigation = () => {
   const pathname = usePathname();
@@ -23,7 +23,7 @@ const MobileNavigation = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Image
-                src={'/images/logo.svg'}
+                src={"/images/logo.svg"}
                 height={0}
                 width={0}
                 alt="logo"
@@ -31,15 +31,14 @@ const MobileNavigation = () => {
               />
             </div>
           </div>
-          <div className="flex md:hidden">
+          <div className="flex lg:hidden">
             <button
               className="inline-flex items-center justify-center p-1 rounded-md text-[#fff] hover:text-white hover:bg-[#E47B0E] bg-[#E47B0E]  focus:outline-none focus:bg-[#E47B0E] focus:text-white"
-              onClick={toggleMenu}
-            >
+              onClick={toggleMenu}>
               {isOpen ? (
-                <Icon icon={'ion:close-outline'} className="h-7 w-7" />
+                <Icon icon={"ion:close-outline"} className="h-7 w-7" />
               ) : (
-                <Icon icon={'quill:hamburger'} className="h-7 w-7" />
+                <Icon icon={"quill:hamburger"} className="h-7 w-7" />
               )}
             </button>
           </div>
@@ -55,22 +54,18 @@ const MobileNavigation = () => {
                     href={item?.link}
                     className={`${
                       pathname === item?.link ||
-                      (item?.subLinks || []).some((link) =>
-                        pathname.includes(link)
-                      )
-                        ? 'px-6 border-b-[1px] border-[#E47B0E] pb-1 '
-                        : 'px-6'
+                      (item?.subLinks || []).some((link) => pathname.includes(link))
+                        ? "px-6 border-b-[1px] border-[#E47B0E] pb-1 "
+                        : "px-6"
                     }`}
-                    onClick={toggleMenu}
-                  >
+                    onClick={toggleMenu}>
                     {item?.name}
                   </Link>
                 </div>
               ))}
               <Link
                 href="/contact"
-                className="bg-[#E47B0E] text-white rounded-[3px] py-3 px-8 font-[400] text-[13.5px] font-poppins"
-              >
+                className="bg-[#E47B0E] text-white rounded-[3px] py-3 px-8 font-[400] text-[13.5px] font-poppins">
                 Contact
               </Link>
             </div>

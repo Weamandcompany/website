@@ -59,6 +59,7 @@ export const navLinks = [
   },
   { name: "Projects", link: "/projects" },
   { name: "Gallery", link: "/gallery" },
+  { name: "Social Responsibility", link: "/social-responsibility" },
 ];
 
 export const services = [
@@ -463,6 +464,10 @@ export const quickLinks = [
     name: "Contact Us",
     link: "/contact",
   },
+  {
+    name: "Social Responsibility",
+    link: "/contact",
+  },
 ];
 
 export const facilityGallery = [
@@ -559,4 +564,13 @@ export const collections = [
     subtitle:
       "Detailed Engineering Design for rehabilitation and upgrade of process equipment, field instruments, Fire and Gas Systems, Electrical installations, control and security building to a much modern status and also guarantee reliability of operations and security of the facility.",
   },
+];
+
+export const csrImages = [
+  "/images/csr/photo-1.jpg",
+  "/images/csr/photo-4.jpg",
+  "/images/csr/photo-2.jpg",
+  "/images/csr/photo-5.jpg",
+  "/images/csr/photo-6.jpg",
+  "/images/csr/photo-7.jpg",
 ];

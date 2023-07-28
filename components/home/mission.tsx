@@ -42,8 +42,8 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]"> Our </span>Mission
           </Title>
           <Value>
-            To provide a diverse range of client focused and cost-effective engineering & software
-            solutions in the oil & gas, manufacturing, and maritime industry.
+            Our mission is to improve our clients efficiency by providing optimal solutions that
+            achieve operational excellence at the most competitive cost.
           </Value>
         </Wrapper>
       </SwiperSlide>
@@ -53,8 +53,8 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]"> Our </span>Vision
           </Title>
           <Value>
-            To be the reliable indigenous company in the West African sub-region, delivering
-            world-class engineering services and simulation software to the Oil and Gas industry.
+            A reliable indigenous company in the West African sub-region, renowned for delivering
+            exceptional services and solutions across various industry sectors.
           </Value>
         </Wrapper>
       </SwiperSlide>
@@ -64,10 +64,12 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]">Our</span> Core Values
           </Title>
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:mb-0 mb-8 text-xs lg:text-base">
-            <CoreValueItem icon="zondicons:checkmark" text="Commitment to Quality Service" />
             <CoreValueItem icon="zondicons:checkmark" text="Integrity" />
-            <CoreValueItem icon="zondicons:checkmark" text="Culture of Continuous Improvement" />
-            <CoreValueItem icon="zondicons:checkmark" text="Building Lasting Relationships" />
+            <CoreValueItem icon="zondicons:checkmark" text="Innovation" />
+            <CoreValueItem icon="zondicons:checkmark" text="Teamwork" />
+            <CoreValueItem icon="zondicons:checkmark" text="Continuous growth" />
+            <CoreValueItem icon="zondicons:checkmark" text="Drive" />
+            <CoreValueItem icon="zondicons:checkmark" text="Quality & Customer Satisfaction" />
           </div>
         </Wrapper>
       </SwiperSlide>
