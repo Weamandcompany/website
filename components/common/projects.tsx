@@ -7,10 +7,6 @@ import ProjectTab from "./projectTab";
 import { Icon } from "@iconify/react";
 import ImageCarousel from "./imageCarousel";
 import {
-  calabarImages,
-  deltaImages,
-  facilityImages,
-  omlImages,
   trainingImages,
   projectZero,
   projectOne,
@@ -27,7 +23,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
     }[]
   >([]);
 
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabIndex: number) => {
     setActiveTab(tabIndex);

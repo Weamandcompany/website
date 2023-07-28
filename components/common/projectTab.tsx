@@ -70,19 +70,21 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
             {isActive && (
               <Bounce cascade triggerOnce={true}>
                 <div className="lg:block hidden">
-                  <Image
-                    src={imageSrc ?? "/images/placeholder.png"}
-                    className="absolute lg:top-[-150px] rounded-lg right-[15%]"
-                    width={0}
-                    height={0}
-                    style={{
-                      width: "37%",
-                      height: "210px",
-                      objectFit: "cover",
-                    }}
-                    alt="projectImage"
-                    onClick={() => setSelectedImage(images)}
-                  />
+                  {imageSrc && (
+                    <Image
+                      src={imageSrc ?? "/images/placeholder.png"}
+                      className="absolute lg:top-[-150px] rounded-lg right-[15%]"
+                      width={0}
+                      height={0}
+                      style={{
+                        width: "37%",
+                        height: "210px",
+                        objectFit: "cover",
+                      }}
+                      alt="projectImage"
+                      onClick={() => setSelectedImage(images)}
+                    />
+                  )}
                 </div>
               </Bounce>
             )}

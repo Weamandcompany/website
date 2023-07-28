@@ -32,10 +32,10 @@ const SimulationStudiesService = () => {
               to gain critical insights, optimize designs, and make informed decisions. Our team of
               skilled engineers combines technical expertise with innovative thinking to simulate
               real-world scenarios and accurately predict the behavior and performance of complex
-              systems. Whether it&apos;s structural analysis, fluid dynamics, or electromagnetic
+              systems. Whether it is structural analysis, fluid dynamics, or electromagnetic
               simulations, our simulation studies empower clients to mitigate risks, enhance
               efficiency, and drive sustainable growth. Step into the future of engineering with us
-              and unlock the potential of simulation studies to solve tomorrow&apos;s challenges
+              and unlock the potentials of simulation studies to solve tomorrow&apos;s challenges
               today.
             </p>
           </Slide>
