@@ -17,7 +17,6 @@ const HeroSupport = () => {
     { name: "Certificates", link: "certificates" },
     { name: "HSE Policy", link: "hse-policy" },
     { name: "Quality Policy Statement", link: "policy-Statement" },
-    { name: "social responsibility", link: "cooperate-social-responsibility" },
   ]);
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -125,15 +124,6 @@ const HeroSupport = () => {
                       We also offer data archiving and digitization services.
                     </p>
                   </div>
-                </div>
-
-                <div className="flex justify-center md:justify-start">
-                  <a
-                    href="#"
-                    className="mt-8 md:ml-10 btn-yellow font-poppins flex items-center gap-2 w-fit hover:opacity-80 px-7">
-                    Learn More
-                    <Icon icon="ph:arrow-right-bold"></Icon>
-                  </a>
                 </div>
               </Slide>
             </div>

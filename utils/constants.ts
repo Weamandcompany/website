@@ -503,13 +503,13 @@ export const projectOneCollection = [
 ];
 
 export const projectTwoCollection = [
-  '/projects/project-2/1.JPG',
+  '/projects/project-2/1.jpg',
   '/projects/project-2/2.jpg',
   '/projects/project-2/3.jpg',
 ];
 
 export const projectThreeCollection = [
-  '/projects/project-3/1.JPG',
+  '/projects/project-3/1.jpg',
   '/projects/project-3/2.jpg',
   '/projects/project-3/3.jpg',
 ];

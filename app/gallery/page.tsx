@@ -6,7 +6,7 @@ import { collections } from "@/utils/constants";
 import { GalleryGroup } from "@/components/gallery/GalleryGroup";
 
 export const metadata: Metadata = {
-  title: " About | Weam",
+  title: "Gallery | Weam",
 };
 
 const About = () => {
