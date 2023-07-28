@@ -502,13 +502,13 @@ export const projectOneCollection = [
 ];
 
 export const projectTwoCollection = [
-  "/projects/project-2/1.JPG",
+  "/projects/project-2/1.jpg",
   "/projects/project-2/2.jpg",
   "/projects/project-2/3.jpg",
 ];
 
 export const projectThreeCollection = [
-  "/projects/project-3/1.JPG",
+  "/projects/project-3/1.jpg",
   "/projects/project-3/2.jpg",
   "/projects/project-3/3.jpg",
 ];
@@ -575,6 +575,6 @@ export const csrImages = [
   "/images/csr/photo-9.webp",
   "/images/csr/photo-10.webp",
   "/images/csr/photo-6.jpg",
-   "/images/csr/photo-7.jpg",
-   "/images/csr/photo-11.webp",
+  "/images/csr/photo-7.jpg",
+  "/images/csr/photo-11.webp",
 ];
