@@ -72,7 +72,7 @@ const PolicySection = () => {
 
           <div className="rounded-md bg-white shadow-air p-1">
             <Image
-              src="/images/NMDPRA_LOGO.png"
+              src="/images/nmd.png"
               width={200}
               height={100}
               className="w-auto h-[60px] object-contain"
@@ -82,7 +82,7 @@ const PolicySection = () => {
 
           <div className="rounded-md bg-white shadow-air p-1">
             <Image
-              src="/images/NUPRC_LOGO.jpg"
+              src="/images/nuprc.png"
               width={200}
               height={100}
               className="w-auto h-[60px] object-contain"
