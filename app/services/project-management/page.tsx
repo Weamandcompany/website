@@ -24,7 +24,7 @@ const ProjectManagementService = () => {
           />
           <Slide cascade triggerOnce={true}>
             <h6 className="text-[#1C1C1C] lg:text-[24px] text-[20px] font-[600] lg:mb-3 mb-1">
-              Efficiently Navigate the Path to Success: Expert Project Management Solutions.{" "}
+              Expert Project Management Solutions.{" "}
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
               Weam and Company Limited excels in project management, delivering exceptional

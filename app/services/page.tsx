@@ -38,24 +38,19 @@ const Services = () => {
                   />
                 </Fade>
                 <h6 className=" font-[900] lg:text-[40px] text-[25px] lg:text-left text-center leading-[1.4]">
-                  Unleashing Possibilities: Our Dynamic Services at Weam and
-                  Company Limited
+                  Our Dynamic Services at Weam and Company Limited
                 </h6>
                 <p className="lg:text-[16px] lg:my-8 my-4 lg:leading-9 lg:text-left text-center">
-                  Our dynamic services at Weam and Company Limited empower your
-                  success. With a customer-centric approach, we deliver tailored
-                  solutions for digital transformation, process optimization,
-                  and more. Partner with our experienced team to unlock new
-                  opportunities and drive growth. Explore our comprehensive
-                  services today and experience the power of Weam and Company
-                  Limited.
+                  With a customer-centric approach, we deliver tailored solutions for digital
+                  transformation, process optimization, and more. Partner with our experienced team
+                  to unlock new opportunities and drive growth. Explore our comprehensive services
+                  today and experience the power of Weam and Company Limited.
                 </p>
 
                 <div className="flex lg:justify-start justify-center">
                   <Button
                     href="/contact"
-                    className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 "
-                  >
+                    className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 ">
                     Contact Us <Icon icon="ph:arrow-right-bold"></Icon>
                   </Button>
                 </div>

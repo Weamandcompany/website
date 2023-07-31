@@ -63,7 +63,7 @@ export default SoftwareServices;
 
 const softwares = [
   {
-    title: "Aspen Technology Software",
+    title: "Aspen Technology Inc Software Solutions",
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -141,13 +141,16 @@ const softwares = [
           <div>Planning . Execution . Reserves</div>
           <ul className="list-disc list-inside">
             <li>Planning Space</li>
-            <li>esi.manage</li>
             <li>petroVR</li>
             <li>enersight</li>
             <li>Val NAV</li>
             <li>Aucerna Execute</li>
             <li>Aucerna Reserves</li>
             <li>Aucerna Regimes</li>
+            <li>Portfolio Management</li>
+            <li>Previso</li>
+            <li>Dawinci</li>
+            <li>Energy Component and Flowcal</li>
           </ul>
         </div>
       </>

@@ -82,7 +82,7 @@ const HeroSupport = () => {
                   Excellence Powered By Innovation
                 </h6>
                 <h3 className="text-wdark font-nunito font-black leading-normal text-2xl md:text-3xl mb-2 px-4 md:px-0">
-                  Driving Excellence: Unleashing the Power of Seamless Operations.
+                  Unleashing the Power of Seamless Operations.
                 </h3>
 
                 <div className="flex flex-col gap-y-5 mt-10">

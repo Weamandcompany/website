@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { Slide } from 'react-awesome-reveal';
-import tw from 'tailwind-styled-components';
-import ProjectTab from './projectTab';
-import { Icon } from '@iconify/react';
-import ImageCarousel from './imageCarousel';
+import React, { useState } from "react";
+import { Slide } from "react-awesome-reveal";
+import tw from "tailwind-styled-components";
+import ProjectTab from "./projectTab";
+import { Icon } from "@iconify/react";
+import ImageCarousel from "./imageCarousel";
 import {
   trainingImages,
   projectZero,
@@ -13,7 +13,7 @@ import {
   projectTwo,
   projectThree,
   projectFour,
-} from '@/utils/constants';
+} from "@/utils/constants";
 
 const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
   const [selectedImage, setSelectedImage] = useState<
@@ -42,9 +42,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
       <div className="bg-bgblue bg-no-repeat bg-cover lg:px-32 px-5 lg:py-16 py-12">
         {showHeader && (
           <div className="flex justify-between items-center font-roboto">
-            <h6 className="font-[700] lg:text-[30px] text-[20px] text-white">
-              Latest Projects
-            </h6>
+            <h6 className="font-[700] lg:text-[30px] text-[20px] text-white">Recent Projects</h6>
             <Btn href="/projects" className="">
               View All Projects
             </Btn>
@@ -187,12 +185,10 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
         {selectedImage?.length > 0 && (
           <div
             className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-50"
-            onClick={handleCloseModal}
-          >
+            onClick={handleCloseModal}>
             <div
               onClick={handleCarouselClick}
-              className="relative lg:w-[45%] w-[90%] lg:left-[30%] md:left-[25%] left-[5%]"
-            >
+              className="relative lg:w-[45%] w-[90%] lg:left-[30%] md:left-[25%] left-[5%]">
               <ImageCarousel items={selectedImage} />
             </div>
             <button className="relative flex justify-end lg:top-[-30%] w-full -top-[25%] right-8 lg:right-[20%] cursor-pointer">

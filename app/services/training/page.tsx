@@ -24,7 +24,7 @@ const TrainingService = () => {
           />
           <Slide cascade triggerOnce={true}>
             <h6 className="text-[#1C1C1C] lg:text-[24px] text-[20px] font-[600] lg:mb-3 mb-1">
-              Unlock Your Potential: Service Training Excellence by Weam and Company Limited{" "}
+              Unlock Your Potentials through Excellent Training on Our Services.
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
               At Weam & Company Limited, we offer top-notch service training programs that empower

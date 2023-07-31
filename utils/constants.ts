@@ -569,11 +569,7 @@ export const csrImages = [
   "/images/csr/photo-1.jpg",
   "/images/csr/photo-4.jpg",
   "/images/csr/photo-5.jpg",
-  "/images/csr/photo-8.webp",
   "/images/csr/photo-2.jpg",
-  "/images/csr/photo-9.webp",
-  "/images/csr/photo-10.webp",
   "/images/csr/photo-6.jpg",
   "/images/csr/photo-7.jpg",
-  "/images/csr/photo-11.webp",
 ];
