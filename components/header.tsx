@@ -23,7 +23,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
             background: bgcolor ? bgcolor : "bg-white",
           }}
           className={cn(
-            "lg:w-[80%] w-[90%] bg-white mx-auto rounded-[20px] p-5 flex justify-between items-center",
+            "lg:w-[80%] w-[90%] bg-white mx-auto rounded-[20px] px-5 py-2 flex justify-between items-center",
             bgcolor ? "" : "shadow-light"
           )}>
           {bgcolor ? (
@@ -32,7 +32,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
               height={0}
               width={0}
               alt="logo"
-              className="h-[46px] w-auto"
+              className="h-[70px] w-auto"
             />
           ) : (
             <Image
@@ -40,7 +40,7 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
               height={0}
               width={0}
               alt="logo"
-              className="h-[46px] w-auto"
+              className="h-[70px] w-auto"
             />
           )}
           <div className="flex items-center md:gap-x-3.5 xl:gap-x-8 gap-y-10 font-[600] text-sm font-roboto ">

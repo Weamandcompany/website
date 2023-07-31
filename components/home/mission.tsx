@@ -63,13 +63,15 @@ const HomeMission = () => {
           <Title>
             <span className="text-[#C9D0FC78]">Our</span> Core Values
           </Title>
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 lg:mb-0 mb-8 text-xs lg:text-base">
-            <CoreValueItem icon="zondicons:checkmark" text="Integrity" />
-            <CoreValueItem icon="zondicons:checkmark" text="Innovation" />
-            <CoreValueItem icon="zondicons:checkmark" text="Teamwork" />
-            <CoreValueItem icon="zondicons:checkmark" text="Continuous growth" />
-            <CoreValueItem icon="zondicons:checkmark" text="Drive" />
-            <CoreValueItem icon="zondicons:checkmark" text="Quality & Customer Satisfaction" />
+          <div className="flex justify-center">
+            <div className="max-w-md grid lg:grid-cols-2 grid-cols-1 gap-4 lg:mb-0 mb-8 text-xs lg:text-base">
+              <CoreValueItem icon="zondicons:checkmark" text="Integrity" />
+              <CoreValueItem icon="zondicons:checkmark" text="Innovation" />
+              <CoreValueItem icon="zondicons:checkmark" text="Teamwork" />
+              <CoreValueItem icon="zondicons:checkmark" text="Continuous growth" />
+              <CoreValueItem icon="zondicons:checkmark" text="Drive" />
+              <CoreValueItem icon="zondicons:checkmark" text="Quality & Customer Satisfaction" />
+            </div>
           </div>
         </Wrapper>
       </SwiperSlide>
