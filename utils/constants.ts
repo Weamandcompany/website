@@ -59,7 +59,6 @@ export const navLinks = [
   },
   { name: "Projects", link: "/projects" },
   { name: "Gallery", link: "/gallery" },
-  { name: "Social Responsibility", link: "/social-responsibility" },
 ];
 
 export const services = [
@@ -466,7 +465,7 @@ export const quickLinks = [
   },
   {
     name: "Social Responsibility",
-    link: "/contact",
+    link: "/about#social-responsibility",
   },
 ];
 

@@ -17,6 +17,7 @@ const HeroSupport = () => {
     { name: "Certificates", link: "certificates" },
     { name: "HSE Policy", link: "hse-policy" },
     { name: "Quality Policy Statement", link: "policy-Statement" },
+    { name: "Corporate Social Responsibility", link: "social-responsibility" },
   ]);
 
   const [activeIndex, setActiveIndex] = useState(0);

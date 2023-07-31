@@ -51,8 +51,8 @@ const Header = ({ bgcolor }: { bgcolor?: string }) => {
                   className={`${
                     pathname === item?.link ||
                     (item?.subLinks || []).some((link) => pathname.includes(link))
-                      ? "px-1.5 border-b-[2px] border-[#E47B0E] pb-2.5"
-                      : "px-1.5"
+                      ? "px-3 border-b-[2px] border-[#E47B0E] pb-2.5"
+                      : "px-3"
                   }`}
                   style={{ color: bgcolor ? "white" : "#0C1239" }}
                   onMouseEnter={() => {

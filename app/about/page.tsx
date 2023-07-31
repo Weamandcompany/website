@@ -5,6 +5,8 @@ import HeroSupport from "@/components/about/HeroSupport";
 import PageLayout from "@/layouts/PageLayout";
 import PolicySection from "@/components/about/PolicySection";
 import ClientSection from "@/components/about/ClientSection";
+import HomeMission from "@/components/home/mission";
+import CorporateSocial from "@/components/about/CorporateSocial";
 
 export const metadata: Metadata = {
   title: " About | Weam",
@@ -18,6 +20,10 @@ const About = () => {
         <HeroSupport />
         <ClientSection />
         <PolicySection />
+        <CorporateSocial />
+        <section className="pt-20 pb-16">
+          <HomeMission />
+        </section>
       </div>
     </PageLayout>
   );

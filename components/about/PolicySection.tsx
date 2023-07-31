@@ -248,10 +248,6 @@ const PolicySection = () => {
           </div>
         </div>
       </section>
-
-      <section className="pt-20 pb-16">
-        <HomeMission />
-      </section>
     </>
   );
 };
