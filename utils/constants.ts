@@ -573,3 +573,10 @@ export const csrImages = [
   "/images/csr/photo-6.jpg",
   "/images/csr/photo-7.jpg",
 ];
+
+export const officeImages = [
+  "/images/csr/photo-11.webp",
+  "/images/csr/photo-10.webp",
+  "/images/csr/photo-8.webp",
+  "/images/csr/photo-9.webp",
+];
