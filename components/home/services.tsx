@@ -10,13 +10,12 @@ const HomeServices: React.FC = () => {
     <div className="bg-[#F9F4FF] lg:px-32 px-5 lg:py-20 py-10 mt-14">
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-14 gap-6">
         <h6 className="text-[#0C1239] font-nunito font-[900] lg:text-[32px] text-[25px]">
-          Efficiency at its Finest: Streamlining Processes for Optimal Results.
+          Streamlining Processes for Optimal Results.
         </h6>
         <p className="text-[#61657E] font-roboto font-[600] lg:text-[16px] leading-[2]">
-          &ldquo;Unleashing operational excellence through streamlined
-          processes, cutting-edge technology, and a skilled workforce. We exceed
-          expectations and drive results with a proven track record of
-          success.&rdquo;
+          &ldquo;Unleashing operational excellence through streamlined processes, cutting-edge
+          technology, and a skilled workforce. We exceed expectations and drive results with a
+          proven track record of success.&rdquo;
         </p>
       </div>
 
@@ -46,8 +45,7 @@ const HomeServices: React.FC = () => {
       <div className="flex justify-end">
         <Link
           href="/services"
-          className="font-poppins text-[14px] font-[400] mb-8 hover:underline"
-        >
+          className="font-poppins text-[14px] font-[400] mb-8 text-[#E47B0E] hover:underline">
           View more
         </Link>
       </div>

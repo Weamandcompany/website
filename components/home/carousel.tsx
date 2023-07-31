@@ -130,6 +130,6 @@ const HomeCarousel = () => {
   );
 };
 
-const Button = tw.a`bg-[#E47B0E] text-white rounded-[3px] lg:py-3 lg:px-8 py-2  px-3 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
+const Button = tw.a`bg-[#E47B0E] cursor-pointer text-white rounded-[3px] lg:py-3 lg:px-8 py-2  px-3 font-[400] text-[13.5px] font-poppins flex items-center gap-2 w-fit hover:opacity-80`;
 
 export default HomeCarousel;

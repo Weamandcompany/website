@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { Icon } from '@iconify/react';
-import Image from 'next/image';
-import React from 'react';
-import { Fade, Slide } from 'react-awesome-reveal';
-import tw from 'tailwind-styled-components';
+import { Icon } from "@iconify/react";
+import Image from "next/image";
+import React from "react";
+import { Fade, Slide } from "react-awesome-reveal";
+import tw from "tailwind-styled-components";
 
 const HomeAbout = () => {
   return (
     <div className="bg-bgabout bg-no-repeat bg-cover lg:py-20 py-12 lg:mt-0 mt-12">
       <div className="lg:px-24 px-5 grid lg:grid-cols-2 grid-cols-1 gap-16  items-center">
         <Slide cascade triggerOnce={true}>
-          {' '}
+          {" "}
           <div className="lg:w-[85%]">
             <h6 className="text-[#E47B0E] lg:text-[15px] text-sm font-poppins font-[500] mb-3">
               About Our Company
@@ -20,10 +20,9 @@ const HomeAbout = () => {
               WEAM AND COMPANY LIMITED
             </p>
             <p className="text-sm font-nunito mb-6 leading-[2.5]">
-              Weam and Company Limited, established in 1985, is an ISO 9001:2015
-              and COREN certified Engineering, Procurement, Construction,
-              Installation and Commissioning (EPCIC) company, providing a
-              diverse range of client-focused and cost-effective engineering
+              Weam and Company Limited, established in 1985, is an ISO 9001:2015 and COREN certified
+              Engineering, Procurement, Construction, Installation and Commissioning (EPCIC)
+              company, providing a diverse range of client-focused and cost-effective engineering
               solutions in the oil, gas and manufacturing industries.
             </p>
             <Button href="/about">
@@ -34,12 +33,12 @@ const HomeAbout = () => {
         </Slide>
 
         <Fade triggerOnce={true}>
-          {' '}
+          {" "}
           <Image
-            src="/images/experience.svg"
+            src="/images/home-box.svg"
             width={0}
             height={0}
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: "100%", height: "auto" }}
             alt={`experience`}
             className="lg:mt-12"
           />
