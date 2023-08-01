@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Gallery | Weam",
 };
 
-const About = () => {
+const Gallery = () => {
   return (
     <PageLayout>
       <div className="lg:mt-[7rem] md:mt-[2rem] lg:pt-0 pt-[4.5rem] relative px-0">
@@ -25,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Gallery;

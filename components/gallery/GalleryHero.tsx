@@ -1,6 +1,5 @@
 "use client";
 
-import { officeImages } from "@/utils/constants";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +26,7 @@ const GalleryHero = () => {
           </div>
 
           <div>
-            <ResponsiveMasonry columnsCountBreakPoints={{ 320: 4, 768: 2 }}>
+            {/* <ResponsiveMasonry columnsCountBreakPoints={{ 320: 4, 768: 2 }}>
               <Masonry gutter="12px">
                 {officeImages?.map((image, i) => (
                   <div key={i} className="rounded-md bg-slate-200 overflow-hidden">
@@ -43,7 +42,7 @@ const GalleryHero = () => {
                   </div>
                 ))}
               </Masonry>
-            </ResponsiveMasonry>
+            </ResponsiveMasonry> */}
           </div>
         </div>
       </div>
