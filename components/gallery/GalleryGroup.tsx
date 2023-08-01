@@ -32,7 +32,7 @@ export const GalleryGroup = ({
               <Image
                 key={i}
                 src={image}
-                className="w-full h-full block"
+                className="w-full h-full block min-h-[150px]"
                 alt=""
                 width={200}
                 height={200}

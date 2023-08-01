@@ -10,7 +10,7 @@ const ServiceSidebar = () => {
 
   return (
     <div className="bg-white px-6 pt-4 pb-2 shadow-lg">
-      <h6 className="text-[#0C1239] text-[19px] font-roboto font-[500]">Our Service</h6>
+      <h6 className="text-[#0C1239] text-[19px] font-roboto font-[500]">Our Services</h6>
       <hr className="w-[15%] bg-[#0C1239] h-[1px] border-0" />
 
       <div className="mt-5 font-[500]">

@@ -464,7 +464,7 @@ export const quickLinks = [
     link: "/contact",
   },
   {
-    name: "Social Responsibility",
+    name: "Corporate Social Responsibility",
     link: "/about#social-responsibility",
   },
 ];
@@ -486,7 +486,7 @@ export const projectZeroCollection = [
   "/projects/project-0/1.jpg",
   "/projects/project-0/2.jpg",
   "/projects/project-0/4.jpeg",
-  "/projects/project-0/5.jpeg",
+  "/projects/project-0/5.jpg",
   "/projects/project-0/6.jpeg",
   "/projects/project-0/7.jpeg",
 ];
@@ -524,9 +524,21 @@ export const projectFourCollection = [
   "/projects/project-4/8.jpeg",
 ];
 
-export const officeCollection = ["/images/csr/photo-11.webp", "/images/csr/photo-8.webp"];
+export const officeCollection = [
+  "/images/group/office-2.webp",
+  "/images/group/office-1.webp",
+  "/images/group/boardroom.webp",
+  "/images/group/reception.webp",
+  "/images/group/frontdesk.webp",
+];
 
-export const trainingCollection = ["/images/csr/photo-10.webp", "/images/csr/photo-9.webp"];
+export const trainingCollection = [
+  "/images/group/training-4.webp",
+  "/images/training-1.jpg",
+  "/images/group/training-3.webp",
+  "/images/training-2.jpg",
+  "/images/training-3.jpg",
+];
 
 export const collections = [
   {
@@ -536,8 +548,8 @@ export const collections = [
   },
   {
     photos: trainingCollection,
-    title: "Training blocks",
-    subtitle: "Our training blocks",
+    title: "Training Facility",
+    subtitle: "",
   },
   {
     photos: facilityGallery,
