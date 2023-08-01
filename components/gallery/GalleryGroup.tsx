@@ -25,7 +25,7 @@ export const GalleryGroup = ({
         </div>
       </div>
 
-      <ResponsiveMasonry columnsCountBreakPoints={{ 320: 2, 768: 4, 1024: 5 }}>
+      {/* <ResponsiveMasonry columnsCountBreakPoints={{ 320: 2, 768: 4, 1024: 5 }}>
         <Masonry gutter="12px">
           {collection?.photos?.map((image, i) => (
             <div key={i} className="rounded-md bg-slate-200 overflow-hidden">
@@ -41,7 +41,23 @@ export const GalleryGroup = ({
             </div>
           ))}
         </Masonry>
-      </ResponsiveMasonry>
+      </ResponsiveMasonry> */}
+
+      <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-col-3 grid-cols-2 gap-4">
+        {collection?.photos?.map((image, i) => (
+          <div key={i} className="rounded-md bg-slate-200 overflow-hidden h-full w-full">
+            <Image
+              key={i}
+              src={image}
+              className="w-full h-full object-cover"
+              alt=""
+              width={200}
+              height={200}
+              priority
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
