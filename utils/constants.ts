@@ -532,7 +532,7 @@ export const collections = [
   {
     photos: officeCollection,
     title: "Our office blocks",
-    subtitle: "Our abuja and port harcout office blocks",
+    subtitle: "Our abuja and port harcourt office blocks",
   },
   {
     photos: trainingCollection,
