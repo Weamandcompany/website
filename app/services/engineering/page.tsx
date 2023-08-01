@@ -23,7 +23,7 @@ const EngineeringService = () => {
           />
           <Slide cascade triggerOnce={true}>
             <h6 className="text-[#1C1C1C] lg:text-[24px] text-[20px] font-[600] lg:mb-3 mb-1">
-              Engineering Excellence: Transforming Ideas into Reality
+              Transforming Ideas into Reality
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
               We have an in-house multi-disciplined engineering team with an average of 25 years
