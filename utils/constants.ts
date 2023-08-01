@@ -524,7 +524,21 @@ export const projectFourCollection = [
   "/projects/project-4/8.jpeg",
 ];
 
+export const officeCollection = ["/images/csr/photo-11.webp", "/images/csr/photo-8.webp"];
+
+export const trainingCollection = ["/images/csr/photo-10.webp", "/images/csr/photo-9.webp"];
+
 export const collections = [
+  {
+    photos: officeCollection,
+    title: "Our office blocks",
+    subtitle: "Our abuja and port harcout office blocks",
+  },
+  {
+    photos: trainingCollection,
+    title: "Training blocks",
+    subtitle: "Our training blocks",
+  },
   {
     photos: facilityGallery,
     title: "Facilities models",
@@ -572,11 +586,4 @@ export const csrImages = [
   "/images/csr/photo-2.jpg",
   "/images/csr/photo-6.jpg",
   "/images/csr/photo-7.jpg",
-];
-
-export const officeImages = [
-  "/images/csr/photo-11.webp",
-  "/images/csr/photo-10.webp",
-  "/images/csr/photo-8.webp",
-  "/images/csr/photo-9.webp",
 ];

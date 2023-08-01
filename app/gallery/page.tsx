@@ -14,7 +14,7 @@ const About = () => {
   return (
     <PageLayout>
       <div className="lg:mt-[7rem] md:mt-[2rem] lg:pt-0 pt-[4.5rem] relative px-0">
-        <GalleryHero />
+        {/* <GalleryHero /> */}
         <div className="py-20 px-4 xs:px-5 sm:px-6">
           {collections.map((collection, index) => (
             <GalleryGroup key={index} collection={collection} />
