@@ -15,10 +15,10 @@ const GalleryHero = () => {
           <div className="col-span-4">
             <Slide duration={700} triggerOnce={true}>
               <h3 className="text-wdark text-center md:text-left font-nunito font-extrabold lg:text-[40px] text-[25px] leading-[1.4] mb-4">
-                Inside Weam and Company
+                Inside Weam and Company Limited
               </h3>
 
-              <p className="font-nunito text-[14px] text-center md:text-left leading-[2.5] sm:text-[15px] sm:leading-[2.5] text-wdark font-semibold">
+              <p className="font-nunito text-[14px] text-center md:text-left leading-[2.5] sm:text-[15px] sm:leading-[2.2] text-wdark font-semibold">
                 Keep in touch with all activities going on at Weam and Company Limited.
               </p>
             </Slide>
@@ -38,7 +38,7 @@ const GalleryHero = () => {
                       priority
                     />
                   </div>
-                  <div className="text-xs sm:text-sm bg-black/70 backdrop-blur-sm py-1 sm:py-2 px-2 sm:px-4 rounded text-white font-medium absolute m-2 bottom-0 left-0 z-[5]">
+                  <div className="text-xs sm:text-sm bg-[#0F1437] py-1 sm:py-2 px-2 sm:px-4 rounded text-white font-medium absolute m-2 bottom-0 left-0 z-[5]">
                     Abuja Office
                   </div>
                 </div>
@@ -53,7 +53,7 @@ const GalleryHero = () => {
                       priority
                     />
                   </div>
-                  <div className="text-xs sm:text-sm bg-black/70 backdrop-blur-sm py-1 sm:py-2 px-2 sm:px-4 rounded text-white font-medium absolute m-2 bottom-0 left-0 z-[5]">
+                  <div className="text-xs sm:text-sm bg-[#0F1437] py-1 sm:py-2 px-2 sm:px-4 rounded text-white font-medium absolute m-2 bottom-0 left-0 z-[5]">
                     Port Harcourt Office
                   </div>
                 </div>
