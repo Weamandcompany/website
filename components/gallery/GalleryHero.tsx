@@ -69,9 +69,8 @@ const GalleryHero = () => {
             </ResponsiveMasonry>
             <div className="grid grid-cols-3 lg:grid-cols-5 gap-[8px] mt-[8px]">
               {officeCollection.map((image, i) => (
-                <div className="rounded-md bg-slate-200 overflow-hidden">
+                <div key={i} className="rounded-md bg-slate-200 overflow-hidden">
                   <Image
-                    key={i}
                     src={image}
                     className="w-full h-full block"
                     alt=""
