@@ -71,6 +71,7 @@ const GalleryHero = () => {
               {officeCollection.map((image, i) => (
                 <div className="rounded-md bg-slate-200 overflow-hidden">
                   <Image
+                    key={i}
                     src={image}
                     className="w-full h-full block"
                     alt=""
