@@ -541,11 +541,11 @@ export const trainingCollection = [
 ];
 
 export const collections = [
-  {
-    photos: officeCollection,
-    title: "Our office blocks",
-    subtitle: "Our Abuja and Port Harcourt office blocks",
-  },
+  //   {
+  //     photos: officeCollection,
+  //     title: "Our office blocks",
+  //     subtitle: "Our Abuja and Port Harcourt office blocks",
+  //   },
   {
     photos: trainingCollection,
     title: "Training Facility",

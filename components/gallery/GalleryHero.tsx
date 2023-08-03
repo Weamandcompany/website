@@ -8,6 +8,14 @@ import { Fade, Slide } from "react-awesome-reveal";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const GalleryHero = () => {
+  const officeCollection = [
+    "/images/group/frontdesk.webp",
+    "/images/group/reception.webp",
+    "/images/group/boardroom.webp",
+    "/images/group/office-5.webp",
+    "/images/group/office-6.webp",
+  ];
+
   return (
     <div className="container lg:w-full md:w-[90%] mx-auto">
       <div className="bg-[#F4F6FF] rounded-none md:rounded-3xl py-10 px-4 xs:px-5 sm:px-6 md:px-10">
@@ -59,6 +67,20 @@ const GalleryHero = () => {
                 </div>
               </Masonry>
             </ResponsiveMasonry>
+            <div className="grid grid-cols-3 lg:grid-cols-5 gap-[8px] mt-[8px]">
+              {officeCollection.map((image, i) => (
+                <div className="rounded-md bg-slate-200 overflow-hidden">
+                  <Image
+                    src={image}
+                    className="w-full h-full block"
+                    alt=""
+                    width={150}
+                    height={150}
+                    priority
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
