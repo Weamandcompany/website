@@ -111,13 +111,16 @@ const HomeCarousel = () => {
           }}>
           {CarouselImages?.map((item, i) => (
             <SwiperSlide key={i}>
-              <Image
-                src={item}
-                width={0}
-                height={0}
-                alt={`CarouselImage${i}`}
-                className="lg:rounded-tl-[126px] lg:rounded-none rounded-[10px] lg:w-[100%] lg:h-[auto] h-[280px] w-[100%] object-cover"
-              />
+              <div className="grid grid-cols-1 relative overflow-hidden lg:rounded-tl-[126px] lg:rounded-none rounded-[10px]">
+                <Image
+                  src={item}
+                  width={0}
+                  height={0}
+                  alt={`CarouselImage${i}`}
+                  className="col-start-1 row-start-1 lg:rounded-tl-[126px] lg:rounded-none rounded-[10px] lg:w-[100%] lg:h-[auto] h-[280px] w-[100%] object-cover"
+                />
+                <div className="col-start-1 row-start-1 bg-gradient-to-tr from-black/60 from-55%"></div>
+              </div>
             </SwiperSlide>
           ))}
 

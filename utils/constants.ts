@@ -2,7 +2,7 @@ export const CarouselImages = [
   "/images/image1.svg",
   "/images/image2.svg",
   "/images/image3.svg",
-  "/images/image4.svg",
+  "/images/slide-image.webp",
 ];
 
 export const SponsorImages = [
