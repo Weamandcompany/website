@@ -94,7 +94,7 @@ const Services = () => {
               />
               <ServiceItem
                 title="Simulation Studies"
-                description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
+                description="Our expertise in steady state and dynamic simulation studies allows us to analyze and optimize complex systems, through the utilization of advanced modeling and simulation techniques"
                 icon="/images/icon5.svg"
                 link="/services/simulation-studies"
               />

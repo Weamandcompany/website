@@ -11,9 +11,8 @@ const GalleryHero = () => {
   const officeCollection = [
     "/images/group/frontdesk.webp",
     "/images/group/reception.webp",
-    "/images/group/boardroom.webp",
-    "/images/group/office-5.webp",
     "/images/group/office-6.webp",
+    "/images/group/office-s2.webp",
   ];
 
   return (
@@ -67,21 +66,26 @@ const GalleryHero = () => {
                 </div>
               </Masonry>
             </ResponsiveMasonry>
-            <div className="grid grid-cols-3 lg:grid-cols-5 gap-[8px] mt-[8px]">
-              {officeCollection.map((image, i) => (
-                <div key={i} className="rounded-md bg-slate-200 overflow-hidden">
-                  <Image
-                    src={image}
-                    className="w-full h-full block"
-                    alt=""
-                    width={150}
-                    height={150}
-                    priority
-                  />
-                </div>
-              ))}
-            </div>
           </div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[8px] mt-[8px]">
+          {officeCollection.map((image, i) => (
+            <div className="grid grid-cols-1 rounded-md bg-slate-200 overflow-hidden">
+              {i == 3 && <div className="col-start-1 row-start-1 bg-black/20 z-10"></div>}
+              <div
+                key={i}
+                className="col-start-1 row-start-1 rounded-md bg-slate-200 overflow-hidden">
+                <Image
+                  src={image}
+                  className="w-full h-full block object-cover max-h-[180px]"
+                  alt=""
+                  width={270}
+                  height={180}
+                  priority
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
