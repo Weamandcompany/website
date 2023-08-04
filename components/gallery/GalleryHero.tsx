@@ -70,7 +70,7 @@ const GalleryHero = () => {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[8px] mt-[8px]">
           {officeCollection.map((image, i) => (
-            <div className="grid grid-cols-1 rounded-md bg-slate-200 overflow-hidden">
+            <div key={i} className="grid grid-cols-1 rounded-md bg-slate-200 overflow-hidden">
               {i == 3 && <div className="col-start-1 row-start-1 bg-black/30 z-10"></div>}
               <div
                 key={i}
