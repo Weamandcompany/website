@@ -66,7 +66,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               isActive={activeTab === 2}
               description="Procurement, Installation, Configuration, and Commissioning of Gas Metering Instruments (Transmitters, Gauges, Flow Computers, Gas Chromatographs, etc.) for Gas Metering stations and Power Plants at Geregu and Calabar."
               client="Niger Delta Power Holding Company Limited"
-              imageSrc="/images/project1.svg"
+              imageSrc="/projects/project-1/1.jpeg"
               onClick={() => handleTabClick(2)}
               heading="ENGINEERING: Niger Delta Power Holding Company Limited"
               setSelectedImage={setSelectedImage}
@@ -105,7 +105,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
             <ProjectTab
               isActive={activeTab === 6}
               description="Weam provided Detailed Engineering Design and upgrade works on existing Lightning and earthing protection system using INDELEC technology for all field equipment and control room."
-              imageSrc="/images/project4.svg"
+              imageSrc={null}
               onClick={() => handleTabClick(6)}
               heading="ENGINEERING: Design and upgrade of Lightning and Earthing System"
               client="Niger Delta Power Holding Company Limited"

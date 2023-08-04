@@ -253,8 +253,8 @@ export const projectZero = [
     thumbnail: "/projects/project-0/4.jpeg",
   },
   {
-    original: "/projects/project-0/5.jpeg",
-    thumbnail: "/projects/project-0/5.jpeg",
+    original: "/projects/project-0/5.jpg",
+    thumbnail: "/projects/project-0/5.jpg",
   },
   {
     original: "/projects/project-0/6.jpeg",
@@ -272,16 +272,16 @@ export const projectOne = [
     thumbnail: "/projects/project-1/1.jpeg",
   },
   {
-    original: "/projects/project-1/2.jpjpeg",
-    thumbnail: "/projects/project-1/2.jpjpeg",
+    original: "/projects/project-1/2.jpeg",
+    thumbnail: "/projects/project-1/2.jpeg",
   },
   {
-    original: "/projects/project-1/3.jpjpeg",
-    thumbnail: "/projects/project-1/3.jpjpeg",
+    original: "/projects/project-1/3.peg",
+    thumbnail: "/projects/project-1/3.jpeg",
   },
   {
-    original: "/projects/project-1/4.jpjpeg",
-    thumbnail: "/projects/project-1/4.jpjpeg",
+    original: "/projects/project-1/4.jpeg",
+    thumbnail: "/projects/project-1/4.jpeg",
   },
   {
     original: "/projects/project-1/5.jpeg",
@@ -337,12 +337,12 @@ export const projectFour = [
     thumbnail: "/projects/project-0/3.jpg",
   },
   {
-    original: "/projects/project-0/4.jpg",
-    thumbnail: "/projects/project-0/4.jpg",
+    original: "/projects/project-0/4.jpeg",
+    thumbnail: "/projects/project-0/4.jpeg",
   },
   {
-    original: "/projects/project-0/5.jpeg",
-    thumbnail: "/projects/project-0/5.jpeg",
+    original: "/projects/project-0/5.jpg",
+    thumbnail: "/projects/project-0/5.jpg",
   },
   {
     original: "/projects/project-0/6.jpeg",
@@ -351,14 +351,6 @@ export const projectFour = [
   {
     original: "/projects/project-0/7.jpeg",
     thumbnail: "/projects/project-0/7.jpeg",
-  },
-  {
-    original: "/projects/project-0/8.jpeg",
-    thumbnail: "/projects/project-0/8.jpeg",
-  },
-  {
-    original: "/projects/project-0/8.jpeg",
-    thumbnail: "/projects/project-0/8.jpeg",
   },
 ];
 

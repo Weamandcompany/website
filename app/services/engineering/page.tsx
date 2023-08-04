@@ -88,11 +88,6 @@ const simulations = [
         description:
           "Debottlenecked facility to reduce system backpressure on surge vessel. Installation of new flare barrel to receive gases from separators.",
       },
-      {
-        title: "Kolocreek Debottlenecking Project",
-        description:
-          "Debottlenecked facility to reduce system backpressure on surge vessel. Installation of new flare barrel to receive gases from separators.",
-      },
     ],
   },
 
@@ -214,7 +209,7 @@ const simulations = [
         title:
           "Detailed Engineering Design for Rehabilitation/Upgrade of Delta IV Metering Station, Ughelli.",
         description:
-          "etailed Engineering Design for rehabilitation and upgrade of process equipment, field instruments, Fire and Gas Systems, Electrical installations, control and security building to a much modern status and also guarantee reliability of operations and security of the facility.",
+          "Detailed Engineering Design for rehabilitation and upgrade of process equipment, field instruments, Fire and Gas Systems, Electrical installations, control and security building to a much modern status and also guarantee reliability of operations and security of the facility.",
       },
       {
         title: "Detailed Engineering Design for EPC of the New Egbin Metering Station.",
@@ -262,11 +257,6 @@ const simulations = [
           "Update of Hazardous Area Classification and As-Built Drawings of Facilities in OML-26.",
         description:
           "The Nigerian National Petroleum Corporation (NNPC) and E&P Limited (as operators of OML 26) in joint venture with NEPL and FHN 26 Limited intend to carry out an update of hazardous area classification and as-built drawings of facilities in OML 26. This entails reviews and back drafting of existing drawings, deployment of Laser scanner (2D/3D technology), and generation of new as-built documentations. To this end, Weam and Company Limited was contracted to perform the aforementioned Scope of Work (SOW).",
-      },
-      {
-        title: "Ahia Flow Station Process Study and Design",
-        description:
-          "Determined the ability of the proposed double-bank flow station to handle an anticipated peak production.",
       },
     ],
   },
