@@ -532,28 +532,60 @@ export const projectOneCollection = [
   "/projects/project-1/6.jpeg",
 ];
 
+// export const projectTwoCollection = [
+//   "/projects/project-2/1.jpg",
+//   "/projects/project-2/2.jpg",
+//   "/projects/project-2/3.jpg",
+// ];
+
+// export const projectThreeCollection = [
+//   "/projects/project-3/1.jpg",
+//   "/projects/project-3/2.jpg",
+//   "/projects/project-3/3.jpg",
+// ];
+
+// export const projectFourCollection = [
+//   "/projects/project-4/1.jpg",
+//   "/projects/project-4/2.jpg",
+//   "/projects/project-4/3.jpg",
+//   "/projects/project-4/4.jpg",
+//   "/projects/project-4/5.jpeg",
+//   "/projects/project-4/6.jpeg",
+//   "/projects/project-4/7.jpeg",
+//   "/projects/project-4/8.jpeg",
+//   "/projects/project-4/8.jpeg",
+// ];
+
 export const projectTwoCollection = [
-  "/projects/project-2/1.jpg",
-  "/projects/project-2/2.jpg",
-  "/projects/project-2/3.jpg",
+  "/projects/proj-3/image1.jpg",
+  "/projects/proj-3/image2.jpg",
+  "/projects/proj-3/image3.jpg",
+  "/projects/proj-3/image4.jpg",
+  "/projects/proj-3/image5.jpg",
+  "/projects/proj-3/image6.jpg",
+  "/projects/proj-3/image7.jpg",
 ];
 
 export const projectThreeCollection = [
-  "/projects/project-3/1.jpg",
-  "/projects/project-3/2.jpg",
-  "/projects/project-3/3.jpg",
+  "/projects/proj-4/image1.jpg",
+  "/projects/proj-4/image2.jpg",
+  "/projects/proj-4/image3.jpg",
+  "/projects/proj-4/image4.jpg",
+  "/projects/proj-4/image5.jpg",
 ];
 
 export const projectFourCollection = [
-  "/projects/project-4/1.jpg",
-  "/projects/project-4/2.jpg",
-  "/projects/project-4/3.jpg",
-  "/projects/project-4/4.jpg",
-  "/projects/project-4/5.jpeg",
-  "/projects/project-4/6.jpeg",
-  "/projects/project-4/7.jpeg",
-  "/projects/project-4/8.jpeg",
-  "/projects/project-4/8.jpeg",
+  "/projects/proj-5/image1.jpg",
+  "/projects/proj-5/image2.jpg",
+  "/projects/proj-5/image3.jpg",
+  "/projects/proj-5/image4.jpg",
+  "/projects/proj-5/image5.jpg",
+  "/projects/proj-5/image6.jpg",
+  "/projects/proj-5/image7.jpeg",
+  "/projects/proj-5/image8.jpeg",
+  "/projects/proj-5/image9.jpeg",
+  "/projects/proj-5/image10.jpeg",
+  "/projects/proj-5/image11.jpeg",
 ];
 
 export const officeCollection = [
@@ -573,11 +605,6 @@ export const trainingCollection = [
 ];
 
 export const collections = [
-  //   {
-  //     photos: officeCollection,
-  //     title: "Our office blocks",
-  //     subtitle: "Our Abuja and Port Harcourt office blocks",
-  //   },
   {
     photos: trainingCollection,
     title: "Training Facility",
@@ -592,7 +619,7 @@ export const collections = [
   {
     photos: projectZeroCollection,
     title:
-      "ENGINEERING: Update of Hazardous Area Classification and AsBuilt Documentation of Facilities in OML-26",
+      "ENGINEERING: Update of Hazardous Area Classification and As Built Documentation of Facilities in OML-26",
     subtitle:
       "NNPC E&P Limited in joint venture FHN Limited intends to carry-out update of hazardous area classification and As-Built documentation of facilities in OML 26.",
   },
