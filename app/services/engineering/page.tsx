@@ -41,7 +41,7 @@ const EngineeringService = () => {
         </div>
       </div>
       <div className="lg:px-32 px-5 lg:mt-14 mt-8">
-        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">Our Engineering Process </h6>
+        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">Our Engineering Services</h6>
         <div className="grid lg:grid-cols-2 gap-12 ">
           <Slide direction="left" cascade triggerOnce={true}>
             <Accordion noclick={true} items={engineeringAccordions} />

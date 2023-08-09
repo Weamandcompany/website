@@ -106,7 +106,7 @@ const Services = () => {
               />
               <ServiceItem
                 title="Risk Management"
-                description="We offer end-to-end software solutions. From sales to deployment and ongoing support"
+                description="We combine a proactive and integrated multidisciplinary approach to create designs with a strong early-stage and continual focus on identifying and mitigating HSE risks"
                 icon="/images/icon7.svg"
                 link="/services/risk-management"
               />

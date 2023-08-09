@@ -57,7 +57,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
               client="NNPC Exploration & Production Limited/First Hydrocarbon Nigeria Limited"
               imageSrc="/images/project1.svg"
               onClick={() => handleTabClick(1)}
-              heading="ENGINEERING: Update of Hazardous Area Classification and AsBuilt Documentation of Facilities in OML-26"
+              heading="ENGINEERING: Update of Hazardous Area Classification and As Built Documentation of Facilities in OML-26"
               setSelectedImage={setSelectedImage}
               images={projectZero}
             />
@@ -75,7 +75,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
             <ProjectTab
               isActive={activeTab === 3}
               description="Development of FEED and Detailed Engineering Designs for Pipelines, Pressure Reduction, and Metering Systems, Construction support, Management, and As-built documentation for the Escravos Environs Power Supply Project."
-              imageSrc="/images/project2.svg"
+              imageSrc="/projects/proj-3/image1.jpg"
               onClick={() => handleTabClick(3)}
               heading="FEED, DED, and Follow-on for Pipeline Infrastructure for Escravos Environs Power Supply Project"
               client="Yonkys Ya-star Nigeria Limited/ Nigeria Gas Infrastructure Company Ltd"
@@ -85,7 +85,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
             <ProjectTab
               isActive={activeTab === 4}
               description="Provision of FEED Verification and Detailed Engineering Design for the EPC project."
-              imageSrc="/images/project3.svg"
+              imageSrc="/projects/proj-4/image1.jpg"
               onClick={() => handleTabClick(4)}
               heading="ENGINEERING: Detailed Engineering Design for EPC of the New Egbin Metering Station."
               client="Lateejay Nigeria Limited / Nigeria Gas Infr"
@@ -95,7 +95,7 @@ const ProjectSection = ({ showHeader }: { showHeader: boolean }) => {
             <ProjectTab
               isActive={activeTab === 5}
               description="Detailed Engineering Design for rehabilitation and upgrade of process equipment, field instruments, Fire and Gas Systems, Electrical installations, control and security building to a much modern status and also guarantee reliability of operations and security of the facility."
-              imageSrc="/images/project4.svg"
+              imageSrc="/projects/proj-5/image1.jpg"
               onClick={() => handleTabClick(5)}
               heading="ENGINEERING: Detailed Engineering Design for Rehabilitation/Upgrade of Delta IV Metering Station, Ughelli"
               client="NGIC/Bablink Resources Nigeria Limited"

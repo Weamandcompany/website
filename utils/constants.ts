@@ -295,62 +295,102 @@ export const projectOne = [
 
 export const projectTwo = [
   {
-    original: "/projects/project-0/1.JPG",
-    thumbnail: "/projects/project-0/1.JPG",
+    original: "/projects/proj-3/image1.jpg",
+    thumbnail: "/projects/proj-3/image1.jpg",
   },
   {
-    original: "/projects/project-0/2.jpg",
-    thumbnail: "/projects/project-0/2.jpg",
+    original: "/projects/proj-3/image2.jpg",
+    thumbnail: "/projects/proj-3/image2.jpg",
   },
   {
-    original: "/projects/project-0/3.jpg",
-    thumbnail: "/projects/project-0/3.jpg",
+    original: "/projects/proj-3/image3.jpg",
+    thumbnail: "/projects/proj-3/image3.jpg",
+  },
+  {
+    original: "/projects/proj-3/image4.jpg",
+    thumbnail: "/projects/proj-3/image4.jpg",
+  },
+  {
+    original: "/projects/proj-3/image5.jpg",
+    thumbnail: "/projects/proj-3/image5.jpg",
+  },
+  {
+    original: "/projects/proj-3/image6.jpg",
+    thumbnail: "/projects/proj-3/image6.jpg",
+  },
+  {
+    original: "/projects/proj-3/image7.jpg",
+    thumbnail: "/projects/proj-3/image7.jpg",
   },
 ];
 
 export const projectThree = [
   {
-    original: "/projects/project-0/1.JPG",
-    thumbnail: "/projects/project-0/1.JPG",
+    original: "/projects/proj-4/image1.jpg",
+    thumbnail: "/projects/proj-4/image1.jpg",
   },
   {
-    original: "/projects/project-0/2.jpg",
-    thumbnail: "/projects/project-0/2.jpg",
+    original: "/projects/proj-4/image2.jpg",
+    thumbnail: "/projects/proj-4/image2.jpg",
   },
   {
-    original: "/projects/project-0/3.jpg",
-    thumbnail: "/projects/project-0/3.jpg",
+    original: "/projects/proj-4/image3.jpg",
+    thumbnail: "/projects/proj-4/image3.jpg",
+  },
+  {
+    original: "/projects/proj-4/image4.jpg",
+    thumbnail: "/projects/proj-4/image4.jpg",
+  },
+  {
+    original: "/projects/proj-4/image5.jpg",
+    thumbnail: "/projects/proj-4/image5.jpg",
   },
 ];
 
 export const projectFour = [
   {
-    original: "/projects/project-0/1.jpg",
-    thumbnail: "/projects/project-0/1.jpg",
+    original: "/projects/proj-5/image1.jpg",
+    thumbnail: "/projects/proj-5/image1.jpg",
   },
   {
-    original: "/projects/project-0/2.jpg",
-    thumbnail: "/projects/project-0/2.jpg",
+    original: "/projects/proj-5/image2.jpg",
+    thumbnail: "/projects/proj-5/image2.jpg",
   },
   {
-    original: "/projects/project-0/3.jpg",
-    thumbnail: "/projects/project-0/3.jpg",
+    original: "/projects/proj-5/image3.jpg",
+    thumbnail: "/projects/proj-5/image3.jpg",
   },
   {
-    original: "/projects/project-0/4.jpeg",
-    thumbnail: "/projects/project-0/4.jpeg",
+    original: "/projects/proj-5/image4.jpg",
+    thumbnail: "/projects/proj-5/image4.jpg",
   },
   {
-    original: "/projects/project-0/5.jpg",
-    thumbnail: "/projects/project-0/5.jpg",
+    original: "/projects/proj-5/image5.jpg",
+    thumbnail: "/projects/proj-5/image5.jpg",
   },
   {
-    original: "/projects/project-0/6.jpeg",
-    thumbnail: "/projects/project-0/6.jpeg",
+    original: "/projects/proj-5/image6.jpg",
+    thumbnail: "/projects/proj-5/image6.jpg",
   },
   {
-    original: "/projects/project-0/7.jpeg",
-    thumbnail: "/projects/project-0/7.jpeg",
+    original: "/projects/proj-5/image7.jpeg",
+    thumbnail: "/projects/proj-5/image7.jpeg",
+  },
+  {
+    original: "/projects/proj-5/image8.jpeg",
+    thumbnail: "/projects/proj-5/image8.jpeg",
+  },
+  {
+    original: "/projects/proj-5/image9.jpeg",
+    thumbnail: "/projects/proj-5/image9.jpeg",
+  },
+  {
+    original: "/projects/proj-5/image10.jpeg",
+    thumbnail: "/projects/proj-5/image10.jpeg",
+  },
+  {
+    original: "/projects/proj-5/image11.jpeg",
+    thumbnail: "/projects/proj-5/image11.jpeg",
   },
 ];
 
