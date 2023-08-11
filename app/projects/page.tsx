@@ -12,25 +12,27 @@ const Projects = () => {
   return (
     <PageLayout>
       <div className="lg:mt-[8rem] lg:pt-0 pt-[4.5rem]  relative  lg:px-24 px-0 ">
-        <Image
-          src="/images/projecthero.svg"
-          alt="projecthero"
-          width={0}
-          height={0}
-          style={{ width: "40%" }}
-          className="mx-auto absolute top-[-7%] right-[6%] hidden lg:block"
-        />
+        <div className="rounded-lg">
+          <Image
+            src="/images/project-lady.jpeg"
+            alt="projecthero"
+            width={0}
+            height={0}
+            style={{ width: "40%", height: "100%" }}
+            className="mx-auto object-cover rounded-xl absolute top-[-7%] right-[6%] hidden lg:block"
+          />
+        </div>
         <div className="bg-[#0C1239] lg:rounded-[34px] rounded-none lg:py-[5rem] lg:px-32 py-8  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white">
           <Slide cascade triggerOnce={true}>
             <div className="lg:w-[75%] font-nunito">
               <Fade triggerOnce={true}>
                 <Image
-                  src="/images/projecthero.svg"
+                  src="/images/project-lady.jpeg"
                   alt="projecthero"
                   width={0}
                   height={0}
                   style={{ width: "100%" }}
-                  className="mx-auto lg:hidden block mb-8"
+                  className="mx-auto object-cover rounded-xl lg:hidden block mb-8"
                 />
               </Fade>
               <h6 className=" font-[900] lg:text-[40px] text-[25px] leading-[1.4] lg:text-left text-center">
