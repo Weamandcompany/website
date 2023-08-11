@@ -1,0 +1,66 @@
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <div>
+              1. Process Simulation Software (Oil, Gas, Refining and Chemicals)
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Aspen HYSYS®</li>
+              <li>Aspen HYSYS Dynamics™</li>
+              <li>Aspen HYSYS Upstream™</li>
+              <li>Aspen HYSYS Petroleum Refining (formerly Aspen RefSYS™)</li>
+              <li>Aspen HYSYS Reformer</li>
+              <li>Aspen HYSYS Hydrocracker</li>
+              <li>Aspen HYSYS CatCracker</li>
+              <li>Aspen HYSYS Amines</li>
+              <li>Aspen HYSYS Crude™</li>
+              <li>Aspen Flare System Analyzer</li>
+              <li>Aspen Plus®</li>
+              <li>Aspen Plus Dynamics®</li>
+              <li>Aspen Properties®</li>
+              <li>Aspen Rate-Based Distillation</li>
+              <li>Aspen Adsorption</li>
+              <li>Aspen Distillation Synthesis</li>
+              <li>Aspen Polymers</li>
+              <li>Aspen Energy Analyzer</li>
+              <li>Aspen Custom Modeler®</li>
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-1 gap-y-4">
+            <div>
+              <div>2. Model Deployment, Production Management & Execution</div>
+              <ul className="list-disc list-inside">
+                <li>Aspen InfoPlus.21®</li>
+                <li>Aspen Model Runner™</li>
+                <li>Aspen HYSYS Upstream™</li>
+                <li>Aspen Online Deployment™</li>
+                <li>Aspen OTS Framework</li>
+                <li>Aspen Simulation Workbook™</li>
+              </ul>
+            </div>
+
+            <div>
+              <div>3. Economic Evaluation (ASPEN ICARUS)</div>
+              <ul className="list-disc list-inside">
+                <li>Aspen Decision Analyzer</li>
+                <li>Aspen Process Economic Analyzer</li>
+                <li>Aspen Capital Cost Estimator</li>
+                <li>Aspen In-plant Cost Estimator</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div>4. Equipment Modeling</div>
+            <ul className="list-disc list-inside">
+              <li>Aspen Shell & Tube Exchanger</li>
+              <li>Aspen Shell & Tube Mechanical</li>
+              <li>Aspen Air Cooled Exchanger</li>
+              <li>Aspen Fired Heater™</li>
+              <li>Aspen Plate Exchanger</li>
+              <li>Aspen FRAN™</li>
+              <li>Aspen HTFS Research Network™</li>
+              <li>Aspen Plate Fin Exchanger</li>
+            </ul>
+          </div>
+        </div>

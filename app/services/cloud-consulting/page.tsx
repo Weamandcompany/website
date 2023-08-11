@@ -23,15 +23,17 @@ const CloudConsultingService = () => {
           />
           <Slide cascade triggerOnce={true}>
             <h6 className="text-[#1C1C1C] lg:text-[24px] text-[20px] font-[600] lg:mb-3 mb-1">
-              Cloud Consultation
+              Cloud Consulting
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
-              Weam & Company specializes in cloud consulting, helping businesses unlock the full
-              potential of cloud technology. Our experts work closely with clients to develop
-              customized strategies for successful cloud adoption. From planning to implementation,
-              we offer comprehensive solutions to optimize your cloud infrastructure. Trust Weam &
-              Company to unleash the power of the cloud, enabling scalability and efficiency for
-              your business.
+              In today&apos;s digital era, cloud computing has revolutionized the way businesses operate, 
+              offering scalable and cost-effective solutions to streamline
+              operations, enhance collaboration, and accelerate growth. However, navigating the complex world of 
+              loud services can be challenging without expert guidance. That&apos;s where Cloud Consulting comes in. 
+              Our consultancy provides comprehensive guidance, strategic planning, and implementation support to 
+              help businesses harness the power of cloud computing. With our expertise, organizations can 
+              optimize their cloud infrastructure, maximize efficiency, and drive innovation to stay ahead in 
+              the competitive market. Weam and Company delivers bespoke and comprehensive cloud solutions using Azure and AWS.
             </p>
           </Slide>
         </div>

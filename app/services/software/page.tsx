@@ -68,65 +68,37 @@ const softwares = [
       <>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <div>1. Process Simulation Software (Oil, Gas, Refining and Chemicals)</div>
-            <ul className="list-disc list-inside">
-              <li>Aspen HYSYS®</li>
-              <li>Aspen HYSYS Dynamics™</li>
-              <li>Aspen HYSYS Upstream™</li>
-              <li>Aspen HYSYS Petroleum Refining (formerly Aspen RefSYS™)</li>
-              <li>Aspen HYSYS Reformer</li>
-              <li>Aspen HYSYS Hydrocracker</li>
-              <li>Aspen HYSYS CatCracker</li>
-              <li>Aspen HYSYS Amines</li>
-              <li>Aspen HYSYS Crude™</li>
-              <li>Aspen Flare System Analyzer</li>
-              <li>Aspen Plus®</li>
-              <li>Aspen Plus Dynamics®</li>
-              <li>Aspen Properties®</li>
-              <li>Aspen Rate-Based Distillation</li>
-              <li>Aspen Adsorption</li>
-              <li>Aspen Distillation Synthesis</li>
-              <li>Aspen Polymers</li>
-              <li>Aspen Energy Analyzer</li>
-              <li>Aspen Custom Modeler®</li>
-            </ul>
-          </div>
-
-          <div className="grid grid-cols-1 gap-y-4">
             <div>
-              <div>2. Model Deployment, Production Management & Execution</div>
-              <ul className="list-disc list-inside">
-                <li>Aspen InfoPlus.21®</li>
-                <li>Aspen Model Runner™</li>
-                <li>Aspen HYSYS Upstream™</li>
-                <li>Aspen Online Deployment™</li>
-                <li>Aspen OTS Framework</li>
-                <li>Aspen Simulation Workbook™</li>
-              </ul>
+              AspenTech&apos;s product portfolio represents the broadest
+              footprint of process optimization solutions in the market. The
+              best-in-class products span engineering, manufacturing, and supply
+              chain operations, enabling you to create and maintain sustainable
+              best practices while driving operational excellence. We deliver
+              Aspen Technology Software solutions as the Authorized Marketing
+              Partners, which comprises a team of highly efficient Training and
+              Solution Consultants to talk you through any difficulties you may
+              encounter, offer cost-effective Maintenance, Updates and Support
+              Program keeping our clients updated with the latest technology.{" "}
+              <br />
+              These solutions include:
             </div>
-
-            <div>
-              <div>3. Economic Evaluation (ASPEN ICARUS)</div>
-              <ul className="list-disc list-inside">
-                <li>Aspen Decision Analyzer</li>
-                <li>Aspen Process Economic Analyzer</li>
-                <li>Aspen Capital Cost Estimator</li>
-                <li>Aspen In-plant Cost Estimator</li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
-            <div>4. Equipment Modeling</div>
             <ul className="list-disc list-inside">
-              <li>Aspen Shell & Tube Exchanger</li>
-              <li>Aspen Shell & Tube Mechanical</li>
-              <li>Aspen Air Cooled Exchanger</li>
-              <li>Aspen Fired Heater™</li>
-              <li>Aspen Plate Exchanger</li>
-              <li>Aspen FRAN™</li>
-              <li>Aspen HTFS Research Network™</li>
-              <li>Aspen Plate Fin Exchanger</li>
+              <li>Process Simulation for Energy</li>
+              <li>Process Simulation for Chemicals</li>
+              <li>Exchanger Design & Rating</li>
+              <li>Concurrent FEED</li>
+              <li>Subsurface Science & Engineering</li>
+              <li>Energy & Utilities Optimization</li>
+              <li>Operations Support</li>
+              <li>Advanced Process Control</li>
+              <li>Dynamic Optimization</li>
+              <li>Manufacturing Execution Systems</li>
+              <li>Petroleum Supply Chain</li>
+              <li>Supply Chain Management</li>
+              <li>Asset Performance Management</li>
+              <li>AspenTech DataWorks</li>
+              <li>AEI - Workflow Management</li>
+              <li>Digital Grid Management</li>
             </ul>
           </div>
         </div>
@@ -137,21 +109,101 @@ const softwares = [
     title: "Quorum Software Solutions",
     content: (
       <>
-        <div>
-          <div>Planning . Execution . Reserves</div>
-          <ul className="list-disc list-inside">
-            <li>Planning Space</li>
-            <li>petroVR</li>
-            <li>enersight</li>
-            <li>Val NAV</li>
-            <li>Aucerna Execute</li>
-            <li>Aucerna Reserves</li>
-            <li>Aucerna Regimes</li>
-            <li>Portfolio Management</li>
-            <li>Previso</li>
-            <li>Dawinci</li>
-            <li>Energy Component and Flowcal</li>
-          </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <div className="font-bold">
+              Planning, Economics & Reserves suite
+            </div>
+            <div>
+              With sector-leading comprehensive solutions, you can quickly and
+              intelligently make decisions at every step of asset development
+              while having a clear picture of the performance and potential of
+              your portfolio. These solutions are relevant for:
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Strategy & Portfolio Management</li>
+              <li>Petroleum Economics</li>
+              <li>Business Planning</li>
+              <li>Reserves Management</li>
+              <li>Asset Development</li>
+              <li>Technical Forecasting</li>
+              <li>Integrated Production Modelling</li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="font-bold">Execution & Well Operations suite</div>
+            <div>
+              This user-friendly software suite, which integrates AFE workflows,
+              field operations, and well master data management into a
+              simplified project delivery ecosystem, lets you manage your
+              operations with confidence. These include:
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Capital & Well Lifecycle Management</li>
+              <li>Well Data Management</li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="font-bold">
+              Hydrocarbon Production Management suite
+            </div>
+            <div>
+              With a single system to monitor and optimize hydrocarbon
+              production throughout the value chain, you can meet production
+              targets while reducing LOE. This includes:
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Production Operations & Optimization</li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="font-bold">Logistics Management suite</div>
+            <div>
+              Using a world-class logistics solution for the Energy Industry,
+              Quorum is challenging the status quo by assisting customers in
+              reducing efforts and performing better. This solution unifies the
+              entire logistics process, including personnel, cargo and offshore
+              wind, making logistics straightforward.
+            </div>
+          </div>
+
+          <div>
+            <div className="font-bold">LNG & Distribution suite</div>
+            <div>
+              Simplify all LNG and pipeline operations across the value chain to
+              make faster decisions. A unified version of the truth that enables
+              planners to make swift, fact-based decisions about their LNG
+              operations. This includes:
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Import and Export Terminal Management</li>
+              <li>
+                Measurement Solutions:
+                <br />
+                Simplify your measurement process and improve data accuracy.
+                Software in this suite are used for: <br />
+                <ul className="list-disc list-inside ml-5">
+                  <li>Gas & Liquid Measurement</li>
+                  <li>Oilfield Chemistry</li>
+                </ul>
+              </li>
+              <li>Environment & Emissions Management</li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="font-bold">Midstream suite</div>
+            <div>
+              Streamlines complicated midstream procedures by leveraging
+              industry-leading tools for hydrocarbon scheduling, accounting,
+              transportation, and trading across the value chain. This delivers
+              solutions for pipeline transaction management and Energy
+              marketing.
+            </div>
+          </div>
         </div>
       </>
     ),
@@ -162,7 +214,10 @@ const softwares = [
     content: (
       <>
         <div>
-          <div>Flare System Design and Analysis</div>
+          <div>
+            We offer Training and support services for Flare System Design and
+            Analysis.
+          </div>
           <ul className="list-disc list-inside">
             <li>Flaresim</li>
           </ul>
@@ -176,7 +231,11 @@ const softwares = [
     content: (
       <>
         <div>
-          <div>Fluid Flow Analysis, Pipeline and Utilities</div>
+          <div>
+            We set the standard by leading the way in Fluid Flow Analysis,
+            Pipeline and Utilities by performing pipe sizing and pump selection
+            calculations in the steady state.
+          </div>
           <ul className="list-disc list-inside">
             <li>PIPENET Standard Module</li>
             <li>PIPENET Spray/Sprinkler Module</li>

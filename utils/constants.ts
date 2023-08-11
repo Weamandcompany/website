@@ -156,7 +156,7 @@ export const cloudConsultingAccordions = [
   },
   {
     title: "Cloud Infrastructure Optimization",
-    content: `To maximize the benefits of cloud computing, organizations must optimize their cloud infrastructure continuously. Our consultancy helps businesses streamline their cloud architecture, fine-tune resource allocation, and leverage automation tools for improved performance and cost-efficiency. We assess the scalability and elasticity requirements, implement load balancing mechanisms, and provide ongoing monitoring and optimization services to ensure optimal resource`,
+    content: `To maximize the benefits of cloud computing, organizations must optimize their cloud infrastructure continuously. Our consultancy helps businesses streamline their cloud architecture, fine-tune resource allocation, and leverage automation tools for improved performance and cost-efficiency. We assess the scalability and elasticity requirements, implement load balancing mechanisms, and provide ongoing monitoring and optimization services to ensure optimal resource utilization`,
   },
   {
     title: "Cloud Security and Compliance",
@@ -164,7 +164,7 @@ export const cloudConsultingAccordions = [
   },
   {
     title: "Cloud Cost Optimization",
-    content: `Controlling cloud costs can be a significant challenge for businesses. We analyze cloud usage patterns, identify cost optimization opportunities, and implement strategies to reduce unnecessary spending. Our experts assist in rightsizing resources, implementing cost-effective storage solutions, leveraging spot instances, and utilizing cost management tools to optimize cloud expenditure without compromising performance or scalability.`,
+    content: `Controlling cloud costs can be a significant challenge for businesses. We analyze cloud usage patterns, identify cost optimization opportunities, and implement strategies to reduce unnecessary spending. Our experts assist in rightsizing resources, implementing cost-effective storage solutions, leveraging spot instances, and utilizing cost management tools to optimize cloud expenditure without compromising performance or scalability. Embracing cloud computing can unlock unprecedented opportunities for businesses, but navigating the complexities requires expertise and guidance. Our Cloud Consulting provides end-to-end solutions to help organizations develop a robust cloud strategy, migrate seamlessly, optimize infrastructure, enhance security, control costs, and gain a competitive edge in the digital landscape. Partner with us to unlock the full potential of cloud computing and drive innovation and growth in your business.`,
   },
 ];
 
