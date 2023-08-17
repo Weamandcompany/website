@@ -5,7 +5,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 
 const ClientCard = ({ src }: { src: string }) => (
-  <div className="bg-white rounded p-2">
+  <div className="bg-white rounded flex justify-center p-2">
     <Image src={src} width={200} height={0} className="w-auto" alt="client" />
   </div>
 );

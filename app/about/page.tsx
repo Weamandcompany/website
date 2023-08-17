@@ -9,7 +9,7 @@ import HomeMission from "@/components/home/mission";
 import CorporateSocial from "@/components/about/CorporateSocial";
 
 export const metadata: Metadata = {
-  title: " About | Weam",
+  title: "About | Weam",
 };
 
 const About = () => {

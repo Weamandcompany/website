@@ -35,16 +35,14 @@ const HomeMission = () => {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials lg:w-[85%] w-[90%] mx-auto rounded-[32px]  text-white font-roboto">
+      className="bg-bgtestimonials bg-no-repeat bg-cover bg-bottom myTestimonials lg:w-[85%] w-[90%] mx-auto rounded-[32px]  text-white font-roboto"
+    >
       <SwiperSlide>
         <Wrapper>
           <Title>
-            <span className="text-[#C9D0FC78]"> Our </span>Mission
+            <span className="text-[#C9D0FC78]"> Our </span>Motto
           </Title>
-          <Value>
-            Our mission is to improve our clients efficiency by providing optimal solutions that
-            achieve operational excellence at the most competitive cost.
-          </Value>
+          <Value>Excellence Powered by Innovation.</Value>
         </Wrapper>
       </SwiperSlide>
       <SwiperSlide>
@@ -53,8 +51,21 @@ const HomeMission = () => {
             <span className="text-[#C9D0FC78]"> Our </span>Vision
           </Title>
           <Value>
-            A reliable indigenous company in the West African sub-region, renowned for delivering
-            exceptional services and solutions across various industry sectors.
+            A reliable indigenous company in the West African sub-region,
+            renowned for delivering exceptional services and solutions across
+            various industry sectors.
+          </Value>
+        </Wrapper>
+      </SwiperSlide>
+      <SwiperSlide>
+        <Wrapper>
+          <Title>
+            <span className="text-[#C9D0FC78]"> Our </span>Mission
+          </Title>
+          <Value>
+            Our mission is to improve our clients efficiency by providing
+            optimal solutions that achieve operational excellence at the most
+            competitive cost.
           </Value>
         </Wrapper>
       </SwiperSlide>
@@ -68,19 +79,18 @@ const HomeMission = () => {
               <CoreValueItem icon="zondicons:checkmark" text="Integrity" />
               <CoreValueItem icon="zondicons:checkmark" text="Innovation" />
               <CoreValueItem icon="zondicons:checkmark" text="Teamwork" />
-              <CoreValueItem icon="zondicons:checkmark" text="Continuous growth" />
+              <CoreValueItem
+                icon="zondicons:checkmark"
+                text="Continuous growth"
+              />
+              <CoreValueItem icon="zondicons:checkmark" text="Respect" />
               <CoreValueItem icon="zondicons:checkmark" text="Drive" />
-              <CoreValueItem icon="zondicons:checkmark" text="Quality & Customer Satisfaction" />
+              <CoreValueItem
+                icon="zondicons:checkmark"
+                text="Quality & Customer Satisfaction"
+              />
             </div>
           </div>
-        </Wrapper>
-      </SwiperSlide>
-      <SwiperSlide>
-        <Wrapper>
-          <Title>
-            <span className="text-[#C9D0FC78]"> Our </span>Motto
-          </Title>
-          <Value>Excellence Powered by Innovation.</Value>
         </Wrapper>
       </SwiperSlide>
     </Swiper>

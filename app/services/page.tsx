@@ -16,12 +16,12 @@ const Services = () => {
         <div className="lg:mt-[6.5rem] lg:pt-0 pt-[4.5rem] relative ">
           <Fade triggerOnce={true}>
             <Image
-              src="/images/service.svg"
+              src="/images/engineer-t2.webp"
               alt="service"
               width={0}
               height={0}
               style={{ width: "32%" }}
-              className="mx-auto absolute right-[6%] top-[12%] lg:block hidden"
+              className="mx-auto absolute right-[6%] top-[12%] lg:block hidden rounded-xl"
             />
           </Fade>
           <div className="bg-[#0C1239] lg:py-[5.5rem] lg:px-32 py-8  px-5 lg:rounded-r-[42px]  lg:w-[75%] w-[100%] text-white ">
@@ -29,7 +29,7 @@ const Services = () => {
               <div className="lg:w-[75%] font-nunito">
                 <Fade triggerOnce={true}>
                   <Image
-                    src="/images/service.svg"
+                    src="/images/engineer-t2.webp"
                     alt="service"
                     width={0}
                     height={0}
@@ -41,16 +41,19 @@ const Services = () => {
                   Our Dynamic Services at Weam and Company Limited
                 </h6>
                 <p className="lg:text-[16px] lg:my-8 my-4 lg:leading-9 lg:text-left text-center">
-                  With a customer-centric approach, we deliver tailored solutions for digital
-                  transformation, process optimization, and more. Partner with our experienced team
-                  to unlock new opportunities and drive growth. Explore our comprehensive services
-                  today and experience the power of Weam and Company Limited.
+                  With a customer-centric approach, we deliver tailored
+                  solutions for digital transformation, process optimization,
+                  and more. Partner with our experienced team to unlock new
+                  opportunities and drive growth. Explore our comprehensive
+                  services today and experience the power of Weam and Company
+                  Limited.
                 </p>
 
                 <div className="flex lg:justify-start justify-center">
                   <Button
                     href="/contact"
-                    className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 ">
+                    className="font-poppins  flex items-center justify-center gap-2 w-fit hover:opacity-80 "
+                  >
                     Contact Us <Icon icon="ph:arrow-right-bold"></Icon>
                   </Button>
                 </div>

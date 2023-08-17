@@ -180,16 +180,18 @@ const softwares = [
             </div>
             <ul className="list-disc list-inside">
               <li>Import and Export Terminal Management</li>
-              <li>
-                Measurement Solutions:
-                <br />
-                Simplify your measurement process and improve data accuracy.
-                Software in this suite are used for: <br />
-                <ul className="list-disc list-inside ml-5">
-                  <li>Gas & Liquid Measurement</li>
-                  <li>Oilfield Chemistry</li>
-                </ul>
-              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div className="font-bold">Measurement Solutions</div>
+            <div>
+              Simplify your measurement process and improve data accuracy.
+              Software in this suite are used for:
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Gas & Liquid Measurement</li>
+              <li>Oilfield Chemistry</li>
               <li>Environment & Emissions Management</li>
             </ul>
           </div>

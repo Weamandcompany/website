@@ -255,17 +255,18 @@ const simulations = [
             <ul className="list-disc">
               <li>Installation of the Software License Manager</li>
               <li>
-                Installation of the CIM-IO application on the CIM-IO server and enabling an
-                interaction interface between the Infoplus.21 Server and the Schneider OPC server
+                Installation of the CIM-IO application on the CIM-IO server and
+                enabling an interaction interface between the Infoplus.21 Server
+                and the Schneider OPC server
               </li>
               <li>
-                CIM-IO full configuration and subsequent creation of CIM-IO related records (Tasks
-                and Logical Devices)
+                CIM-IO full configuration and subsequent creation of CIM-IO
+                related records (Tasks and Logical Devices)
               </li>
               <li>Installation of Aspen Infoplus.21 Process explorer</li>
               <li>
-                Testing of OPC tag names via the Test API CIM-IO utility to verify the name
-                convention
+                Testing of OPC tag names via the Test API CIM-IO utility to
+                verify the name convention
               </li>
               <li>Configuration of CIM-IO for IP.21</li>
               <li>Loading of tags from corrected spreadsheets</li>
@@ -291,7 +292,7 @@ const simulations = [
   },
 
   {
-    title: "Warri Refinery and Petrochemicals Company Limited",
+    title: "WARRI REFINERY AND PETROCHEMICALS COMPANY LIMITED",
     content: [
       {
         title: "Project Name",

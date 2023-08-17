@@ -45,7 +45,8 @@ const HomeCarousel = () => {
                 key={index}
                 className={`fade-in w-[80%] 2xl:w-[65%] mr-[0px] lg:top-[50px] 2xl:top[70px] top-[10px] 2xl:left-32 right-[0px] lg:pr-10 2xl:pr-10 pr-4 ${
                   index === currentIndex ? "active" : ""
-                }`}>
+                }`}
+              >
                 <h6 className="text-[#E47B0E] lg:text-base text-[6px] font-poppins font-[500] lg:mb-3 mb-1">
                   {data.title}
                 </h6>
@@ -73,7 +74,10 @@ const HomeCarousel = () => {
             {carouselData.map((data, index) => (
               <div
                 key={index}
-                className={`fade-in w-[100%] p-8 ${index === currentIndex ? "active" : ""}`}>
+                className={`fade-in w-[100%] p-8 ${
+                  index === currentIndex ? "active" : ""
+                }`}
+              >
                 <h6 className="text-[#E47B0E] text-sm text-center font-poppins font-[500] lg:mb-3 mb-2">
                   {data.title}
                 </h6>
@@ -104,31 +108,41 @@ const HomeCarousel = () => {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-          className="myswiper 2xl:h-[515px] lg:h-[483px] h-[280px]"
+          className="myswiper 2xl:h-[515px] lg:h-[483px] h-[280px] overflow-hidden"
           autoplay={{
             delay: 10000,
             disableOnInteraction: true,
-          }}>
+          }}
+        >
           {CarouselImages?.map((item, i) => (
-            <SwiperSlide key={i}>
-              <div className="grid grid-cols-1 relative overflow-hidden lg:rounded-tl-[126px] lg:rounded-none rounded-[10px]">
+            <SwiperSlide className="overflow-hidden" key={i}>
+              <div className="relative overflow-hidden lg:rounded-tl-[126px] lg:rounded-none rounded-[10px] lg:w-[100%] lg:h-full h-[280px] w-[100%]">
+                <div className="w-full h-full bg-gradient-to-tr from-black/50 from-55% absolute inset-0"></div>
                 <Image
                   src={item}
                   width={0}
                   height={0}
-                  alt={`CarouselImage${i}`}
-                  className="col-start-1 row-start-1 lg:rounded-tl-[126px] lg:rounded-none rounded-[10px] lg:w-[100%] lg:h-[auto] h-[280px] w-[100%] object-cover"
+                  alt=" "
+                  className="h-full w-full object-cover"
                 />
-                <div className="col-start-1 row-start-1 bg-gradient-to-tr from-black/60 from-55%"></div>
               </div>
             </SwiperSlide>
           ))}
 
           <div ref={prevRef} className="swiper-button-prev ">
-            <Icon icon="gg:arrow-right" width={30} className="lg:w-full w-[50%]" hFlip={true} />
+            <Icon
+              icon="gg:arrow-right"
+              width={30}
+              className="lg:w-full w-[50%]"
+              hFlip={true}
+            />
           </div>
           <div ref={nextRef} className="swiper-button-next">
-            <Icon icon="gg:arrow-right" width={30} className="lg:w-full w-[50%]" />
+            <Icon
+              icon="gg:arrow-right"
+              width={30}
+              className="lg:w-full w-[50%]"
+            />
           </div>
         </Swiper>
       </div>

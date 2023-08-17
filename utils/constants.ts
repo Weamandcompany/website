@@ -1,7 +1,7 @@
 export const CarouselImages = [
   "/images/image1.svg",
   "/images/image2.svg",
-  "/images/image3.svg",
+  "/images/dark-hour.webp",
   "/images/slide-image.webp",
 ];
 
