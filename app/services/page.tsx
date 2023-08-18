@@ -16,7 +16,7 @@ const Services = () => {
         <div className="lg:mt-[6.5rem] lg:pt-0 pt-[4.5rem] relative ">
           <Fade triggerOnce={true}>
             <Image
-              src="/images/engineer-t2.webp"
+              src="/images/vent-guys.png"
               alt="service"
               width={0}
               height={0}
@@ -29,7 +29,7 @@ const Services = () => {
               <div className="lg:w-[75%] font-nunito">
                 <Fade triggerOnce={true}>
                   <Image
-                    src="/images/engineer-t2.webp"
+                    src="/images/vent-guys.png"
                     alt="service"
                     width={0}
                     height={0}
