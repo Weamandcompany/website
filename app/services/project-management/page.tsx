@@ -27,12 +27,13 @@ const ProjectManagementService = () => {
               Expert Project Management Solutions.{" "}
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
-              Weam and Company Limited excels in project management, delivering exceptional
-              solutions across industries. With a dedicated team of experienced project managers, we
-              ensure successful project completion within budget and timeline. Our collaborative
-              approach, proactive problem-solving, and commitment to quality make us the preferred
-              partner for seamless project management. Trust us to bring your projects to fruition
-              with excellence.
+              Weam and Company Limited excels in project management, delivering
+              exceptional solutions across industries. With a dedicated team of
+              experienced project managers, we ensure successful project
+              completion within budget and timeline. Our collaborative approach,
+              proactive problem-solving, and commitment to quality make us the
+              preferred partner for seamless project management. Trust us to
+              bring your projects to fruition with excellence.
             </p>
           </Slide>
         </div>
@@ -43,14 +44,16 @@ const ProjectManagementService = () => {
         </div>
       </div>
       <div className="lg:px-32 px-5 lg:mt-14 mt-8">
-        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">Our Operations </h6>
+        <h6 className="text-[#1C1C1C] text-[24px] font-[600] mb-4">
+          Our Operations{" "}
+        </h6>
         <div className="grid lg:grid-cols-2 gap-12 ">
           <Slide direction="left" cascade triggerOnce={true}>
             <Accordion items={projectManagementAccordions} />
           </Slide>
           <Zoom triggerOnce={true}>
             <Image
-              src={"/images/projectmanagement2.svg"}
+              src={"/images/management.png"}
               className="lg:block relative hidden rounded-lg mb-5"
               width={0}
               height={0}
