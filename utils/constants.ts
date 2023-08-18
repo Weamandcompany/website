@@ -596,7 +596,7 @@ export const officeCollection = [
   "/images/group/frontdesk.webp",
 ];
 
-export const trainingCollection = [
+export const trainingFacilityCollection = [
   "/images/group/training-4.webp",
   "/images/training-1.jpg",
   "/images/group/training-3.webp",
@@ -604,10 +604,23 @@ export const trainingCollection = [
   "/images/training-3.jpg",
 ];
 
+export const trainingCollection = [
+  "/images/training/training-g1.jpeg",
+  "/images/training/training-g2.jpeg",
+  "/images/training/training-g3.jpeg",
+  "/images/training/training-g4.jpeg",
+  "/images/training/training-g5.jpeg",
+];
+
 export const collections = [
   {
-    photos: trainingCollection,
+    photos: trainingFacilityCollection,
     title: "Training Facility",
+    subtitle: "",
+  },
+  {
+    photos: trainingCollection,
+    title: "Training",
     subtitle: "",
   },
   {
