@@ -64,6 +64,9 @@ const ProjectManagementService = () => {
         </div>
 
         <div className="max-w-4xl mx-auto mt-14">
+          <h6 className="max-w-md mx-auto text-[#1C1C1C] lg:text-[24px] text-[20px] text-center font-[600] lg:mb-7 mb-7">
+            Project Management Jobs
+          </h6>
           <Accordion defaultIndex={0} items={managementProjects} />
         </div>
       </div>
