@@ -110,7 +110,7 @@ const PolicySection = () => {
 
           <div className="rounded-md flex justify-center bg-white shadow-air p-1">
             <Image
-              src="/images/ncdmb.png"
+              src="/images/client-45.png"
               width={200}
               height={100}
               className="w-auto h-[60px] object-contain"
