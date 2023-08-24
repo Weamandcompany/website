@@ -14,7 +14,10 @@ const ContactForm = () => {
   const handleSubmit = (event: any) => {
     event.preventDefault();
 
-    fetch("https://kuadratik.com/demo.php", {
+    setLoading(true);
+    setIsSuccess(false);
+
+    fetch("mailer/mailer.php", {
       method: "POST",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -23,10 +26,16 @@ const ContactForm = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        setIsSuccess(true);
+
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 10000);
+
+        setLoading(false);
       })
       .catch((error) => {
-        console.error(error);
+        setLoading(false);
       });
   };
 
@@ -71,7 +80,28 @@ const ContactForm = () => {
           required
         />
 
-        <Button type="submit">
+        {isSuccess && (
+          <div
+            className="flex items-center px-4 py-5 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:text-green-400"
+            role="alert"
+          >
+            <svg
+              className="flex-shrink-0 inline w-4 h-4 mr-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+            </svg>
+            <span className="sr-only">Info</span>
+            <div>
+              <span className="font-medium">Email successfully sent</span>
+            </div>
+          </div>
+        )}
+
+        <Button type="submit" disabled={loading}>
           Send Message <Icon icon="ph:arrow-right-bold"></Icon>
         </Button>
       </form>
@@ -79,7 +109,7 @@ const ContactForm = () => {
   );
 };
 
-const Button = tw.button`bg-[#E47B0E] justify-center w-full text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 hover:opacity-80`;
+const Button = tw.button`bg-[#E47B0E] justify-center w-full text-white rounded-[3px] lg:py-3 lg:px-8 py-2 px-4 font-[400] text-[13.5px] font-poppins flex items-center gap-2 hover:opacity-80 disabled:bg-gray-500`;
 const Input = tw.input`border-[1px] border-[#F4F6FF] p-[.6rem] outline-0 rounded-[9px] placeholder:text-xs text-sm`;
 const Textarea = tw.textarea`border-[1px] border-[#F4F6FF] p-[.6rem] outline-0 rounded-[9px] placeholder:text-xs text-sm mb-4 w-full`;
 export default ContactForm;
