@@ -20,7 +20,7 @@ const Services = () => {
               alt="service"
               width={0}
               height={0}
-              style={{ width: "32%" }}
+              style={{ width: "38%" }}
               className="mx-auto absolute right-[6%] top-[12%] lg:block hidden rounded-xl"
             />
           </Fade>
