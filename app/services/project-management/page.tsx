@@ -53,7 +53,7 @@ const ProjectManagementService = () => {
           </Slide>
           <Zoom triggerOnce={true}>
             <Image
-              src={"/images/management.png"}
+              src={"/images/project-gl.png"}
               className="lg:block relative hidden rounded-lg mb-5"
               width={0}
               height={0}

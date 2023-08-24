@@ -24,7 +24,7 @@ export const carouselData = [
     title: "WEAM AND COMPANY LIMITED",
     subtitle: "Making the Best Companies Even Better",
     description:
-      "Our software helps you to reliably and safely operate at maximum asset performance",
+      "Our software helps you to reliably and safely operate at maximum asset performance.",
   },
   //   {
   //     title: "WEAM AND COMPANY LIMITED",
@@ -36,7 +36,7 @@ export const carouselData = [
     title: "WEAM AND COMPANY LIMITED",
     subtitle: "Capacity Development",
     description:
-      "Empowering Nigerians with the skills required for participation in the Nigerian Oil & Gas, Energy and Petrochemical Industry",
+      "Empowering Nigerians with the skills required for participation in the Nigerian Oil & Gas, Energy and Petrochemical Industry.",
   },
   {
     title: "WEAM AND COMPANY LIMITED",
