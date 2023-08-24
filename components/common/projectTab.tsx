@@ -33,7 +33,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
     <>
       <div
         className={`${
-          isActive ? 'bg-white lg:my-12 my-6' : 'bg-[#161C49] mb-4'
+          isActive ? "bg-white lg:my-12 my-6" : "bg-[#161C49] mb-4"
         } lg:p-10 p-6 rounded-[8px] font-poppins cursor-pointer`}
         onClick={onClick}
       >
@@ -41,14 +41,14 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
           <div>
             <h6
               className={`text-[#E47B0E] lg:text-[14px] text-[13.5px] mb-2 ${
-                isActive ? 'w-[65%]' : 'w-full'
+                isActive ? "w-[65%]" : "w-full"
               }`}
             >
               {isActive ? heading : title}
             </h6>
             <p
               className={`text-white  text-[19.5px] font[600] ${
-                isActive ? 'hidden' : ''
+                isActive ? "hidden" : ""
               }`}
             >
               {heading}
@@ -56,24 +56,26 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
 
             <div
               className={`text-[#61657E] lg:text-[13px] text-xs lg:w-[65%] ${
-                isActive ? '' : 'hidden'
+                isActive ? "" : "hidden"
               }`}
             >
               <Bounce cascade triggerOnce={true}>
                 <div className="lg:hidden block">
-                  <Image
-                    src={imageSrc ?? '/images/placeholder.png'}
-                    className="relative rounded-lg my-3"
-                    width={0}
-                    height={0}
-                    style={{
-                      width: '100%',
-                      height: '120px',
-                      objectFit: 'cover',
-                    }}
-                    alt="projectImage"
-                    onClick={() => setSelectedImage(images)}
-                  />
+                  {imageSrc && (
+                    <Image
+                      src={imageSrc ?? "/images/placeholder.png"}
+                      className="relative rounded-lg my-3"
+                      width={0}
+                      height={0}
+                      style={{
+                        width: "100%",
+                        height: "120px",
+                        objectFit: "cover",
+                      }}
+                      alt="projectImage"
+                      onClick={() => setSelectedImage(images)}
+                    />
+                  )}
                 </div>
               </Bounce>
               {description}
@@ -93,7 +95,7 @@ const ProjectTab: React.FC<ProjectTabProps> = ({
                 <div className="lg:block hidden">
                   {imageSrc && (
                     <Image
-                      src={imageSrc ?? '/images/placeholder.png'}
+                      src={imageSrc ?? "/images/placeholder.png"}
                       className="w-[340px] h-[220px] object-cover rounded-lg"
                       width={0}
                       height={0}

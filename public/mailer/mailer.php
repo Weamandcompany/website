@@ -1,14 +1,15 @@
 <?php
+$data = json_decode(file_get_contents('php://input'), true);
 
-$contactName=($_POST['name']);
-$contactEmail=($_POST['email']);
-$contactPhone=($_POST['phone']);
-$contactAddress=($_POST['address']);
-$contactSubject=($_POST['subject']);
-$contactMessage=($_POST['message']);
+$contactName = ($data['name']);
+$contactEmail = ($data['email']);
+$contactPhone = ($data['phone']);
+$contactSubject = ($data['subject']);
+$contactMessage = ($data['message']);
 
 
-$to = 'info@weamandcompany.com';
+// $to = 'info@weamandcompany.com';
+$to = 'afuwapesunday12@gmail.com';
 $headers = "From: " . strip_tags("noreply@weamandcompany.com") . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -23,19 +24,18 @@ $msg1 .= '<div style="text-align:center; background:#c8e6c9; color:#1b5e20; heig
 $msg1 .= '<h2>WEAM AND COMPANY LTD.</h2>';
 $msg1 .= '</div>';
 $msg1 .= '<p>Hello,</p>';
-$msg1 .= '<p>New Contact Message on Weam and Company Website with subject "'.$contactSubject.'"</p>';
-$msg1 .= '<p><strong>Name:</strong>  '.$contactName.' </p>';
-$msg1 .= '<p><strong>Phone Number:</strong>  '.$contactPhone.' </p>';
-$msg1 .= '<p><strong>Email Address: </strong>  '.$contactEmail.' </p>';
-$msg1 .= '<p><strong>Phone Number: </strong>  '.$contactPhone.' </p>';
-$msg1 .= '<p><strong>Address: </strong>  '.$contactAddress.' </p>';
-$msg1 .= '<p><strong>Message: </strong>  '.$contactMessage.' </p>';
+$msg1 .= '<p>New Contact Message on Weam and Company Website with subject "' . $contactSubject . '"</p>';
+$msg1 .= '<p><strong>Name:</strong>  ' . $contactName . ' </p>';
+$msg1 .= '<p><strong>Phone Number:</strong>  ' . $contactPhone . ' </p>';
+$msg1 .= '<p><strong>Email Address: </strong>  ' . $contactEmail . ' </p>';
+$msg1 .= '<p><strong>Phone Number: </strong>  ' . $contactPhone . ' </p>';
+$msg1 .= '<p><strong>Message: </strong>  ' . $contactMessage . ' </p>';
 $msg1 .= '<p>Thank You !!! </p>';
 $msg1 .= '</div>';
 $msg1 .= '</body></html>';
 
-
 $mail = mail($to, $subject1, $msg1, $headers);
 
-echo 'success';
-?>
+echo json_encode([
+   'status' => (bool) $mail,
+]);
