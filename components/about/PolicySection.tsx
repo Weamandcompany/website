@@ -224,8 +224,8 @@ const PolicySection = () => {
           <div className="container mx-auto grid sm:grid-cols-2 gap-7 lg:gap-x-14">
             <CommitCard
               title="Customer focus"
-              description="As an organization, we are dedicated to understanding our current and future customers’ needs,
-              meeting their requirements, and strive to exceed their expectations."
+              description="As an organization, we are dedicated to understanding our customers’ needs,
+              meeting their requirements, and striving to exceed their expectations."
             />
 
             <CommitCard
@@ -242,7 +242,7 @@ const PolicySection = () => {
 
             <CommitCard
               title="Improvement"
-              description="We have committed to achieving continual improvement across all aspects of our Quality
+              description="We are committed to achieving continual improvement across all aspects of our Quality
               Management System; it is one of our main annual objectives."
             />
 
@@ -260,7 +260,7 @@ const PolicySection = () => {
 
             <CommitCard
               title="Relationship management"
-              description="As an organisation, we have committed to only make decisions relating to our QMS following an
+              description="As an organisation, we are committed to only making decisions relating to our QMS following an
               analysis of relevant data and information."
             />
           </div>

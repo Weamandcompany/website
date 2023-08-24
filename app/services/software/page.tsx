@@ -20,7 +20,7 @@ const SoftwareServices = () => {
       <div className="lg:mt-[7.5rem]  lg:pt-0 pt-[4.5rem]  lg:flex lg:gap-20 gap-6 lg:px-32 px-5  mb-8 grid">
         <div className="lg:w-[68%] font-roboto order-2 lg:order-1">
           <Image
-            src={"/images/software.svg"}
+            src={"/images/soft-sales.jpg"}
             className="relative rounded-lg mb-5 lg:h-[350px] h-[100px]"
             width={0}
             height={0}
@@ -32,11 +32,12 @@ const SoftwareServices = () => {
               Software sales, Deployment and Support.
             </h6>
             <p className="text-[#61657E] lg:leading-9 leading-7 lg:text-[16px] text-sm">
-              We offer end-to-end software solutions. From sales to deployment and ongoing support,
-              our experts ensure a seamless experience. Choose the right software with our
-              personalized consultations. Our skilled professionals handle smooth deployment,
-              minimizing disruptions. Count on us for dedicated support, updates, and training.
-              Enhance productivity with our comprehensive services.
+              We offer end-to-end software solutions. From sales to deployment
+              and ongoing support, our experts ensure a seamless experience.
+              Choose the right software with our personalized consultations. Our
+              skilled professionals handle smooth deployment, minimizing
+              disruptions. Count on us for dedicated support, updates, and
+              training. Enhance productivity with our comprehensive services.
             </p>
           </Slide>
         </div>
@@ -167,6 +168,18 @@ const softwares = [
               reducing efforts and performing better. This solution unifies the
               entire logistics process, including personnel, cargo and offshore
               wind, making logistics straightforward.
+            </div>
+          </div>
+
+          <div>
+            <div className="font-bold">Hydrocarbon Accounting</div>
+            <div>
+              <ul className="list-disc list-inside">
+                <li>Production</li>
+                <li>Transport</li>
+                <li>Sales</li>
+                <li>Revenue</li>
+              </ul>
             </div>
           </div>
 

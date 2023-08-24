@@ -20,10 +20,11 @@ const HomeAbout = () => {
               WEAM AND COMPANY LIMITED
             </p>
             <p className="text-sm font-nunito mb-6 leading-[2.5]">
-              Weam and Company Limited, established in 1985, is an ISO 9001:2015 and COREN certified
-              Engineering, Procurement, Construction, Installation and Commissioning (EPCIC)
-              company, providing a diverse range of client-focused and cost-effective engineering
-              solutions in the oil, gas and manufacturing industries.
+              Weam and Company Limited, established in 1985, is an ISO 9001:2015
+              and COREN certified Engineering, Procurement, Construction,
+              Installation and Commissioning (EPCIC) company, providing a
+              diverse range of client-focused and cost-effective engineering
+              solutions in the Oil & Gas, Energy and manufacturing industries.
             </p>
             <Button href="/about">
               Learn More

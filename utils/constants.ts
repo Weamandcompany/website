@@ -18,7 +18,7 @@ export const carouselData = [
     title: "WELCOME TO",
     subtitle: "WEAM AND COMPANY LIMITED",
     description:
-      "A worldclass Engineering company with rich experience in the Oil and Gas, Energy, Manufacturing and Environmental Industries.",
+      "A worldclass Engineering company with rich experience in the Oil & Gas, Energy, Manufacturing and Environmental Industries.",
   },
   {
     title: "WEAM AND COMPANY LIMITED",
@@ -36,7 +36,7 @@ export const carouselData = [
     title: "WEAM AND COMPANY LIMITED",
     subtitle: "Capacity Development",
     description:
-      "Empowering Nigerians with the skills required for participation the Nigerian Oil & Gas, and Petrochem Industry",
+      "Empowering Nigerians with the skills required for participation in the Nigerian Oil & Gas, Energy and Petrochemical Industry",
   },
   {
     title: "WEAM AND COMPANY LIMITED",
@@ -598,9 +598,9 @@ export const officeCollection = [
 
 export const trainingFacilityCollection = [
   "/images/group/training-4.webp",
-  "/images/training-1.jpg",
+  "/images/training/training-new-1.jpg",
   "/images/group/training-3.webp",
-  "/images/training-2.jpg",
+  "/images/training/training-new-2.jpg",
   "/images/training-3.jpg",
 ];
 
@@ -609,7 +609,6 @@ export const trainingCollection = [
   "/images/training/training-g2.jpeg",
   "/images/training/training-g3.jpeg",
   "/images/training/training-g4.jpeg",
-  "/images/training/training-g5.jpeg",
 ];
 
 export const collections = [
@@ -620,7 +619,7 @@ export const collections = [
   },
   {
     photos: trainingCollection,
-    title: "Training",
+    title: "Trainings",
     subtitle: "",
   },
   {

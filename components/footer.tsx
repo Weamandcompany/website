@@ -21,15 +21,19 @@ const Footer = () => {
             alt="logo"
           />
           <p className="font-roboto text-white/75 text-[13px] leading-6 lg:w-[65%]">
-            Weam and Company Limited, established in 1985, is an ISO 9001:2015 and COREN certified
-            Engineering, Procurement, Construction, Installation and Commissioning (EPCIC) company,
-            providing a diverse range of client-focused and cost-effective engineering solutions in
-            the oil, gas and manufacturing industries
+            Weam and Company Limited, established in 1985, is an ISO 9001:2015
+            and COREN certified Engineering, Procurement, Construction,
+            Installation and Commissioning (EPCIC) company, providing a diverse
+            range of client-focused and cost-effective engineering solutions in
+            the Oil & Gas, Energy and manufacturing industries.
           </p>
         </div>
         <div className="flex items-center gap-6 lg:w-[15%] lg:mt-0 mt-8">
           Find us on:{" "}
-          <Link href={"https://ng.linkedin.com/company/weam-and-company"} target="_blank">
+          <Link
+            href={"https://ng.linkedin.com/company/weam-and-company"}
+            target="_blank"
+          >
             <Icon
               icon={"ri:linkedin-fill"}
               className="text-[#E47B0E] p-[7px] bg-white h-[32px] w-[32px] rounded-full"

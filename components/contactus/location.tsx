@@ -6,7 +6,7 @@ import Map from "./map";
 const data = [
   <>
     <p className="lg:text-left text-center">
-      Plot 42C, Road 22, Federal Housing Estate, Rumueme(Agip), P.O.Box 12450,
+      Plot 42C, Road 22, Federal Housing Estate, Rumueme (Agip), P.O.Box 12450,
       Port Harcourt, Rivers State, Nigeria. <br />
       <br /> +234 818 152 7677
     </p>

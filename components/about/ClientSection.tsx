@@ -4,9 +4,21 @@ import Image from "next/image";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-const ClientCard = ({ src }: { src: string }) => (
-  <div className="bg-white rounded flex justify-center p-2">
-    <Image src={src} width={200} height={0} className="w-auto" alt="client" />
+const ClientCard = ({
+  src,
+  className,
+}: {
+  src: string;
+  className?: string;
+}) => (
+  <div className={`bg-white rounded flex justify-center p-2 ${className}`}>
+    <Image
+      src={src}
+      width={200}
+      height={0}
+      className="w-auto object-contain"
+      alt="client"
+    />
   </div>
 );
 
@@ -19,9 +31,10 @@ const ClientSection = () => {
             OUR CLIENTELE
           </h3>
           <p className="text-xs leading-loose sm:text-sm sm:leading-loose text-wdark font-medium text-center">
-            Our engineering expertise has earned us the trust of industry leaders across sectors,
-            including manufacturing, construction, aerospace, automotive, and energy. Join our
-            esteemed clientele and experience our trusted solutions firsthand.
+            Our engineering expertise has earned us the trust of industry
+            leaders across sectors, including manufacturing, construction,
+            aerospace, automotive, and energy. Join our esteemed clientele and
+            experience our trusted solutions firsthand.
           </p>
         </div>
 
@@ -38,7 +51,7 @@ const ClientSection = () => {
             <li className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3 rounded-md bg-[#F4F6FF] shadow-light py-3 px-3">
               <ClientCard src="/images/clients/client-1.png" />
               <ClientCard src="/images/clients/client-6.png" />
-              <ClientCard src="/images/clients/client-13.png" />
+              <ClientCard src="/images/clients/client-19.png" />
               <ClientCard src="/images/clients/client-18.png" />
               <ClientCard src="/images/clients/client-33.png" />
             </li>
@@ -48,7 +61,7 @@ const ClientSection = () => {
               <ClientCard src="/images/clients/client-14.png" />
               <ClientCard src="/images/clients/client-17.png" />
 
-              <ClientCard src="/images/clients/client-19.png" />
+              <ClientCard src="/images/clients/client-39.png" />
               <ClientCard src="/images/clients/client-36.png" />
             </li>
 
@@ -69,11 +82,18 @@ const ClientSection = () => {
             </li>
 
             <li className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3 rounded-md bg-[#F4F6FF] shadow-light py-3 px-3">
-              <ClientCard src="/images/clients/client-39.png" />
+              <ClientCard src="/images/clients/client-43.png" />
               <ClientCard src="/images/clients/client-10.png" />
               <ClientCard src="/images/clients/client-5.png" />
               <ClientCard src="/images/clients/client-41.jpg" />
               <ClientCard src="/images/clients/client-42.jpg" />
+            </li>
+
+            <li className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-5 gap-3 rounded-md bg-[#F4F6FF] shadow-light py-3 px-3">
+              <ClientCard
+                className="max-h-[70px]"
+                src="/images/clients/client-44.png"
+              />
             </li>
           </ul>
         </Fade>
