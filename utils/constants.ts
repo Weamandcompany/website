@@ -62,13 +62,13 @@ export const navLinks = [
 ];
 
 export const services = [
-  { name: "Engineering", link: "/services/engineering" },
-  { name: "Project Management", link: "/services/project-management" },
-  { name: "Software", link: "/services/software" },
-  { name: "Training", link: "/services/training" },
-  { name: "Simulation Studies", link: "/services/simulation-studies" },
-  { name: "Cloud Consulting", link: "/services/cloud-consulting" },
-  { name: "Risk Management", link: "/services/risk-management" },
+  { name: "Engineering", link: "/services/engineering/" },
+  { name: "Project Management", link: "/services/project-management/" },
+  { name: "Software", link: "/services/software/" },
+  { name: "Training", link: "/services/training/" },
+  { name: "Simulation Studies", link: "/services/simulation-studies/" },
+  { name: "Cloud Consulting", link: "/services/cloud-consulting/" },
+  { name: "Risk Management", link: "/services/risk-management/" },
 ];
 
 export const engineeringAccordions = [
