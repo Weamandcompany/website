@@ -17,9 +17,9 @@ export default function PageLayout({
   const router = useRouter();
   const pathname = usePathname();
 
-  // useEffect(() => {
-  //   router.push(pathname + '#top');
-  // }, [pathname, router]);
+  useEffect(() => {
+    router.push(pathname + "#top");
+  }, [pathname, router]);
 
   return (
     <>
