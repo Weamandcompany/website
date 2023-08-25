@@ -17,7 +17,7 @@ const ContactForm = () => {
     setLoading(true);
     setIsSuccess(false);
 
-    fetch("mailer/mailer.php", {
+    fetch("/mailer/mailer.php", {
       method: "POST",
       headers: {
         "Content-type": "application/json; charset=UTF-8",

@@ -13,8 +13,9 @@ const Contact = () => {
             Want to know more about us?
           </h6>
           <div className="lg:flex grid lg:gap-6 gap-4 items-center">
-            <BtnDownload href="Weam-official.pdf" download={true}>
-              <Icon icon="subway:download-3"></Icon> Download Company&apos;s Profile
+            <BtnDownload href="/Weam-official.pdf" download={true}>
+              <Icon icon="subway:download-3"></Icon> Download Company&apos;s
+              Profile
             </BtnDownload>
             <BtnContact href="/contact">Contact Us</BtnContact>
           </div>

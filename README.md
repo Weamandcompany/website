@@ -13,20 +13,7 @@ pnpm dev
 ```
 
 ```
-username:
-weam7676##
 
-host:
-home289890466.1and1-data.host
-
-port:
-22
-
-username:
-acc87460911
-
-command
-scp -P 22 -r out/* acc87460911@home289890466.1and1-data.host:/
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
