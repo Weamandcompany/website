@@ -32,7 +32,7 @@ const Location = () => {
         Call us or message and we&apos;ll respond as soon as possible
       </p>
       <div className="lg:flex gap-1 flex-wrap mb-5">
-        <div className="lg:w-[36.5%] p-4 text-xs font-sans flex-wrap">
+        <div className="lg:w-[32.5%] p-4 text-xs font-sans flex-wrap">
           <Icon
             icon={"ic:outline-email"}
             className="h-[42px] w-[42px] bg-[#FE5D14] text-white p-[.6rem] rounded-full mb-4 lg:mx-0 mx-auto"
@@ -49,7 +49,8 @@ const Location = () => {
               isActive === i && "bg-[#F4F6FF]"
             } lg:w-[31%] p-4 text-xs font-roboto cursor-pointer`}
             key={i}
-            onClick={() => setIsActive(i)}>
+            onClick={() => setIsActive(i)}
+          >
             <Icon
               icon={"mi:location"}
               className={`${
@@ -61,8 +62,29 @@ const Location = () => {
         ))}
       </div>
       <div>
-        {isActive === 0 && <Map longitude={6.9794509} latitude={4.8158563} />}
-        {isActive === 1 && <Map longitude={7.407276500000001} latitude={9.0437826} />}
+        {isActive === 0 && (
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.7378580353734!2d6.969412274778651!3d4.815011540656412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cef843962f9d%3A0xfe8c637dfde79292!2sWeam%20and%20Company%20Limited!5e0!3m2!1sen!2sng!4v1692958515040!5m2!1sen!2sng"
+            height="300"
+            className="w-full"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        )}
+
+        {isActive === 1 && (
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.492165687019!2d7.380333674802224!3d9.109939787717183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e75f43bb5a89b%3A0x56aefe6598efb003!2sWEAM%20AND%20COMPANY%20LIMITED!5e0!3m2!1sen!2sng!4v1692958406541!5m2!1sen!2sng"
+            height="300"
+            className="w-full"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        )}
       </div>
     </div>
   );

@@ -51,14 +51,14 @@ export const navLinks = [
     name: "Home",
     link: "/",
   },
-  { name: "About us", link: "/about" },
+  { name: "About us", link: "/about/" },
   {
     name: "Services",
-    link: "/services",
+    link: "/services/",
     subLinks: ["/services/"],
   },
-  { name: "Projects", link: "/projects" },
-  { name: "Gallery", link: "/gallery" },
+  { name: "Projects", link: "/projects/" },
+  { name: "Gallery", link: "/gallery/" },
 ];
 
 export const services = [
