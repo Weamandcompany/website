@@ -20,8 +20,8 @@ $contactSubject = ($data['subject']);
 $contactMessage = ($data['message']);
 
 
-// $to = 'info@weamandcompany.com';
-$to = 'afuwapesunday12@gmail.com';
+$to = 'info@weamandcompany.com';
+// $to = 'afuwapesunday12@gmail.com';
 $headers = "From: " . strip_tags("noreply@weamandcompany.com") . "\r\n";
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
