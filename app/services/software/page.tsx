@@ -4,7 +4,7 @@ import React from "react";
 import PageLayout from "@/layouts/PageLayout";
 import Image from "next/image";
 import ServiceSidebar from "@/components/common/serviceSidebar";
-import { Fade, Slide, Zoom } from "react-awesome-reveal";
+import { Fade, Slide, } from "react-awesome-reveal";
 import Accordion from "@/components/common/accordion";
 
 const Row = ({ cellOne, cellTwo }: { cellOne: string; cellTwo: string }) => (
@@ -256,6 +256,34 @@ const softwares = [
             <li>PIPENET Spray/Sprinkler Module</li>
             <li>PIPENET Transient Module</li>
           </ul>
+        </div>
+      </>
+    ),
+  },
+
+  {
+    title: "SAP Solutions",
+    content: (
+      <>
+        <div>
+          <div>
+          Weam and Company Limited is a member o f the SAP PartnerEdge open ecosystem providing consulting services. Currently, we provide comprehensive S/4HANA Cutover Stabilization Support Services to the Nigerian National Petroleum Company Limited (NNPCL), spanning multiple modules, including:
+          </div>
+          <ul className="list-disc list-inside">
+            <li>Project Systems</li>
+            <li>Sourcing & Procurement/Ariba</li>
+            <li>Enterprise Asset Management</li>
+            <li>Production Planning and Costing</li>
+            <li>Finance and Accounts</li>
+            <li>Joint Venture Accounting</li>
+            <li>IS-Oil</li>
+            <li>Business Technology Platform</li>
+            <li>SuccessFactors/Concur</li>
+            <li>Sales and Distribution</li>
+          </ul>
+          <div>
+          Our expertise and experience enable us to support complex SAP implementations and stabilization projects, driving value for our clients.
+          </div>
         </div>
       </>
     ),
