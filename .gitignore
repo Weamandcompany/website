@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-/.yarn
+.yarn/*
+!.yarn/releases
+!.yarn/releases/yarn-3.8.7.cjs
 
 # testing
 /coverage

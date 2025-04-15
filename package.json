@@ -38,5 +38,5 @@
     "@types/react-image-gallery": "^1.2.0",
     "@types/react-responsive-masonry": "^2.1.0"
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.8.7"
 }
