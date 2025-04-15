@@ -11,6 +11,7 @@ export const SponsorImages = [
   "/images/sponsor1.svg",
   "/images/sponsor5.svg",
   "/images/sponsor2.svg",
+  "/images/sponsor6.png",
 ];
 
 export const carouselData = [
